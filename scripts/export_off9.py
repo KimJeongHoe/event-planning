@@ -28,7 +28,7 @@ seg=P[P.index("const R=[[-30"):];seg=seg[:seg.index("]];")+3]
 rows=[]
 for mm in re.finditer(r'\[(-?\d+),"([^"]*)",(?:"([^"]*)"|[^\]]*?),"([a-z]*)"\]',seg):
     rows.append({"D":int(mm.group(1)),"할일":mm.group(2),"메모":mm.group(3) or "","도구":mm.group(4) or ""})
-html=open(f"{B}/preview/행사안_미리보기.html",encoding="utf-8").read();mi=re.search(r'\{"link":',html);D=json.loads(html[mi.start():html.index("\n",mi.start())].rstrip(";"))
+html=open(f"{B}/preview/행사안_미리보기.html",encoding="utf-8").read();mi=re.search(r'\{"(iq|mtd|link)":',html);D=json.loads(html[mi.start():html.index("\n",mi.start())].rstrip(";"))
 prep={}
 for c in D["cases"]:
     if c.get("kd")=="준비·절차":

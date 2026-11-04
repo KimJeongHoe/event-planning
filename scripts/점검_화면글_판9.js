@@ -4,7 +4,7 @@ const {chromium}=require('playwright');const BAD=/확인 필요|확인필요|준
 await p.goto('file://'+process.argv[2]);await p.waitForTimeout(500);const hits=[];let views=0;
 const scan=async w=>{views++;const t=await p.evaluate(()=>document.body.innerText);const m=t.match(new RegExp('.{0,30}('+BAD.source+').{0,30}','g'));if(m)hits.push(w+': '+m.slice(0,2).join(' / '))};
 const tabs=await p.$$eval('[data-tab]',x=>x.map(y=>y.dataset.tab));
-const flows=[['sample','고깃집'],['sample','카페'],['sample','미용실'],['ind','학원·교육|학원'],['ind','병의원·약국|치과'],['ind','병의원·약국|약국'],['ind','소매|편의점'],['ind','서비스업|헬스장'],['ind','미용·뷰티|네일'],['ind','소매|편의점'],['ind','요식업|한식'],['ind','서비스업|세탁']];
+const flows=[['sample','고깃집'],['sample','카페'],['sample','미용실'],['ind','학원·교육|학원'],['ind','병의원·약국|치과'],['ind','병의원·약국|약국'],['ind','소매|편의점'],['ind','서비스업|헬스장'],['ind','미용·뷰티|네일'],['ind','소매|편의점'],['ind','요식업|한식'],['ind','서비스업|세탁'],['ind','서비스업|숙박'],['ind','병의원·약국|약국'],['ind','소매|정육점'],['ind','서비스업|헬스장']];
 for(const [k,v] of flows){if(k==='sample'){await p.click('#nav-home').catch(()=>{});await p.waitForTimeout(100);await p.click(`[data-sample="${v}"]`)}else{const [i,s]=v.split('|');await p.click('#nav-home').catch(()=>{});await p.selectOption('#in-ind',i);await p.selectOption('#in-sub',s).catch(()=>{});await p.click('#go').catch(async()=>{await p.click('button.main').catch(()=>{})})}
  await p.waitForTimeout(250);await scan(v+' 2단계');const pick=await p.$('[data-pick]');if(!pick)continue;await pick.click();await p.waitForTimeout(200);
  for(const t of tabs){await p.click(`[data-tab="${t}"]`).catch(()=>{});await p.waitForTimeout(60);await scan(v+' 탭 '+t)}

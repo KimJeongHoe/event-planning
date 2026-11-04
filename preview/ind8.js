@@ -8,7 +8,7 @@ function indLis(keys){return (keys||[]).filter(k=>D.law[k]).map(lawLi).join("")}
 function indRisk(){const box=$("#tab-risk");if(!box||!CUR)return;box.querySelectorAll("[data-ind8]").forEach(x=>x.remove());const P=IP8();if(!P)return;
  const wrap=box.firstElementChild||box;const ks=(P["법"]||[]).filter(k=>D.law[k]);
  wrap.insertAdjacentHTML("beforeend",`<div class="note" data-ind8><b>${esc(P["이름"])} 업종에서 지킬 것</b>${P["한줄"]?` — ${esc(deW(P["한줄"]))}`:""}<ul class="clean" style="margin-top:4px">
- ${(P["막을행사"]||[]).map(x=>`<li>그대로 하지 않기: ${esc(deW(x))}</li>`).join("")}${(P["바꿀행사"]||[]).map(x=>`<li>대신 이렇게: ${esc(deW(x))}</li>`).join("")}</ul>
+ ${iqYes().map(x=>`<li>${esc(x)}</li>`).join("")}${(P["막을행사"]||[]).map(x=>`<li>그대로 하지 않기: ${esc(deW(x))}</li>`).join("")}${(P["바꿀행사"]||[]).map(x=>`<li>대신 이렇게: ${esc(deW(x))}</li>`).join("")}</ul>
  ${ks.length?`<details><summary class="small">근거 법령 ${ks.length}개</summary><ul class="clean small">${indLis(ks)}</ul></details>`:""}</div>`)}
 function indApply(){const P=IP8()||{};const W=P["말"]||{};
  const liq=$("#in-liq");if(liq){const lab=liq.closest("label");const off=P["술"]===false;if(lab)lab.hidden=off;if(off)liq.value="아니오"}
@@ -17,7 +17,14 @@ function indApply(){const P=IP8()||{};const W=P["말"]||{};
  const food=$("#in-ind").value==="요식업";const VN={"신메뉴":"신상품·새 서비스","신메뉴알리기":"새 상품·서비스 알리기","포장배달":"포장·배달·택배","회전율":"손님 회전"};
  document.querySelectorAll("#in-st option").forEach(o=>{if(VN[o.value])o.textContent=food?o.value:VN[o.value]});
  document.querySelectorAll("#in-goals label").forEach(l=>{const i=l.querySelector("input");const n=[...l.childNodes].find(x=>x.nodeType===3);if(i&&n&&VN[i.value])n.textContent=food?i.value:VN[i.value]});
- indRisk()}
+ indQs();indRisk()}
+// 판 10: 업종 전용 질문 칸(spec/업종질문_판10.json → D.iq). 1단계 입력 칸 묶음에 기존 칸 모양으로 넣음
+const IQA={};
+function indQs(){const P=IP8(),grid=$("#s1 .grid");if(!grid)return;grid.querySelectorAll("[data-iq]").forEach(x=>x.remove());if(!P)return;
+ ((D.iq||{})["질문"]||[]).filter(q=>{try{return new RegExp(q.re).test(P["이름"]||"")}catch(e){return false}}).forEach(q=>{
+  grid.insertAdjacentHTML("beforeend",`<label data-iq="${esc(q.id)}">${esc(q.q)}<select data-iqs="${esc(q.id)}"><option>아니오</option><option${IQA[q.id]==="예"?" selected":""}>예</option></select></label>`)});
+ grid.querySelectorAll("[data-iqs]").forEach(x=>x.addEventListener("change",()=>{IQA[x.dataset.iqs]=x.value;indRisk()}))}
+function iqYes(){const P=IP8();if(!P)return[];return ((D.iq||{})["질문"]||[]).filter(q=>IQA[q.id]==="예"&&(()=>{try{return new RegExp(q.re).test(P["이름"]||"")}catch(e){return false}})()).map(q=>q["예"])}
 // 도구: 업종 항목을 그 도구의 기존 근거 목록(⚠ 상자) 안에 더함. 상자가 없는 도구는 더하지 않음
 const _openTool8=openTool;openTool=function(k,q){_openTool8(k,q);const P=IP8();if(!P)return;const tb=$("#tool-body");if(!tb)return;
  if(k==="coupon"&&P["쿠폰예"]){const b=$("#cp-ben");if(b){b.placeholder="예: "+P["쿠폰예"];if(/사이드|접시/.test(b.value))b.value=P["쿠폰예"]}tb.querySelectorAll(".chips label, .chips span").forEach(x=>{if(x.textContent.includes("1테이블"))x.childNodes.forEach(n=>{if(n.nodeType===3)n.textContent=n.textContent.replace("1인·1테이블 1장","1인 1장")})})}

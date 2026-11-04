@@ -168,17 +168,22 @@ RENDER.coupon=(st)=>{st=st||{};const I=inp();const bt=st.ben??(curB()||"");
  $("#cp-print").addEventListener("click",()=>{document.body.classList.add("print-cp");try{print()}catch(e){alert("이 화면에서는 인쇄를 열 수 없습니다. 인쇄용 CSV를 디자인 도구로 보내세요.")}setTimeout(()=>document.body.classList.remove("print-cp"),500)});
  $("#cp-csv1").addEventListener("click",()=>{const g=cpGet();saveFile("쿠폰_인쇄.csv",toCSV([["쿠폰 종류","앞면 문구","뒷면 주의 문구","유효기간 시작","유효기간 끝","크기","일련번호 시작","일련번호 끝"],[g.kind,`${shopNm()} ${g.ben}`,$("#cp-card .cp-cond").textContent,g.s,g.e,g.size==="a6"?"A6":"명함",serial(g,1),serial(g,g.n)]]))});
  $("#cp-save").addEventListener("click",async()=>{const g=cpGet();if(!g.ben||!g.e||g.e<g.s||!g.n||g.n>2000){$("#cp-msg").textContent="혜택·유효기간·발급 수(2,000장 이하)를 확인하세요";return}if(hasLiq(g.ben)&&!confirm("술이 들어간 혜택입니다. 그래도 저장할까요?"))return;
-  if(await recPut(Object.assign({t:"쿠폰",name:`${g.kind} ${g.ben}`.slice(0,40),used:{}},g))){$("#cp-msg").textContent="저장했습니다. 아래 목록에서 사용 처리합니다.";cpList()}});
+  if(await recPut(Object.assign({t:"쿠폰",name:`${g.kind} ${g.ben}`.slice(0,40),used:{},salt:cpSalt()},g))){$("#cp-msg").textContent="저장했습니다. 아래 목록에서 사용 처리합니다.";cpList()}});
  cpList()};
 function cpGet(){return{kind:v7("#cp-kind"),ben:v7("#cp-ben"),s:v7("#cp-s"),e:v7("#cp-e"),min:n7("#cp-min"),when:v7("#cp-when"),pre:(v7("#cp-pre")||"CP").replace(/[^A-Za-z0-9]/g,"").toUpperCase()||"CP",n:Math.floor(n7("#cp-n")||0),col:v7("#cp-col"),size:v7("#cp-size"),one:$("#cp-one").checked,dup:$("#cp-dup").checked,cash:$("#cp-cash").checked,liqx:$("#cp-liqx").checked}}
-const serial=(g,i)=>`${g.pre}-${(g.s||"").replace(/-/g,"")}-${String(i).padStart(4,"0")}`;
+// 판 10: 묶음마다 비밀값(salt, 사장님 개인 저장소에만)으로 번호 끝 확인 글자 2개 — 번호를 지어내 쓰는 것을 막음. salt 없는 옛 묶음은 옛 형식
+const CPA="ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+function cpChk(salt,b){let h=2166136261;for(const ch of salt+"|"+b){h^=ch.codePointAt(0);h=Math.imul(h,16777619)>>>0}return CPA[h%32]+CPA[(h>>>5)%32]}
+function cpSalt(){try{const a=new Uint8Array(9);crypto.getRandomValues(a);return [...a].map(x=>CPA[x%32]).join("")}catch(e){return Math.random().toString(36).slice(2,11).toUpperCase()}}
+const serial=(g,i)=>{const b=`${g.pre}-${(g.s||"").replace(/-/g,"")}-${String(i).padStart(4,"0")}`;return g.salt?b+"-"+cpChk(g.salt,b):b};
 function cpState(g,sn){return g.used&&g.used[sn]?"사용":(g.e<TODAY?"만료":"발급")}
 function cpList(){const L=ST.rec.filter(r=>r.t==="쿠폰");const el=$("#cp-list");if(!el)return;if(!L.length){el.innerHTML=`<p class="empty">저장한 쿠폰 묶음이 없습니다.</p>`;return}
  el.innerHTML=`<h3>사용 기록</h3>`+L.map(g=>{const u=Object.keys(g.used||{}).length;return `<div class="faq" style="margin-top:6px"><div class="badges"><b class="small">${esc(g.name)}</b><span class="badge b-info">${esc(g.s)}~${esc(g.e)}</span><span class="badge ${g.e<TODAY?"b-bad":"b-ok"}">${g.e<TODAY?"기간 끝":"쓰는 중"}</span><span class="small">발급 ${g.n}장 · 사용 ${u}장${g.n?` (${(u/g.n*100).toFixed(0)}%)`:""}</span></div>
  <div class="row" style="margin-top:6px"><input placeholder="${esc(serial(g,1))}" data-sn="${g.id}" style="max-width:220px"><button type="button" data-use="${g.id}">사용 처리</button><button type="button" class="ghost" data-csv="${g.id}">발급 목록 CSV</button><button type="button" class="ghost" data-del="${g.id}">묶음 지우기</button><span class="small" data-um="${g.id}"></span></div>
  ${u?`<details><summary>사용한 번호 ${u}개</summary><p class="small">${Object.entries(g.used).slice(-30).map(([k,t])=>esc(k)+" ("+esc(t.slice(0,16).replace("T"," "))+")").join(", ")}</p></details>`:""}</div>`}).join("");
- el.querySelectorAll("[data-use]").forEach(b=>b.addEventListener("click",async()=>{const g=ST.rec.find(r=>r.id===b.dataset.use);const sn=el.querySelector(`[data-sn="${g.id}"]`).value.trim().toUpperCase();const m=el.querySelector(`[data-um="${g.id}"]`);
-  const ok=new RegExp(`^${g.pre}-${g.s.replace(/-/g,"")}-(\\d{4})$`).exec(sn);if(!ok||+ok[1]<1||+ok[1]>g.n){m.textContent="이 묶음의 번호가 아닙니다";return}
+ el.querySelectorAll("[data-use]").forEach(b=>b.addEventListener("click",async()=>{const g=ST.rec.find(r=>r.id===b.dataset.use);let sn=el.querySelector(`[data-sn="${g.id}"]`).value.trim().toUpperCase();const m=el.querySelector(`[data-um="${g.id}"]`);
+  const ok=new RegExp(`(?:^|\\s)(${g.pre}-${g.s.replace(/-/g,"")}-(\\d{4}))(?:-([A-Z0-9]{2}))?(?:$|\\s)`).exec(sn);if(!ok||+ok[2]<1||+ok[2]>g.n){m.textContent="이 묶음의 번호가 아닙니다";return}
+  if(g.salt&&ok[3]!==cpChk(g.salt,ok[1])){m.textContent="번호 끝 확인 글자가 맞지 않습니다(바꿔 적은 번호일 수 있음)";return}sn=serial(g,+ok[2]);
   if(g.used[sn]){m.textContent="이미 쓴 번호입니다("+g.used[sn].slice(0,10)+")";return}if(g.e<TODAY){m.textContent="유효기간이 지났습니다";return}if(g.s>TODAY){m.textContent="아직 시작 전입니다";return}
   g.used[sn]=new Date().toISOString();if(await recPut(g)){cpList();}}));
  el.querySelectorAll("[data-csv]").forEach(b=>b.addEventListener("click",()=>{const g=ST.rec.find(r=>r.id===b.dataset.csv);const rows=[["일련번호","쿠폰 종류","혜택","조건","유효기간 시작","유효기간 끝","상태","사용 일시"]];for(let i=1;i<=g.n;i++){const sn=serial(g,i);rows.push([sn,g.kind,g.ben,[g.min?won(g.min)+" 이상":"",g.when].filter(Boolean).join(" "),g.s,g.e,cpState(g,sn),(g.used[sn]||"").replace("T"," ").slice(0,16)])}saveFile("쿠폰_발급목록.csv",toCSV(rows))}));

@@ -62,7 +62,8 @@ if SMS:
     SMS["start"]=[[fix(t),m,o,f] for t,m,o,f in SMS["start"]]; SMS["end"]=[[fix(t),m,o,f] for t,m,o,f in SMS["end"]]
 # 응용 예시: 숫자 금지, 판정은 근거 사례 중 가장 엄격, 안전운영조건·FAQ는 근거 사례 합집합
 EXJ=json.load(open(f"{B}/spec/응용예시.json",encoding="utf-8"))["items"]
-if os.path.exists(f"{B}/spec/응용예시_2차.json"): EXJ+=json.load(open(f"{B}/spec/응용예시_2차.json",encoding="utf-8"))["items"]  # 판 9: 2차 7업종
+import glob as _g
+for _f in sorted(_g.glob(f"{B}/spec/응용예시_*차.json")): EXJ+=json.load(open(_f,encoding="utf-8"))["items"]  # 판 9: 2차, 판 10: 3차·4차(안내형)
 byid={c["i"]:c for c in C}
 RANK={"가능":0,"조건부":1,"확인":2,"불가":3}
 def rank(v): return next((RANK[k] for k in ("불가","확인","조건부","가능") if v.startswith(k)),1)
@@ -71,6 +72,7 @@ EX=[];errs=[]
 for e in EXJ:
     txt=" ".join([e["n"],e["s"],e["c"],e["b"]])
     if re.search(r"\d",txt): errs.append(f"{e['id']}: 숫자 있음")
+    if e.get("형")=="안내형" and re.search(r"할인|증정|경품|사은품|무료|공짜|덤|쿠폰|추첨|적립|캐시백|반값|특가",e["n"]+" "+e["b"]): errs.append(f"{e['id']}: 안내형에 가격 혜택·경품 말 있음")
     if re.search(r"효과|매출 (증가|상승)|늘었|올랐",txt): errs.append(f"{e['id']}: 효과 표현")
     if BADX.search(txt): errs.append(f"{e['id']}: 피해야 할 표현 {BADX.search(txt).group(0)}")
     bases=[byid.get(b) for b in e["base"]]
@@ -80,7 +82,7 @@ for e in EXJ:
     so=" ／ ".join(dict.fromkeys(x for b in bases for x in b["so"].split(" ／ ") if x))
     f="|".join(dict.fromkeys(x for b in bases for x in re.findall(r"F0\d\d",b["f"])))
     lq=1 if e.get("liq") else 0   # 응용 예시는 지정한 것만(설명 속 "술은 넣지 않는다"는 오탐)
-    EX.append(dict(i=e["id"],n=e["n"],s=e["s"],c=e["c"],b=e["b"],sub=e["sub"],stg=e["st"],v=v,so=so,f=f,lq=lq,bi=e["base"],ref=e.get("ref",[]),tm=e.get("tm",""),k="응용예시",kd="행사",wh="일반 손님",fr=0,
+    EX.append(dict(i=e["id"],n=e["n"],s=e["s"],c=e["c"],b=e["b"],sub=e["sub"],stg=e["st"],v=v,so=so,f=f,lq=lq,bi=e["base"],ref=e.get("ref",[]),tm=e.get("tm",""),k="응용예시",kd="행사",hy=e.get("형","행사"),wh="일반 손님",fr=0,
       ev="응용 예시 — 근거 사례 "+"·".join("#"+str(b) for b in e["base"])+"의 판정 중 가장 엄격한 것을 따름",qb="근거 사례: "+" / ".join(f"#{b['i']} {b['v']}" for b in bases),
       up="",va="",rs="",sg="",du="",li="",kp="",br=bases[0]["br"],orr=bases[0]["orr"],rr=bases[0]["rr"],u="",co="",vs="",grp="",rep="",uc="",cr="",g="",t="",ind="",st="",na="",tm2=""))
 if errs: raise SystemExit("응용 예시 검사 실패:\n"+"\n".join(errs))
@@ -91,6 +93,14 @@ LINKF={"copy":"문구기준","deliv":"배달요금표","open":"개업순서표"}
 LINKD={k:json.load(open(f"{B}/spec/연동/{v}.json",encoding="utf-8")) for k,v in LINKF.items() if os.path.exists(f"{B}/spec/연동/{v}.json")}
 IP=f"{B}/spec/업종_판8.json"
 IND=json.load(open(IP,encoding="utf-8")) if os.path.exists(IP) else {}
+# ── 판 10: 기본 행사 방식 축(spec/행사방식.json, scripts/methods10.py) — 사례마다 mt(방식 키 목록), 응용 예시는 같은 낱말 규칙으로
+MTD={}
+if os.path.exists(f"{B}/spec/행사방식.json"):
+    _m=json.load(open(f"{B}/spec/행사방식.json",encoding="utf-8"))
+    _by={m["키"]:set(m["사례"]) for m in _m["방식"]}
+    for c in C: c["mt"]=[k for k,v in _by.items() if c["i"] in v]
+    for e in EX: e["mt"]=[m["키"] for m in _m["방식"] if re.search(m["규칙"]," ".join([e["n"],e["b"],e["c"]]),flags=re.I)]
+    MTD={"묶음":_m["묶음"],"기준":_m["기준"],"방식":[{k:v for k,v in m.items() if k not in ("사례","규칙")} for m in _m["방식"]]}
 # ── 판 9: 화면용 글 다듬기 — 「확인 필요」 같은 덜 만든 표시는 화면에 내지 않음(원본 자료·장부에는 그대로). 판정값 v는 화면에서 「신중」으로 표시(template vClass)
 def _scr(t):
     if not isinstance(t,str) or ("확인 필요" not in t and "확인필요" not in t and "미확인" not in t): return t
@@ -117,11 +127,12 @@ LAW={k:{kk:(_scr(vv) if kk=="gist" else vv) for kk,vv in v.items() if kk in ("la
 PUB="--공개판" in sys.argv
 if PUB:
     _n=len(C);C=[c for c in C if not (c.get("k")=="실제" and not c.get("u"))];print("공개판: 출처 주소 없는 실제 사례",_n-len(C),"건 뺌")
-DATA=dict(link=LINKD,ind8=IND,law=LAW,ex=EX,sms=SMS,all=ALL,nex=NEX,nbl=NBL,cases=C,faq=F,bank=bank,cal=cal,samples=S,built=pd.Timestamp.today().strftime("%Y-%m-%d"))
+IQ=json.load(open(f"{B}/spec/업종질문_판10.json",encoding="utf-8")) if os.path.exists(f"{B}/spec/업종질문_판10.json") else {}  # 판 10 업종 전용 질문
+DATA=dict(iq=IQ,mtd=MTD,link=LINKD,ind8=IND,law=LAW,ex=EX,sms=SMS,all=ALL,nex=NEX,nbl=NBL,cases=C,faq=F,bank=bank,cal=cal,samples=S,built=pd.Timestamp.today().strftime("%Y-%m-%d"))
 js=json.dumps(DATA,ensure_ascii=False,separators=(",",":")).replace("</","<\\/")
 tpl=open(f"{B}/preview/template.html",encoding="utf-8").read()
 out=tpl.replace("/*__DATA__*/null",js)
-plus="\n".join(open(f"{B}/preview/{n}",encoding="utf-8").read() for n in ("plus7.js","link8.js","ind8.js","set9.js") if os.path.exists(f"{B}/preview/{n}")).replace("</","<\\/")
+plus="\n".join(open(f"{B}/preview/{n}",encoding="utf-8").read() for n in ("vendor_qrcode.js","plus7.js","link8.js","ind8.js","method10.js","coupon10.js","set9.js") if os.path.exists(f"{B}/preview/{n}")).replace("</","<\\/")
 out=out.replace("/*__PLUS__*/",plus)
 open(f"{B}/preview/"+("행사안_공개판.html" if PUB else "행사안_미리보기.html"),"w",encoding="utf-8").write(out)
 print("사례",len(C),"FAQ",len(F),"문구",len(bank),"달력",len(cal),"크기",len(out.encode())//1024,"KB")
