@@ -1,0 +1,15 @@
+수집ID	본문길이	원문에서 못 찾은 숫자
+RT2-001	5670	known_result:1995.6
+RT2-004	5631	benefit:100; limit:100
+RT2-010	5551	known_result:290; summary:290
+RT2-013	12705	known_result:1995.3
+RT2-023	4053	summary:500
+RT2-028	3064	benefit:344; duration:4.25; duration:5.15; known_result:600; summary:344; summary:600
+RT2-029	3378	summary:170
+RT2-030	2765	summary:160
+RT2-031	3090	benefit:1,500
+RT2-033	6829	benefit:80
+RT2-037	7551	summary:3,700; summary:5,800
+RT2-040	1491	summary:2,500
+RT2-041	5495	limit:123; summary:123
+RT2-042	5495	limit:400; summary:1,900; summary:400

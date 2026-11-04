@@ -1,0 +1,51 @@
+BIZ-023 24706 known_result:2,900=있음
+CLS-019 70951 known_result:2,600=없음
+CSR-005 17258 known_result:100=있음
+CSR-012 37889 known_result:2025=없음
+CSR-029 27652 known_result:2021=없음
+ERA-019 52026 known_result:2017=있음
+ERA-031 45395 known_result:2018=없음
+INT-003 140311 known_result:150=있음
+INT-004 892822 known_result:800=있음
+INT-008 91989 known_result:2019=있음
+INT-009 85819 known_result:12=있음
+INT-014 1257950 known_result:2,660=있음; known_result:4,450=없음
+INT-021 406964 known_result:215=있음
+INT-027 115466 known_result:2,740=없음
+INT-045 70730 known_result:102=있음; known_result:3,200=있음; known_result:31=있음; known_result:64=있음; known_result:7,100=있음; known_result:847=있음
+INT-049 1122935 known_result:2025=있음; known_result:3.85=있음; known_result:4.25=있음
+INT-056 3588 known_result:1,000=있음; known_result:2013=없음
+JP2-037 49384 known_result:2023=없음
+JPN-043 62049 known_result:2017=없음
+K5B-006 78746 known_result:38,517=없음; known_result:51,297=없음; known_result:98,233=없음
+K5B-017 243494 known_result:2024=있음
+K5B-022 165280 known_result:2019=있음
+KRA-005 61743 known_result:2014=없음
+KRA-006 45921 known_result:7,017=있음; known_result:7,441=있음
+KRA-016 38732 known_result:52,024=없음; known_result:87,637=없음
+KRB-009 60777 known_result:1229=없음
+KRB-010 20855 known_result:1230=없음
+KRC-020 108315 known_result:1.3=없음; known_result:1.5=없음; known_result:3.5=없음
+MST-001 0 known_result:10=없음; known_result:2026=없음; known_result:23=없음; known_result:235=없음; known_result:28=없음; known_result:41=없음; known_result:71=없음
+MST-003 0 known_result:02=없음; known_result:10=없음; known_result:15=없음; known_result:20=없음; known_result:2026=없음; known_result:25=없음
+MST-004 0 known_result:2024=없음; known_result:29=없음
+MST-005 0 known_result:03=없음; known_result:19=없음; known_result:2026=없음; known_result:287=없음; known_result:3.19=없음; known_result:3.6=없음; known_result:802=없음
+NFD-056 143945 known_result:2,730=있음
+NT3-007 407454 known_result:2024=있음
+NT3-013 102120 known_result:2,700=있음
+NT3-055 28311 known_result:88=있음
+NT3-061 53895 known_result:2020=없음
+ONL-006 16753 known_result:1,000=있음; known_result:700=있음
+ONL-017 3054 known_result:10,500=없음; known_result:280=없음; known_result:472=없음
+OPN-008 558721 known_result:30=있음
+REL-025 25840 known_result:1,148=있음; known_result:1,364=있음
+RET-010 286551 known_result:1,008=있음
+RET-021 45236 known_result:1,600=있음
+RET-026 45394 known_result:300=있음
+RET-030 45021 known_result:450=있음
+RET-031 219683 known_result:1,200=있음; known_result:2,900=없음
+RET-038 54448 known_result:100=있음
+RT2-001 44652 known_result:1995.6=없음
+RT2-010 44534 known_result:290=있음
+RT2-013 298112 known_result:1995.3=없음
+RT2-028 141828 known_result:600=있음

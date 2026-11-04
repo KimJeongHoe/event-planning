@@ -1,0 +1,239 @@
+{"case": "CAL-010", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음"}], "flag": ""}
+{"case": "CAL-020", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음"}], "flag": ""}
+{"case": "CAL-030", "edits": [{"field": "limit", "after": "원문: 세일·당일영업은 한도 언급 없음, 스타필드 고양 헬로카봇 팝업 구매 고객 카봇모자만 선착순 증정"}], "flag": ""}
+{"case": "CAL-042", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음(기간 한정 운영만 명시)"}], "flag": ""}
+{"case": "ERA-002", "edits": [{"field": "limit", "after": "원문 확인 불가(출처 접근 차단)"}], "flag": ""}
+{"case": "ERA-011", "edits": [{"field": "limit", "after": "해당없음(할인·증정 없는 진열 연출 사례)"}], "flag": ""}
+{"case": "ERA-017", "edits": [{"field": "upsell_path", "after": "없음(쿠폰 손님 차별·고객정보 미제공 논란을 다룬 사례)"}, {"field": "limit", "after": "원문에 한도 언급 없음(같은 기사 다른 식당은 4인 테이블 10개 규모에 할인티켓 손님 1,500여 명이 몰려 적자)"}], "flag": ""}
+{"case": "ERA-023", "edits": [{"field": "limit", "after": "해당없음(상시 무한리필 가격 구조, 시간·잔반 규정은 매장별)"}], "flag": ""}
+{"case": "ERA-027", "edits": [{"field": "limit", "after": "해당없음(상시 채널 운영, 쿠폰 내용 미상)"}], "flag": ""}
+{"case": "ERA-032", "edits": [{"field": "upsell_path", "after": "없음(체험단 혹평을 둘러싼 갈등 사례)"}, {"field": "limit", "after": "원문: 마케팅 업체 통해 블로거 10팀 정도 모집(1인 한도 언급 없음)"}], "flag": ""}
+{"case": "ERA-036", "edits": [{"field": "limit", "after": "해당없음(상시 운영 연출, 무료 신청곡 재생으로 수량 개념 없음)"}], "flag": ""}
+{"case": "ERA-042", "edits": [{"field": "upsell_path", "after": "없음(언론사 플랫폼의 팔로우 유도 부스로 현장 판매 없음)"}, {"field": "limit", "after": "원문에 한도 언급 없음(하루 500여 명 참여 결과만 보도)"}], "flag": ""}
+{"case": "INT-003", "edits": [{"field": "limit", "after": "원문: 접종 카드 제시 시 오리지널 글레이즈드 1개, 도넛 데이엔 접종자 총 2개(기간 중 방문 횟수 한도 언급 없음)"}], "flag": ""}
+{"case": "INT-008", "edits": [{"field": "limit", "after": "해당없음(상시 '내는 만큼' 가격 구조. 원문의 1인 제공량 제한은 파네라 케어스 이야기)"}], "flag": ""}
+{"case": "INT-012", "edits": [{"field": "upsell_path", "after": "그루폰 컵케이크 수령 방문 → 주문 제작 케이크·다른 디저트 추가 구매(원문상 전환 확인 안 됨)"}], "flag": ""}
+{"case": "INT-026", "edits": [{"field": "limit", "after": "해당없음(상시 적립 프로그램, 원문에 리워드 한도 언급 없음)"}], "flag": ""}
+{"case": "INT-031", "edits": [{"field": "upsell_path", "after": "없음(서비스차지 정책 논란 사례)"}, {"field": "limit", "after": "해당없음(전 계산서 자동 부과되는 상시 가격 정책)"}], "flag": ""}
+{"case": "INT-038", "edits": [{"field": "limit", "after": "원문: 일·월 이틀간 커피 1잔(free cup), 구매 불필요. 그 밖의 수량 한도 언급 없음"}], "flag": ""}
+{"case": "INT-047", "edits": [{"field": "limit", "after": "해당없음(상시 간판 점등 연출, 혜택 아님)"}], "flag": ""}
+{"case": "INT-053", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음"}], "flag": "원문은 'free glasses of fizz'로만 적혀 '1잔' 수량은 원문에 명시 없음"}
+{"case": "ISS-002", "edits": [{"field": "limit", "after": "해당없음(오전 조기 영업으로 할인·증정 수량 개념 없음)"}], "flag": ""}
+{"case": "ISS-014", "edits": [{"field": "limit", "after": "원문: 추첨 당첨 1등 현금 100만원, 외식상품권 250명(6월 한 달)"}], "flag": ""}
+{"case": "ISS-019", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음"}], "flag": ""}
+{"case": "ISS-026", "edits": [{"field": "upsell_path", "after": "피자 2판 시식권 당첨 → 매장 방문 시 사이드·음료 추가 주문"}], "flag": ""}
+{"case": "ISS-030", "edits": [{"field": "kpi", "after": "경기 당일 버거 판매량(골 수별 할인 적용 건수 POS 집계) · 대기 줄 길이·평균 대기 시간(현장 기록) · 행사 관련 SNS 게시물·보도 수"}, {"field": "upsell_path", "after": "골 연동 할인 버거 → 감자튀김·음료 세트 추가"}], "flag": ""}
+{"case": "ISS-037", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음(쿠폰 1장으로 세 혜택 중 하나 선택만 명시)"}], "flag": ""}
+{"case": "ISS-041", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음(할인·시식은 개문~하프타임 종료 등 시간대 한정만 명시)"}], "flag": ""}
+{"case": "ISS-045", "edits": [{"field": "upsell_path", "after": "없음(지역 단체의 무료 나눔으로 판매 없음)"}], "flag": ""}
+{"case": "ISS-051", "edits": [{"field": "limit", "after": "원문: 브랜드별 최소 조건만(타코벨 무료배달은 그럽허브 첫 주문·12달러 이상, 서브웨이 쿠폰은 기한부), 1인 수량 한도 언급 없음"}], "flag": ""}
+{"case": "LAW-004", "edits": [{"field": "kpi", "after": "광고 게시물 '광고·협찬' 표기 비율(월 1회 점검표) · 후기 원고 사전 검수 건수 · 표시광고 관련 민원·신고 건수"}, {"field": "upsell_path", "after": "없음(법 처분 사례)"}, {"field": "limit", "after": "해당없음(과징금 처분 사례)"}], "flag": ""}
+{"case": "LAW-008", "edits": [{"field": "kpi", "after": "정가 근거 표시 상품 비율(월 1회 표본 점검) · 할인 종료 후 가격 원복 여부 점검 건수 · 할인율 관련 소비자 민원 건수"}, {"field": "upsell_path", "after": "없음(공정위·소비자원 개선 권고 사례)"}, {"field": "limit", "after": "해당없음(표시 개선 권고 사례)"}], "flag": ""}
+{"case": "LAW-012", "edits": [{"field": "kpi", "after": "광고 문구 사전 법규 검토 건수 · 시정 대상 표현 삭제율(광고물 점검표) · 광고 관련 민원 건수"}, {"field": "upsell_path", "after": "없음(부당광고 시정조치 사례)"}, {"field": "limit", "after": "해당없음(부당광고 처분 사례)"}], "flag": ""}
+{"case": "LAW-016", "edits": [{"field": "kpi", "after": "개업일 방문객 수(방문 체크) · 사은품 배부 수량 대비 준비 물량 · 보건소 민원 접수 여부"}, {"field": "upsell_path", "after": "없음(약사법상 경품 제공 제한 사례)"}, {"field": "limit", "after": "원문: 소액·상호 미인쇄 물품을 이미 준비된 물량 소진까지만 제공하는 전제로 처분하지 않음"}], "flag": ""}
+{"case": "LAW-020", "edits": [{"field": "kpi", "after": "경품 행사 기간 판매량(응모 건수 집계) · 경품가액 대비 판매이익 비율 · 공정위 신고·민원 건수"}, {"field": "upsell_path", "after": "없음(부당 고객유인 처분 사례)"}, {"field": "limit", "after": "해당없음(처분 사례. 원문상 소비자현상경품 제공한도 규제는 이후 폐지)"}], "flag": ""}
+{"case": "LAW-024", "edits": [{"field": "kpi", "after": "유효기간 만료 전 사용 안내 발송 건수 · 환불 요청 처리 기간(접수~지급) · 만료 상품권 환불 비율 준수 여부"}, {"field": "upsell_path", "after": "없음(약관 시정 처분 사례)"}], "flag": ""}
+{"case": "LAW-028", "edits": [{"field": "kpi", "after": "중계 홍보물 문구 사전 점검 건수(FIFA·월드컵 등 금지 단어 체크) · 경기일 예약·방문 테이블 수 · 상표 관련 경고·민원 건수"}, {"field": "limit", "after": "해당없음(상표 사용 제한 사례로 혜택 없음)"}], "flag": ""}
+{"case": "LAW-032", "edits": [{"field": "kpi", "after": "입간판 규격 준수 여부(업소당 1개·건물 1m 이내, 월 1회 자가점검표) · 영업시간 외 실내 보관 이행률 · 단속 계고·과태료 건수"}, {"field": "upsell_path", "after": "없음(옥외 광고물 단속 사례)"}], "flag": ""}
+{"case": "LAW-037", "edits": [{"field": "kpi", "after": "위생 점검 지적 건수(자체 점검표 주 1회) · 배달 리뷰 중 위생 불만 비율 · 가격표시 민원 건수"}, {"field": "upsell_path", "after": "없음(위생 점검·처분 사례)"}, {"field": "limit", "after": "해당없음(위생 점검·처분 사례)"}], "flag": ""}
+{"case": "MST-001", "edits": [{"field": "kpi", "after": "광고 문구 사전 점검 건수(질병 예방·치료 표현 체크리스트) · 시정 대상 표현 삭제율 · 식약처 지적·민원 건수"}, {"field": "upsell_path", "after": "없음(부당광고 적발 처분 사례)"}, {"field": "limit", "after": "해당없음(부당광고 처분 사례)"}], "flag": ""}
+{"case": "MST-005", "edits": [{"field": "limit", "after": "해당없음(상시 제도에 따른 반려동물 동반 출입 허용, 수량 개념 없음)"}], "flag": ""}
+{"case": "NFD-009", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음"}], "flag": ""}
+{"case": "NFD-016", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음(응모 자격 3만원 이상 영수증, 응모는 9/5 16시까지)"}], "flag": ""}
+{"case": "NFD-029", "edits": [{"field": "limit", "after": "원문: 오일펜 증정은 준비 수량 소진 시 마감, 적립금 뽑기 당첨 인원 1등 3명·2등 5명·3등 7명·4등 15명·5등 82명(총 112명), 첫 방문 젤 시술 시 적용"}], "flag": ""}
+{"case": "NFD-034", "edits": [{"field": "kpi", "after": "무료체험 종료 전 유료 전환 사전 고지 발송률(자동 알림 로그) · 무료기간 내 해지 처리 건수·소요 시간 · 유료 전환 후 환불·민원 건수"}, {"field": "limit", "after": "해당없음(피해주의보 사례)"}], "flag": ""}
+{"case": "NFD-038", "edits": [{"field": "kpi", "after": "소개 경로 신규 환자 수(접수 시 소개자 기록) · 의료법상 금지 대가 제공 여부 점검 · 보건소 민원 건수"}, {"field": "limit", "after": "해당없음(환자유인 행정처분 요청 사례)"}], "flag": ""}
+{"case": "NFD-043", "edits": [{"field": "kpi", "after": "랜덤박스 판매 수량 · 일반의약품 포함 여부 사전 점검(구성표) · 약사법 관련 민원·지적 건수"}, {"field": "upsell_path", "after": "없음(약사법 위반 소지 논란 사례)"}, {"field": "limit", "after": "원문에 한도 언급 없음"}], "flag": ""}
+{"case": "NFD-048", "edits": [{"field": "kpi", "after": "특가 품목 판매량(POS 품목별 집계) · 특가 광고 문구 법규 점검 건수 · 약사회·보건소 민원 건수"}, {"field": "limit", "after": "원문에 한도 언급 없음"}], "flag": ""}
+{"case": "NFD-052", "edits": [{"field": "limit", "after": "원문 확인 불가(출처에 해당 사례 본문 없음)"}], "flag": "출처 2건 모두 SBS아카데미게임학원 언급 없음(sidae는 2016년 다른 원격교육원 기사, dhnews는 기사 목록 페이지)"}
+{"case": "NFD-056", "edits": [{"field": "kpi", "after": "광고물 환불 기준·부대비용 표기율(광고 점검표) · 환불 관련 상담·분쟁 건수 · 과태료·시정 건수"}, {"field": "upsell_path", "after": "없음(과태료 처분 사례)"}, {"field": "limit", "after": "해당없음(과태료 처분 사례)"}], "flag": ""}
+{"case": "NFD-063", "edits": [{"field": "limit", "after": "원문: 매달 1:1 무료 PT 3회(그 밖의 수량·인원 한도 언급 없음)"}], "flag": ""}
+{"case": "NFD-068", "edits": [{"field": "kpi", "after": "중도해지·환불 요청 처리 기간(접수~환급) · 할인 회원권 해지 관련 분쟁 건수 · 약관 조항 점검 결과(해지 제한 조항 유무)"}, {"field": "upsell_path", "after": "없음(소비자원 약관 조사 사례)"}, {"field": "limit", "after": "해당없음(약관 조사·개선 촉구 사례)"}], "flag": ""}
+{"case": "NFD-072", "edits": [{"field": "limit", "after": "원문 확인 불가(출처 페이지에 해당 행사 내용 없음)"}], "flag": "출처(당근 업체 프로필)에 워셔액 무료 행사 내용이 보이지 않음"}
+{"case": "NFD-077", "edits": [{"field": "limit", "after": "원문: 시 전체 한도는 없고 시장별 개별 한정만(예: 독산동우시장 선착순 200명 치약선물세트, 일정금액 이상 구매 고객 물품 한정 선착순, 상품권 소진 시까지)"}], "flag": ""}
+{"case": "ONL-002", "edits": [{"field": "upsell_path", "after": "없음(타인 영수증 리뷰 유도 위험 사례)"}, {"field": "limit", "after": "원문에 한도 언급 없음"}], "flag": ""}
+{"case": "ONL-006", "edits": [{"field": "limit", "after": "해당없음(배달앱 리뷰 이벤트 관행 전반에 대한 조사 사례)"}], "flag": ""}
+{"case": "ONL-010", "edits": [{"field": "upsell_path", "after": "없음(팔로우 확보용 경품 이벤트로 원문에 구매 연결 경로 없음)"}, {"field": "limit", "after": "원문 확인 불가(출처 접근 차단)"}], "flag": ""}
+{"case": "ONL-017", "edits": [{"field": "limit", "after": "원문 확인 불가(출처 본문 로드 안 됨)"}], "flag": ""}
+{"case": "ONL-021", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음"}], "flag": ""}
+{"case": "ONL-026", "edits": [{"field": "limit", "after": "원문 확인 불가(출처 접근 차단)"}], "flag": ""}
+{"case": "ONL-033", "edits": [{"field": "upsell_path", "after": "학생 할인 식사 → 음료·디저트 추가, 학생 배달 주문으로 확장"}, {"field": "limit", "after": "해당없음(상시 학생 할인 제휴. 원문의 기간 한정 표현은 한 식당의 배달 20% 할인뿐)"}], "flag": ""}
+{"case": "ONL-039", "edits": [{"field": "upsell_path", "after": "5% 페이백 상품권 → 다음 결제에 재사용, 가맹점 재방문 소비"}], "flag": ""}
+{"case": "ONL-044", "edits": [{"field": "kpi", "after": "매장 연출물 법규 사전 점검 건수(주류 판촉 금지 체크) · 당국 철거 요구·지적 건수 · 연말 시즌 방문객 수"}, {"field": "upsell_path", "after": "없음(주류 판촉 금지 위반 판정 사례)"}, {"field": "limit", "after": "해당없음(규제 판정 사례)"}], "flag": ""}
+{"case": "OPN-003", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음"}], "flag": ""}
+{"case": "OPN-015", "edits": [{"field": "upsell_path", "after": "없음(타인 영수증 리뷰 유도 위험 사례)"}, {"field": "limit", "after": "원문에 한도 언급 없음"}], "flag": ""}
+{"case": "OPN-022", "edits": [{"field": "limit", "after": "해당없음(손님 대상 혜택이 아닌 1000만원어치 떡 기부)"}], "flag": ""}
+{"case": "OPN-030", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음(5월 31일까지 쿠폰 지참 고객 대상만 명시)"}], "flag": ""}
+{"case": "OPN-037", "edits": [{"field": "upsell_path", "after": "아메리카노 1+1 방문 → 디저트·케이크 추가 주문"}], "flag": ""}
+{"case": "SVC-002", "edits": [{"field": "limit", "after": "해당없음(상시 점심 가격 구조)"}], "flag": ""}
+{"case": "SVC-006", "edits": [{"field": "limit", "after": "원문: 장어탕 1인 1그릇(장어·셀프바·생맥주는 무제한, 시간 제한 언급 없음)"}], "flag": ""}
+{"case": "SVC-011", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음(30일까지 매일 오후 3~5시 시간 한정만 명시)"}], "flag": ""}
+{"case": "SVC-017", "edits": [{"field": "limit", "after": "해당없음(상시 무한리필 가격 구조)"}], "flag": ""}
+{"case": "SVC-021", "edits": [{"field": "limit", "after": "해당없음(상시 지정 제도)"}], "flag": ""}
+{"case": "SVC-026", "edits": [{"field": "limit", "after": "해당없음(상시 저가 가격 정책)"}], "flag": ""}
+{"case": "SVC-030", "edits": [{"field": "limit", "after": "해당없음(상시 운영 관행)"}], "flag": "polle 출처는 김포 사우동 멸치국수 후기('1인 1메뉴 주문 시 곱빼기 무료')로 공주 도깨비터국수·수원 콩국수집 내용이 아님. 식신 출처는 접근 제한(429)"}
+{"case": "SVC-034", "edits": [{"field": "limit", "after": "해당없음(상시 좌석 구성)"}], "flag": ""}
+{"case": "SVC-042", "edits": [{"field": "limit", "after": "해당없음(상시 유료화 가격 구조)"}], "flag": ""}
+{"case": "SVC-046", "edits": [{"field": "limit", "after": "해당없음(상시 가격 정책)"}], "flag": ""}
+{"case": "JPN-002", "edits": [{"field": "limit", "after": "원문에 1인 한도 언급 없음(본마치점 한정, 15시 이후 식사 주문 조건, 프리미엄 몰츠 제외, 예고 없이 종료 가능)"}], "flag": ""}
+{"case": "CLS-001", "edits": [{"field": "limit", "after": "해당없음(기한 없는 폐업세일 문구에 대한 규제 당국 처분 사례)"}], "flag": ""}
+{"case": "CLS-005", "edits": [{"field": "kpi", "after": "할인 표시 가격의 정상가 근거 자료 보유율(품목별 점검) · 세일 기간 판매량 · 가격 표시 관련 민원·환불 건수"}, {"field": "upsell_path", "after": "없음(허위 정상가 표시 처분 사례)"}, {"field": "limit", "after": "해당없음(허위 할인 표시 합의 처분 사례)"}], "flag": ""}
+{"case": "CLS-010", "edits": [{"field": "upsell_path", "after": "없음(은퇴 폐업 소식으로 단골이 몰린 사례, 할인 없음)"}, {"field": "limit", "after": "해당없음(할인·증정 없는 폐업 사례)"}], "flag": ""}
+{"case": "CLS-017", "edits": [{"field": "limit", "after": "해당없음(폐업 후 상품권 처리 사례)"}], "flag": ""}
+{"case": "JPN-014", "edits": [{"field": "limit", "after": "원문: 쿠폰은 1인 합계 2점까지(이 쿠폰 1점으로 계산), 다른 할인권 병용 불가, 10/31 무료 증정은 초등생 이하 한정(쿠폰 점수에 미포함), 일부 점포 미실시"}], "flag": ""}
+{"case": "JPN-022", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음"}], "flag": ""}
+{"case": "JPN-028", "edits": [{"field": "limit", "after": "해당없음(상시 병 판매·보관 가격 구조)"}], "flag": ""}
+{"case": "JPN-035", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음(유효기한과 2권 이상 동시 구매 특전만 명시)"}], "flag": ""}
+{"case": "JPN-040", "edits": [{"field": "upsell_path", "after": "반값 가마솥밥·저가 주류 → 무제한 코스 추가 주문"}, {"field": "limit", "after": "원문에 한도 언급 없음(8/9~31 23일간 기간 한정만 명시)"}], "flag": ""}
+{"case": "CSR-004", "edits": [{"field": "kpi", "after": "제공 인원·횟수(현장 기록) · 지역 SNS·언론 언급 수 · 이후 지역 손님 방문 변화(전월 대비 객수)"}, {"field": "upsell_path", "after": "없음(재난 현장 무상 지원 사례)"}, {"field": "limit", "after": "해당없음(긴급 무상 지원)"}], "flag": ""}
+{"case": "CSR-008", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음"}], "flag": ""}
+{"case": "CSR-012", "edits": [{"field": "upsell_path", "after": "없음(주민센터 연계 재능기부 사업)"}], "flag": ""}
+{"case": "CSR-016", "edits": [{"field": "upsell_path", "after": "없음(어르신 무료 점심 사회공헌)"}], "flag": ""}
+{"case": "CSR-020", "edits": [{"field": "upsell_path", "after": "없음(복지관 연계 무료 세탁 사회공헌)"}], "flag": ""}
+{"case": "CSR-024", "edits": [{"field": "upsell_path", "after": "없음(남은 빵 복지시설 기부 사회공헌)"}, {"field": "limit", "after": "해당없음(판매 아닌 상시 기부)"}], "flag": ""}
+{"case": "CSR-028", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음"}], "flag": ""}
+{"case": "JPN-042", "edits": [{"field": "upsell_path", "after": "없음(한부모 가정 아동 무료 식사 사회공헌)"}], "flag": ""}
+{"case": "JPN-048", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음(회원 한정 점포, 런치 11~15시 영업만 명시)"}], "flag": ""}
+{"case": "JPN-052", "edits": [{"field": "upsell_path", "after": "없음(지자체 승계 매칭 사업의 견학 투어)"}], "flag": ""}
+{"case": "CLS-022", "edits": [{"field": "kpi", "after": "현수막 표기 할인율 대비 실제 평균 할인율(영수증 표본) · 제외 상품 표시 비율 · 환불·교환 관련 민원 건수"}, {"field": "upsell_path", "after": "없음(땡처리 매장 할인 표시 논란 사례)"}], "flag": ""}
+{"case": "CLS-026", "edits": [{"field": "kpi", "after": "선불 이용권 잔여 회차·금액 관리 현황(월 1회 정산) · 중도해지 환불 처리 기간 · 피해구제 접수 건수"}, {"field": "upsell_path", "after": "없음(폐업 관련 선불거래 피해 통계 사례)"}, {"field": "limit", "after": "해당없음(피해 통계 사례)"}], "flag": ""}
+{"case": "CLS-030", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음(마지막 날 14~22시 운영만 명시)"}], "flag": ""}
+{"case": "JPN-054", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음(반값 상품은 누구나, 굿즈는 구매액 조건. 결과로 4일간 굿즈 약 230점 증정)"}], "flag": ""}
+{"case": "PRE-012", "edits": [{"field": "kpi", "after": "가림막 디자인 가이드라인 준수 여부(허가 전 점검표) · 불법 광고물 부착 건수 · 구청 시정 요구 건수"}, {"field": "upsell_path", "after": "없음(공사 가림벽 디자인 규정 사례)"}, {"field": "limit", "after": "해당없음(지자체 규정 사례)"}], "flag": ""}
+{"case": "PRE-018", "edits": [{"field": "upsell_path", "after": "없음(무제한 정액 요금이라 원문에 추가 지출 경로 없음)"}, {"field": "limit", "after": "원문에 한도 언급 없음(결과적으로 창립 회원 15명)"}], "flag": ""}
+{"case": "PRE-024", "edits": [{"field": "limit", "after": "해당없음(혜택 없는 소프트오픈)"}], "flag": ""}
+{"case": "REL-005", "edits": [{"field": "upsell_path", "after": "할인·무료 쿠폰 사용 방문 → 속눈썹 펌 외 피부 관리 추가 결제"}, {"field": "limit", "after": "원문에 한도 언급 없음(리뷰 작성자·정답자 '모든 분'에게 지급, 7월 한 달 한정)"}], "flag": ""}
+{"case": "REL-009", "edits": [{"field": "upsell_path", "after": "형제 할인 등록 → 특강 추가 수강"}, {"field": "limit", "after": "해당없음(상시 단골 혜택)"}], "flag": ""}
+{"case": "REL-015", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음"}], "flag": ""}
+{"case": "REL-020", "edits": [{"field": "upsell_path", "after": "수험생 펌·염색 50% → 클리닉·홈케어 제품 추가"}], "flag": ""}
+{"case": "REL-025", "edits": [{"field": "kpi", "after": "중도해지 환불 처리 기간(접수~환급) · 위약금 산정 기준 고지율(계약서 점검) · 해지·위약금 관련 민원 건수"}, {"field": "upsell_path", "after": "없음(회원권 환불 분쟁 사례)"}, {"field": "limit", "after": "해당없음(환불 분쟁 사례)"}], "flag": ""}
+{"case": "CLS-034", "edits": [{"field": "limit", "after": "제안: 잔액 승계는 인계 명단에 있는 고객만, 무료 두피·모발 상담 1인 1회, 양수 후 3개월 내 첫 방문 시 적용"}], "flag": ""}
+{"case": "CLS-039", "edits": [{"field": "upsell_path", "after": "부활 메뉴 맛보러 방문 → 다른 메뉴·포장 추가 주문"}], "flag": ""}
+{"case": "APP1-043", "edits": [{"field": "limit", "after": "해당없음(정상가 판매 매출 기부로 할인·증정 없음)"}], "flag": ""}
+{"case": "APP1-059", "edits": [{"field": "limit", "after": "해당없음(폐업 안내문으로 혜택 없음)"}], "flag": ""}
+{"case": "APP1-065", "edits": [{"field": "limit", "after": "해당없음(경제적 혜택 없는 알림 관리)"}], "flag": ""}
+{"case": "APP1-069", "edits": [{"field": "limit", "after": "해당없음(정보 기고로 혜택 없음)"}], "flag": ""}
+{"case": "APP1-075", "edits": [{"field": "limit", "after": "해당없음(장비 정보 안내로 혜택 없음)"}], "flag": ""}
+{"case": "APP1-079", "edits": [{"field": "limit", "after": "해당없음(손님 혜택 없는 헌혈증 기부함)"}], "flag": ""}
+{"case": "APP1-083", "edits": [{"field": "limit", "after": "해당없음(감사 인사·강좌 안내로 혜택 없음)"}], "flag": ""}
+{"case": "APP2-006", "edits": [{"field": "limit", "after": "해당없음(혜택 없는 진료 연속성 연락)"}], "flag": ""}
+{"case": "APP2-012", "edits": [{"field": "kpi", "after": "폐업 전후 처방전 관련 문의 전화 수(통화 기록) · 안내문 게시 기간 중 헛걸음 방문 수(직원 체크) · 게시판 안내문 반응(주민 문의·사진 공유 수)"}, {"field": "limit", "after": "해당없음(폐업 안내문으로 혜택 없음)"}], "flag": ""}
+{"case": "APP2-019", "edits": [{"field": "limit", "after": "해당없음(상담 노트·차담회 관계 관리로 경제적 혜택 없음)"}], "flag": ""}
+{"case": "APP2-036", "edits": [{"field": "limit", "after": "제안: 개편 전 재원생만 대상, 기존 형제 감면은 개편 후 6개월까지만 유지, 1:1 상담은 원생당 1회"}], "flag": ""}
+{"case": "APP2-047", "edits": [{"field": "limit", "after": "해당없음(사실관계 공지·간담회로 혜택 없음)"}], "flag": ""}
+{"case": "APP2-052", "edits": [{"field": "limit", "after": "해당없음(폐원 수료식으로 판매 혜택 없음)"}], "flag": ""}
+{"case": "APP2-056", "edits": [{"field": "upsell_path", "after": "없음(폐원 학원의 원생 보호 협약으로 추가 지출 경로 아님)"}, {"field": "limit", "after": "제안: 승계는 폐원 시점 남은 교습 기간까지만, 원생 1인당 협약 학원 1곳 선택, 승계 신청은 폐원 2주 전 마감(미신청분은 즉시 반환)"}], "flag": ""}
+{"case": "APP2-064", "edits": [{"field": "limit", "after": "제안: 발톱 정리 무료는 평일 오전 예약분만, 하루 3마리·반려동물 1마리당 월 1회"}], "flag": ""}
+{"case": "APP2-072", "edits": [{"field": "limit", "after": "제안: 미니 인화 추가는 안내 카드 1장당 1회(반려동물 1마리 기준), 신설 후 3개월간 월 30건까지"}], "flag": ""}
+{"case": "APP2-078", "edits": [{"field": "limit", "after": "제안: 3년 이상 단골 1가구 1권, 사진 사용 동의분만, 제작은 월 10권까지 순서대로"}], "flag": ""}
+{"case": "BIZ-001", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음(대상은 동 협의체가 정한 취약계층, 매월 둘째 화요일 오전)"}], "flag": ""}
+{"case": "BIZ-005", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음(3월 31일까지 방문 고객 모두에게 적용)"}], "flag": ""}
+{"case": "BIZ-009", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음"}], "flag": ""}
+{"case": "BIZ-014", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음"}], "flag": ""}
+{"case": "BIZ-018", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음(파티 1일 4시간, 래플 티켓 장당 5달러)"}], "flag": ""}
+{"case": "BIZ-023", "edits": [{"field": "upsell_path", "after": "없음(라면 기탁 사회공헌)"}, {"field": "limit", "after": "해당없음(기부 사례)"}], "flag": ""}
+{"case": "BIZ-027", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음(장난감 뽑기 참가비 2.5파운드만 명시)"}], "flag": ""}
+{"case": "BIZ-031", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음"}], "flag": ""}
+{"case": "BIZ-035", "edits": [{"field": "upsell_path", "after": "없음(휴업 중 직원 지원 모금·재개장 사례로 손님 혜택 없음)"}, {"field": "limit", "after": "해당없음(손님 혜택 없는 모금·재개장 사례)"}], "flag": ""}
+{"case": "BIZ-041", "edits": [{"field": "kpi", "after": "재개장 첫 달 예약 수(예약 장부) · 행사 참석 회원사·주민 수(방명록) · 화재 전 단골 복귀 수(고객 명부 대조)"}, {"field": "upsell_path", "after": "없음(혜택 없는 재개장 리본 커팅 행사)"}, {"field": "limit", "after": "해당없음(손님 혜택 없는 재개장 행사)"}], "flag": ""}
+{"case": "BIZ-045", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음"}], "flag": ""}
+{"case": "RET-003", "edits": [{"field": "upsell_path", "after": "없음(개업 내레이터 모델 관행 회고 기사, 구체 혜택 없음)"}, {"field": "limit", "after": "해당없음(관행 회고 사례)"}], "flag": ""}
+{"case": "RET-007", "edits": [{"field": "upsell_path", "after": "개점 이벤트 방문 → 경품 응모 자격을 위한 구매 → 몰 내 추가 쇼핑"}], "flag": ""}
+{"case": "RET-011", "edits": [{"field": "upsell_path", "after": "없음(개업 도우미 노출·소음 논란 사례)"}, {"field": "limit", "after": "해당없음(혜택 내용 미상인 논란 사례)"}], "flag": ""}
+{"case": "RET-015", "edits": [{"field": "upsell_path", "after": "개업 파티 구경 → 첫 커트·펌 예약"}, {"field": "limit", "after": "해당없음(혜택 없는 개업 공연)"}], "flag": ""}
+{"case": "RET-019", "edits": [{"field": "upsell_path", "after": "잡지 홍보 구경 → 같은 코너 다른 잡지·아동 도서 구매"}, {"field": "limit", "after": "해당없음(혜택 없는 현장 홍보)"}], "flag": ""}
+{"case": "RET-025", "edits": [{"field": "upsell_path", "after": "생일 모임 샴페인 증정 → 단체 생맥주·안주 추가 주문"}, {"field": "limit", "after": "원문에 한도 언급 없음"}], "flag": ""}
+{"case": "RET-029", "edits": [{"field": "upsell_path", "after": "없음(개업 전단 범람 보도로 특정 혜택 없음)"}, {"field": "limit", "after": "해당없음(전단 범람 보도 사례)"}], "flag": ""}
+{"case": "RET-033", "edits": [{"field": "limit", "after": "원문: 매일 오후 5시 김밥 한 묶음을 들고 돌며 시식(1인 한도 언급 없음)"}], "flag": ""}
+{"case": "RET-037", "edits": [{"field": "upsell_path", "after": "무료 이용권 체험 → 시간당 1,500원 유료 이용·주부 인터넷 유료강좌 등록"}], "flag": ""}
+{"case": "RET-042", "edits": [{"field": "upsell_path", "after": "승차권 사은품 방문 → 백화점 내 구매"}, {"field": "limit", "after": "원문에 한도 언급 없음"}], "flag": ""}
+{"case": "RET-046", "edits": [{"field": "upsell_path", "after": "경품 응모 기준(5만원·20만원 이상) 맞추려 추가 구매"}], "flag": ""}
+{"case": "TIM-006", "edits": [{"field": "limit", "after": "원문: 감사 쿠폰(수육 소자)을 단골 800명에게 발송(이 중 500명 재방문), 1인 한도 언급 없음"}], "flag": ""}
+{"case": "TIM-010", "edits": [{"field": "kpi", "after": "정기기부 약정 이행 기록(월 1회) · 착한가게 현판 게시 후 신규 손님 수(전월 대비) · 지역 언론·SNS 언급 수"}, {"field": "upsell_path", "after": "없음(정기기부 사회공헌)"}, {"field": "limit", "after": "해당없음(정기기부 약정 사례)"}], "flag": ""}
+{"case": "TIM-015", "edits": [{"field": "kpi", "after": "나눔 쿠폰·물품 제공 건수(월별 장부) · 협약 대상 가구 수 · 주민센터 연계 후속 상담 건수"}, {"field": "upsell_path", "after": "없음(취약 가구 무상 제공 사회공헌)"}, {"field": "limit", "after": "원문에 한도 언급 없음(대상은 주민센터 협약 취약 가구)"}], "flag": ""}
+{"case": "TIM-019", "edits": [{"field": "kpi", "after": "월 후원 횟수·물량(후원 장부) · 나눔가게 지정 후 지역 손님 수 변화 · 면 협의체 연계 가구 수"}, {"field": "upsell_path", "after": "없음(반찬·간식 정기 후원 사회공헌)"}, {"field": "limit", "after": "원문에 한도 언급 없음"}], "flag": ""}
+{"case": "TIM-023", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음(규모별 혜택 차등만 언급, 인원 기준 수치 없음)"}], "flag": ""}
+{"case": "TIM-027", "edits": [{"field": "upsell_path", "after": "없음(한파 주간 단체 대상 무료 피자 사회공헌)"}, {"field": "limit", "after": "원문에 한도 언급 없음(단체가 이메일로 신청해 수령)"}], "flag": ""}
+{"case": "TIM-032", "edits": [{"field": "upsell_path", "after": "다국어 메뉴판 → 유학생 단체 방문·추가 메뉴 주문"}], "flag": ""}
+{"case": "TIM-036", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음"}], "flag": ""}
+{"case": "TIM-040", "edits": [{"field": "limit", "after": "원문: 12/24~25 연인·빨간 옷 손님에게 무료 음료 한 잔(그 밖의 수량 한도 언급 없음)"}], "flag": ""}
+{"case": "TIM-046", "edits": [{"field": "limit", "after": "해당없음(상시 배달비 면제 정책)"}], "flag": ""}
+{"case": "EMP-003", "edits": [{"field": "limit", "after": "해당없음(혜택 없는 시설 견학)"}], "flag": ""}
+{"case": "EMP-009", "edits": [{"field": "limit", "after": "해당없음(손님 혜택 없는 단체 기부)"}], "flag": ""}
+{"case": "EMP-017", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음(행사 18:00~19:30 시간 한정만 명시)"}], "flag": ""}
+{"case": "EMP-023", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음(누구나 무료, 12~15시)"}], "flag": ""}
+{"case": "EMP-027", "edits": [{"field": "upsell_path", "after": "없음(비영리단체와 함께한 무료 진료 사회공헌)"}], "flag": ""}
+{"case": "EMP-031", "edits": [{"field": "upsell_path", "after": "없음(은퇴 폐업에 따른 처방 기록 이관)"}, {"field": "limit", "after": "해당없음(폐업 안내 사례로 혜택 없음)"}], "flag": ""}
+{"case": "EMP-035", "edits": [{"field": "limit", "after": "해당없음(혜택 없는 영업 재개)"}], "flag": ""}
+{"case": "EMP-042", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음"}], "flag": ""}
+{"case": "EMP-046", "edits": [{"field": "upsell_path", "after": "없음(폐업 재고 기부 사회공헌)"}, {"field": "limit", "after": "해당없음(재고 기부 사례)"}], "flag": ""}
+{"case": "EMP-050", "edits": [{"field": "kpi", "after": "폐업 공지 후 단골 예약 이관 수(디자이너별 고객 명단) · 안내문 게시 후 문의 건수 · 이전 디자이너 매장으로 옮긴 고객 수"}, {"field": "upsell_path", "after": "없음(재계약 불가 폐업 안내 사례)"}, {"field": "limit", "after": "해당없음(혜택 없는 폐업 안내)"}], "flag": ""}
+{"case": "JP2-001", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음(자선 행사는 연 1회 하루 10~16시)"}], "flag": ""}
+{"case": "JP2-006", "edits": [{"field": "upsell_path", "after": "프리오픈 방문 → 그랜드오픈 후 재방문·교자 포장 추가"}, {"field": "limit", "after": "원문에 한도 언급 없음"}], "flag": ""}
+{"case": "JP2-012", "edits": [{"field": "limit", "after": "해당없음(상시 서비스)"}], "flag": ""}
+{"case": "JP2-017", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음(7/14까지 기간 한정 출점만 명시)"}], "flag": ""}
+{"case": "JP2-023", "edits": [{"field": "upsell_path", "after": "우선입장권 구매 → 입장 후 식사 주문(티켓 대금은 별도 추가 매출)"}, {"field": "limit", "after": "원문에 한도 언급 없음"}], "flag": ""}
+{"case": "JP2-028", "edits": [{"field": "upsell_path", "after": "포장마차 거리 방문 → 여러 포장마차 돌며 라멘·안주 추가 주문"}, {"field": "limit", "after": "해당없음(혜택 없는 동시 개업. 원문은 유료회원 기사로 본문 일부만 확인)"}], "flag": ""}
+{"case": "JP2-033", "edits": [{"field": "upsell_path", "after": "없음(음식물 남김 때문에 메뉴 판매를 중단한 사례)"}, {"field": "limit", "after": "해당없음(상시 메뉴 판매 중단 사례)"}], "flag": ""}
+{"case": "JP2-038", "edits": [{"field": "limit", "after": "원문 확인 불가(유료회원 기사로 본문 일부만 공개)"}], "flag": ""}
+{"case": "EMP-060", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음(파티 18~20시 시간 한정만 명시)"}], "flag": ""}
+{"case": "EMP-064", "edits": [{"field": "limit", "after": "해당없음(혜택 없는 도움 요청 사례)"}], "flag": ""}
+{"case": "RT2-003", "edits": [{"field": "upsell_path", "after": "없음(경품 한도 위반 처분 사례)"}, {"field": "limit", "after": "원문: 당시 법정 경품 가격한도 15만원·총액한도 예상매출 1% 이하·제공기간 20일을 넘겨 시정명령(행사 자체의 1인 한도 언급 없음)"}], "flag": ""}
+{"case": "RT2-009", "edits": [{"field": "upsell_path", "after": "무료 냉면 시식 → 이후 정상가 재방문(원문상 효과 미확인)"}, {"field": "limit", "after": "원문에 한도 언급 없음(행사 당일 오전 11시~오후 7시 방문 고객)"}], "flag": ""}
+{"case": "RT2-013", "edits": [{"field": "upsell_path", "after": "사은품·누적 쿠폰 → 같은 주유소 반복 주유"}], "flag": ""}
+{"case": "RT2-017", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음(6만원 이상 결제 조건만 명시)"}], "flag": ""}
+{"case": "RT2-021", "edits": [{"field": "upsell_path", "after": "포인트 상품 목표 → 재등록·친구 추천 등록"}, {"field": "limit", "after": "원문에 한도 언급 없음(포인트 기준만 명시)"}], "flag": ""}
+{"case": "RT2-025", "edits": [{"field": "upsell_path", "after": "점수 구간 상품 목표 → 같은 주유소 반복 주유"}], "flag": ""}
+{"case": "RT2-029", "edits": [{"field": "upsell_path", "after": "명함 쿠폰 방문 → 쿠폰 외 정상가 서비스 추가 이용"}, {"field": "limit", "after": "원문에 한도 언급 없음"}], "flag": ""}
+{"case": "RT2-033", "edits": [{"field": "upsell_path", "after": "1천원 입장 → 매점·세신 등 유료 부대서비스 이용"}, {"field": "limit", "after": "원문에 한도 언급 없음(한 주 동안 행사만 명시)"}], "flag": ""}
+{"case": "RT2-038", "edits": [{"field": "upsell_path", "after": "경품 응모 → 주유량·주유 횟수 늘리기"}, {"field": "limit", "after": "원문: 냉장고·김치냉장고·세탁기 각 1대 등 경품 수량(응모 조건·1인 한도 언급 없음)"}], "flag": ""}
+{"case": "RT2-042", "edits": [{"field": "upsell_path", "after": "초대 손수건 받은 이웃 → 개업일 방문·구매"}], "flag": ""}
+{"case": "KRB-003", "edits": [{"field": "limit", "after": "해당없음(상시 저가 가격 구조)"}], "flag": ""}
+{"case": "KRB-007", "edits": [{"field": "limit", "after": "해당없음(상시 가격·할인 정책)"}], "flag": ""}
+{"case": "KRA-001", "edits": [{"field": "limit", "after": "해당없음(구청 성금 기탁으로 손님 혜택 없음)"}], "flag": ""}
+{"case": "KRA-007", "edits": [{"field": "limit", "after": "해당없음(온라인 수업 지속으로 할인·증정 없음)"}], "flag": ""}
+{"case": "KRA-012", "edits": [{"field": "upsell_path", "after": "없음(화환 대신 쌀 기탁 사회공헌)"}, {"field": "limit", "after": "해당없음(기부 사례)"}], "flag": ""}
+{"case": "KRA-016", "edits": [{"field": "upsell_path", "after": "없음(지자체·약사회 공공약국 지정 사업)"}, {"field": "limit", "after": "해당없음(상시 공공약국 운영 제도)"}], "flag": ""}
+{"case": "KRA-020", "edits": [{"field": "upsell_path", "after": "없음(자살예방 게이트키퍼 연계 사업)"}, {"field": "limit", "after": "해당없음(상시 상담·연계 사업)"}], "flag": ""}
+{"case": "KRA-025", "edits": [{"field": "limit", "after": "해당없음(상시 매장 확장·진열 개선)"}], "flag": ""}
+{"case": "KRA-029", "edits": [{"field": "limit", "after": "해당없음(상시 제공 방식)"}], "flag": ""}
+{"case": "KRA-033", "edits": [{"field": "limit", "after": "해당없음(상시 숍인숍 운영)"}], "flag": ""}
+{"case": "KRB-014", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음(금액대별 증정만 명시, 구간 금액 미공개)"}], "flag": ""}
+{"case": "KRB-019", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음(11월 18일까지 기간 한정만 명시)"}], "flag": ""}
+{"case": "KRB-023", "edits": [{"field": "limit", "after": "해당없음(상시 가격 구조)"}], "flag": ""}
+{"case": "KRB-028", "edits": [{"field": "limit", "after": "해당없음(손님 혜택 없는 정기기부)"}], "flag": ""}
+{"case": "KRB-036", "edits": [{"field": "limit", "after": "해당없음(정보 글 홍보로 할인·증정 없음)"}], "flag": ""}
+{"case": "KRC-003", "edits": [{"field": "limit", "after": "해당없음(혜택 없는 마지막 영업일)"}], "flag": ""}
+{"case": "KRC-007", "edits": [{"field": "upsell_path", "after": "없음(입점업주 반대 속 땡처리 허위광고 논란 사례)"}, {"field": "limit", "after": "원문에 한도 언급 없음"}], "flag": ""}
+{"case": "KRC-011", "edits": [{"field": "kpi", "after": "재개업식 후 일 손님 수(평소 하루 100여 명 대비, POS) · 연대 참여·서명 인원 · 언론 보도 건수"}, {"field": "upsell_path", "after": "없음(임대차 분쟁 사례)"}, {"field": "limit", "after": "해당없음(혜택 없는 영업 지속 선언)"}], "flag": ""}
+{"case": "KRC-016", "edits": [{"field": "upsell_path", "after": "없음(보훈요양원 어르신 초청 대접 사회공헌)"}], "flag": ""}
+{"case": "KRC-020", "edits": [{"field": "limit", "after": "해당없음(혜택 없는 재개장)"}], "flag": ""}
+{"case": "KRC-025", "edits": [{"field": "limit", "after": "해당없음(혜택 없는 재오픈)"}], "flag": ""}
+{"case": "KRC-029", "edits": [{"field": "upsell_path", "after": "없음(주인 부상 후 지역 연대로 영업을 이어간 사례)"}, {"field": "limit", "after": "해당없음(상시 1000원 백반 가격)"}], "flag": ""}
+{"case": "KRC-035", "edits": [{"field": "limit", "after": "원문에 한도 언급 없음(상권별 행사 내용 상이, 12월 16일까지)"}], "flag": ""}
+{"case": "KRC-039", "edits": [{"field": "upsell_path", "after": "없음(영부인 동행 장보기 연출로 손님 혜택 없음)"}, {"field": "limit", "after": "해당없음(혜택 없는 방문 연출)"}], "flag": ""}
+{"case": "NT1-006", "edits": [{"field": "limit", "after": "원문: 쿠폰은 6월 15일 하루 60세 이상 T회원 구매 시 영수증에 발행, 포인트 2배는 6/15~18 60세 이상 T회원 한정(1인 매수 한도 언급 없음)"}], "flag": ""}
+{"case": "NT1-011", "edits": [{"field": "kpi", "after": "인사한 세대 수 · 이웃 반응(감사 인사·답례 횟수) · 이후 층간 민원 건수"}, {"field": "upsell_path", "after": "없음(이사 인사로 판매 없음)"}, {"field": "limit", "after": "해당없음(이웃 인사 사례)"}], "flag": ""}
+{"case": "NT1-015", "edits": [{"field": "kpi", "after": "손편지 관련 SNS 게시물·언급 수 · 한국인 손님 비율(주문·결제 기록) · 재방문 손님 수(스탬프·단골 기록)"}, {"field": "upsell_path", "after": "없음(감사 편지 게시로 혜택 없음)"}, {"field": "limit", "after": "해당없음(혜택 없는 감사 편지)"}], "flag": ""}
+{"case": "NT1-019", "edits": [{"field": "kpi", "after": "인상 후 주간 객수·매출 변화(POS 전후 비교) · 가격 관련 리뷰·민원 수 · 인상 시점 비판 보도 건수"}, {"field": "upsell_path", "after": "없음(가격 인상 시점 논란 사례)"}, {"field": "limit", "after": "해당없음(가격 인상 사례)"}], "flag": ""}
+{"case": "NT1-023", "edits": [{"field": "kpi", "after": "배달·매장 가격 차이 고지율(배달앱 메뉴 표기 점검) · 배달 주문 비중 변화(POS·앱 정산) · 가격 표시 관련 민원·리뷰 건수"}, {"field": "upsell_path", "after": "없음(배달 이중가격 표시 논란 사례)"}, {"field": "limit", "after": "해당없음(가격 정책 사례)"}], "flag": ""}
+{"case": "NT1-027", "edits": [{"field": "kpi", "after": "인상 전 발행 기프티콘 사용 건수(정산 기록) · 차액 미부과 안내 고지 매장 비율 · 기프티콘 관련 민원 건수"}, {"field": "upsell_path", "after": "기프티콘 사용 방문 → 사이드·음료 추가 결제"}, {"field": "limit", "after": "해당없음(표준약관상 추가 대금 요구 금지에 따른 상시 처리)"}], "flag": ""}
+{"case": "NT1-033", "edits": [{"field": "upsell_path", "after": "20% 환급 지역화폐 → 다음 결제에 재사용, 상권 내 다른 점포 추가 구매"}], "flag": ""}
+{"case": "NT1-038", "edits": [{"field": "kpi", "after": "상품권 결제 거부·현금영수증 거부 신고 건수 · 이상거래 탐지 건수 · 점검 후 시정 완료율"}, {"field": "upsell_path", "after": "없음(지역화폐 부정유통 단속 사례)"}, {"field": "limit", "after": "해당없음(단속 사례)"}], "flag": ""}
+{"case": "NT2-002", "edits": [{"field": "upsell_path", "after": "아이 동반 가족 방문 → 아이 음료·디저트 추가 주문"}, {"field": "limit", "after": "해당없음(상시 공간 운영 규칙)"}], "flag": ""}
+{"case": "NT2-006", "edits": [{"field": "upsell_path", "after": "없음(연령 출입 제한 논란 사례)"}, {"field": "limit", "after": "해당없음(이용 제한 안내 사례)"}], "flag": ""}
+{"case": "NT2-010", "edits": [{"field": "upsell_path", "after": "없음(1인 1음료 원칙을 둘러싼 손님 분쟁 사례)"}], "flag": ""}
+{"case": "NT2-014", "edits": [{"field": "upsell_path", "after": "없음(제도 기준 미충족에 따른 반려동물 출입 제한 사례)"}, {"field": "limit", "after": "해당없음(출입 제한 사례)"}], "flag": ""}
+{"case": "NT2-018", "edits": [{"field": "upsell_path", "after": "없음(연령 출입 제한 논란 사례)"}, {"field": "limit", "after": "해당없음(출입 제한 사례)"}], "flag": ""}
+{"case": "NT2-022", "edits": [{"field": "upsell_path", "after": "없음(안내견 출입 제지 법 위반 조사 사례)"}, {"field": "limit", "after": "해당없음(법 위반 조사 사례)"}], "flag": ""}
+{"case": "NT2-026", "edits": [{"field": "upsell_path", "after": "없음(지방의회 조례 논의 사례)"}, {"field": "limit", "after": "해당없음(제도 논의 사례)"}], "flag": ""}
+{"case": "NT2-030", "edits": [{"field": "upsell_path", "after": "없음(리뷰 고소 예고 역풍 사례)"}, {"field": "limit", "after": "해당없음(리뷰 분쟁 사례)"}], "flag": ""}
+{"case": "NT2-034", "edits": [{"field": "upsell_path", "after": "없음(배달앱 리뷰 정책 개정 사례)"}, {"field": "limit", "after": "해당없음(플랫폼 정책 사례)"}], "flag": ""}
+{"case": "NT2-038", "edits": [{"field": "upsell_path", "after": "없음(허위 후기 소송 사례)"}, {"field": "limit", "after": "해당없음(판결 사례)"}], "flag": ""}
+{"case": "NT2-042", "edits": [{"field": "upsell_path", "after": "없음(축제 바가지 요금 논란 사례)"}, {"field": "limit", "after": "해당없음(가격 논란 사례)"}], "flag": ""}
+{"case": "NT2-046", "edits": [{"field": "upsell_path", "after": "없음(지자체 바가지 점검 정책)"}, {"field": "limit", "after": "해당없음(행정 점검 사례)"}], "flag": ""}
+{"case": "NT2-050", "edits": [{"field": "upsell_path", "after": "없음(구청 주방 위생 공개 시범사업)"}, {"field": "limit", "after": "해당없음(상시 위생 정보 공개)"}], "flag": ""}
+{"case": "NT2-054", "edits": [{"field": "upsell_path", "after": "없음(외국인 손님 거절 안내문 논란 사례)"}, {"field": "limit", "after": "해당없음(출입 거절 논란 사례)"}], "flag": ""}
+{"case": "NT2-058", "edits": [{"field": "upsell_path", "after": "없음(정치성 리뷰 폭주 사례)"}, {"field": "limit", "after": "해당없음(리뷰 폭주 사례)"}], "flag": ""}
+{"case": "NT2-062", "edits": [{"field": "upsell_path", "after": "없음(바가지 논란 뒤 행정 대책 사례)"}, {"field": "limit", "after": "해당없음(가격 표시 대책 사례)"}], "flag": ""}
+{"case": "NT2-067", "edits": [{"field": "upsell_path", "after": "없음(리뷰 수정 요청·별점 신뢰도 논란 사례)"}, {"field": "limit", "after": "해당없음(리뷰 논란 사례)"}], "flag": ""}

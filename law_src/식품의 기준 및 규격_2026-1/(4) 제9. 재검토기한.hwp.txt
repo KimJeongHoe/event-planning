@@ -1,0 +1,21 @@
+원문: 사용자 제공 식약처 고시 제2026-1호(2026.1.13) 파일 '(4) 제9. 재검토기한.hwp' — HWP/HWPX를 글자로 바꿈(hwp5html·hwpx XML)
+
+
+.Section-0 {
+ width: 125mm;
+}
+.Section-0 .HeaderPageFooter {
+ position: relative;
+ margin-top: 14mm;
+ margin-right: 17.5mm;
+ margin-bottom: 14mm;
+ margin-left: 17.5mm;
+}
+.Section-0 .Page {
+ padding-top: 0mm;
+ padding-bottom: 8mm;
+}
+제9
+재검토기한
+제9. 재검토기한
+ 식품의약품안전처장은 이 고시에 대하여 ｢훈령·예규 등의 발령 및 관리에 관한 규정｣에 따라 2022년 1월 1일 기준으로 매 3년이 되는 시점(매 3년째의 12월 31일까지를 말한다)마다 그 타당성을 검토하여 개선 등의 조치를 하여야 한다.

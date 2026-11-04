@@ -1,0 +1,7 @@
+수집ID	본문길이	원문에서 못 찾은 숫자
+CSR-005	3364	known_result:100; summary:100
+CSR-011	8749	duration:2024
+CSR-012	2669	known_result:2025
+CSR-029	5186	known_result:2021; summary:2021
+REL-024	1820	condition:17
+REL-025	3782	known_result:1,148; known_result:1,364; summary:1,364

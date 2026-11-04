@@ -1,0 +1,411 @@
+<title>사장님 행사안 고르기</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<style>
+/* 레이아웃: 위에서 아래로 1 입력 → 2 행사안 고르기 → 3 고른 안(공지문·준비·주의·원가). 가게 앞 칠판 같은 짙은 남색 머리띠 하나, 나머지는 조용한 종이색 */
+:root{
+ --ex:#6b3fa0;--exsoft:#efe8f7;
+ --bg:#f5f4f0;--paper:#fffefb;--ink:#22252b;--mut:#5f646d;--line:#dcd9d1;--acc:#24447a;--acc-ink:#ffffff;--accsoft:#e6ebf4;
+ --ok:#1d6b44;--oksoft:#e3f1e8;--warn:#8a5a00;--warnsoft:#fbf0d6;--bad:#a2281f;--badsoft:#f8e3e0;--info:#3d4f6b;--infosoft:#e9edf3;
+ --f-disp:"IBM Plex Sans KR","Noto Sans KR",system-ui,sans-serif;--f-body:"Noto Sans KR",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#15171b;--paper:#1d2026;--ink:#e8e9ec;--mut:#a3a8b2;--line:#323741;--acc:#8fb0ea;--acc-ink:#10151f;--accsoft:#243149;--ok:#7fd1a2;--oksoft:#1d3328;--warn:#f0c26a;--warnsoft:#3a2f17;--bad:#f19b92;--badsoft:#40211e;--info:#b6c4dc;--infosoft:#262d39;--ex:#c7a8f0;--exsoft:#2f2440;color-scheme:dark}}
+:root[data-theme="dark"]{--ex:#c7a8f0;--exsoft:#2f2440;--bg:#15171b;--paper:#1d2026;--ink:#e8e9ec;--mut:#a3a8b2;--line:#323741;--acc:#8fb0ea;--acc-ink:#10151f;--accsoft:#243149;--ok:#7fd1a2;--oksoft:#1d3328;--warn:#f0c26a;--warnsoft:#3a2f17;--bad:#f19b92;--badsoft:#40211e;--info:#b6c4dc;--infosoft:#262d39;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.6;padding-block:0 40px}
+.wrap{max-width:920px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header.band{background:var(--acc);color:var(--acc-ink)}
+header.band .wrap{padding-block:22px 18px}
+h1{font-family:var(--f-disp);font-size:1.55rem;margin:0;letter-spacing:-.01em;text-wrap:balance}
+.band p{margin:6px 0 0;opacity:.9;font-size:.9rem}
+main{display:flex;flex-direction:column;gap:26px;margin-top:22px}
+section.step{display:flex;flex-direction:column;gap:12px;min-width:0}
+.sh{display:flex;align-items:baseline;gap:10px}
+.sh .no{font-family:var(--f-disp);font-weight:700;color:var(--acc);font-size:1.05rem}
+h2{font-family:var(--f-disp);font-size:1.15rem;margin:0;text-wrap:balance}
+h3{font-size:1rem;margin:0}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:16px;min-width:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px 16px}
+label{display:flex;flex-direction:column;gap:4px;font-size:.85rem;color:var(--mut);min-width:0}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:8px 10px;width:100%;min-width:0}
+textarea{min-height:150px;resize:vertical;line-height:1.55}
+input:focus-visible,select:focus-visible,textarea:focus-visible,button:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{display:inline-flex;align-items:center;gap:4px;border:1px solid var(--line);border-radius:99px;padding:4px 10px;font-size:.85rem;color:var(--ink);cursor:pointer;background:var(--paper)}
+.chip input{width:auto;margin:0}
+.chip:has(input:checked){background:var(--accsoft);border-color:var(--acc)}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+button{font:inherit;cursor:pointer;border-radius:6px;padding:8px 14px;border:1px solid var(--line);background:var(--paper);color:var(--ink)}
+button.main{background:var(--acc);color:var(--acc-ink);border-color:var(--acc);font-weight:700}
+button.ghost{background:transparent}
+.small{font-size:.82rem;color:var(--mut)}
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:12px}
+.plan{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:14px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.plan.sel{border-color:var(--acc);box-shadow:0 0 0 2px var(--acc) inset}
+.plan h3{font-size:.98rem;line-height:1.4}
+.kv{display:grid;grid-template-columns:4.2em 1fr;gap:2px 8px;font-size:.88rem}
+.kv dt{color:var(--mut)}.kv dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.badges{display:flex;flex-wrap:wrap;gap:6px}
+.badge{font-size:.78rem;padding:2px 8px;border-radius:99px;font-weight:500;white-space:nowrap}
+.b-ok{background:var(--oksoft);color:var(--ok)}.b-warn{background:var(--warnsoft);color:var(--warn)}.b-bad{background:var(--badsoft);color:var(--bad)}.b-info{background:var(--infosoft);color:var(--info)}.b-ex{background:var(--exsoft);color:var(--ex)}
+.plan.ex{border-color:var(--ex);background:linear-gradient(var(--exsoft),var(--exsoft)) top/100% 4px no-repeat,var(--paper)}
+.plan .foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;border-bottom:1px solid var(--line);padding-bottom:8px}
+.tab{border-radius:99px;padding:6px 14px}
+.tab[aria-selected="true"]{background:var(--acc);color:var(--acc-ink);border-color:var(--acc)}
+ul.clean{margin:0;padding-left:1.1em;display:flex;flex-direction:column;gap:4px}
+.note{border-left:3px solid var(--warn);background:var(--warnsoft);padding:8px 12px;border-radius:4px;font-size:.88rem}
+.note.bad{border-color:var(--bad);background:var(--badsoft)}
+.note.ok{border-color:var(--ok);background:var(--oksoft)}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.88rem}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+th{color:var(--mut);font-weight:500;font-size:.8rem}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+td input{padding:4px 6px}
+.out{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.out div{background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:10px}
+.out b{display:block;font-size:1.15rem;font-variant-numeric:tabular-nums}
+.out span{font-size:.8rem;color:var(--mut)}
+.faq{border:1px solid var(--line);border-radius:6px;padding:10px;background:var(--bg)}
+details summary{cursor:pointer;color:var(--acc)}
+.empty{color:var(--mut);font-size:.9rem;padding:8px 0}
+.stepnav{position:sticky;top:0;z-index:5;display:flex;flex-wrap:wrap;gap:8px;align-items:center;background:var(--bg);border-bottom:1px solid var(--line);padding:8px 0}
+.stepnav button{padding:6px 12px}@media (max-width:600px){#store-mode{display:none}}.stepnav button:disabled{opacity:.45;cursor:default}
+.toolgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:8px}
+.toolbtn{display:flex;flex-direction:column;align-items:flex-start;gap:2px;text-align:left;background:var(--paper)}
+.toolbtn[aria-pressed="true"]{border-color:var(--acc);box-shadow:0 0 0 2px var(--acc) inset}
+.cols label[hidden]{display:none}
+.cp-wrap{overflow-x:auto}
+.cp{--cpc:#24447a;border:2px dashed var(--cpc);border-radius:10px;background:#fffefb;color:#22252b;display:flex;flex-direction:column;gap:6px;padding:12px 14px;max-width:100%}
+.cp.card{width:340px;min-height:190px}.cp.a6{width:300px;min-height:420px}
+.cp-top{font-size:.8rem;color:var(--cpc);font-weight:700}.cp-ben{font-family:var(--f-disp);font-size:1.3rem;font-weight:700;color:var(--cpc);line-height:1.3;overflow-wrap:anywhere}
+.cp-cond{font-size:.78rem;color:#4a4f57}.cp-foot{margin-top:auto;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font-size:.72rem;color:#4a4f57}
+@media print{body.print-cp *{visibility:hidden}body.print-cp #cp-card,body.print-cp #cp-card *{visibility:visible}body.print-cp #cp-card{position:fixed;left:0;top:0}}
+@media (prefers-reduced-motion:no-preference){.plan{transition:box-shadow .15s}}
+</style>
+
+<header class="band"><div class="wrap">
+<h1>사장님 행사안 고르기</h1><span class="small" style="opacity:.85">미리보기 판 7</span>
+<p>가게 정보를 넣으면 실제 사례에서 맞는 행사안을 골라 드립니다. 하나를 고르면 공지문 초안, 준비할 것, 주의 사항, 원가까지 이어서 봅니다. <span id="meta"></span></p>
+</div></header>
+
+<div class="wrap"><main>
+<nav class="stepnav" aria-label="단계 이동"><button type="button" id="nav-home">처음으로</button><button type="button" id="nav-back">이전 단계</button><span class="small" id="nav-where"></span><span class="small" id="store-mode" style="margin-left:auto"></span></nav>
+
+<section class="step" id="s1">
+ <div class="sh"><span class="no">1</span><h2>가게 정보</h2></div>
+ <div class="row"><span class="small">샘플 넣기</span>
+  <button type="button" data-sample="고깃집">그랜드오픈 고깃집</button>
+  <button type="button" data-sample="카페">비수기 카페</button>
+  <button type="button" data-sample="미용실">정착기 미용실</button>
+ </div>
+ <div class="panel">
+  <div class="grid">
+   <label>가게 이름(공지문에 씀)<input id="in-name" placeholder="예: 동네고깃집"></label>
+   <label>업종<select id="in-ind"></select></label>
+   <label>세부 업종<select id="in-sub"></select></label>
+   <label>지금 단계<select id="in-st"></select></label>
+   <label>행사 예산(원)<input id="in-bud" inputmode="numeric" placeholder="예: 300000"></label>
+   <label>술 판매<select id="in-liq"><option>아니오</option><option>예</option></select></label>
+   <label>혜택 받는 손님<select id="in-who"><option value="일반 손님">일반 손님(먹거나 사러 오는 사람)</option><option value="입점·가맹·임차">입점·가맹·임차 업체(공유주방 등)</option><option value="거래처">거래처(납품·도매)</option><option value="구직자">구직자(직원 모집)</option></select></label>
+  </div>
+  <div style="margin-top:12px" class="small">목표(여러 개 고를 수 있음)</div>
+  <div class="chips" id="in-goals" style="margin-top:6px"></div>
+  <div class="row" style="margin-top:14px"><button type="button" class="main" id="go">행사안 보기</button><span class="small" id="go-msg"></span></div>
+ </div>
+</section>
+
+<section class="step" id="s2" hidden>
+ <div class="sh"><span class="no">2</span><h2>맞는 행사안</h2></div>
+ <p class="small" id="s2-note" style="margin:0"></p>
+ <h3 id="ex-head" style="margin-top:4px">응용 예시 — 지금 상황에 맞게 바꾼 안</h3><p class="small" id="ex-note" style="margin:0"></p><div class="plans" id="explans"></div>
+ <h3 style="margin-top:8px">실제 사례 그대로</h3><div class="plans" id="plans"></div>
+ <details class="panel" id="sidebox"><summary>행사가 아닌 참고 사례 (준비·절차 · 주의 사례 · 안내·참고)</summary><p class="small" id="side-note" style="margin:6px 0"></p><div class="plans" id="side"></div></details>
+ <div class="panel" id="mybox"></div>
+ <div class="panel" id="calbox"></div>
+</section>
+
+<section class="step" id="s3" hidden>
+ <div class="sh"><span class="no">3</span><h2 id="s3-title">고른 행사안</h2></div>
+ <div class="tabs" role="tablist">
+  <button type="button" class="tab" role="tab" data-tab="notice" aria-selected="true">홍보 글(채널별)</button>
+  <button type="button" class="tab" role="tab" data-tab="plan" aria-selected="false">알림 순서</button>
+  <button type="button" class="tab" role="tab" data-tab="prep" aria-selected="false">준비할 것</button>
+  <button type="button" class="tab" role="tab" data-tab="risk" aria-selected="false">주의 사항</button>
+  <button type="button" class="tab" role="tab" data-tab="cost" aria-selected="false">원가·남는지</button>
+ </div>
+ <div class="panel" id="tab-notice"></div>
+ <div class="panel" id="tab-plan" hidden></div>
+ <div class="panel" id="tab-prep" hidden></div>
+ <div class="panel" id="tab-risk" hidden></div>
+ <div class="panel" id="tab-cost" hidden></div>
+</section>
+
+<section class="step" id="s4">
+ <div class="sh"><span class="no">4</span><h2>행사 도구</h2></div>
+ <p class="small" style="margin:0">행사안을 고르지 않아도 쓸 수 있습니다. 고른 행사안이 있으면 그 혜택을 미리 넣어 둡니다.</p>
+ <div class="toolgrid" id="toolgrid"></div>
+ <div class="panel" id="toolpanel" hidden></div>
+</section>
+
+<p class="small">이 화면은 사례 자료에서 골라 조합합니다. 생성 모델(AI)을 부르지 않습니다. 법 판단은 사례 DB와 FAQ의 판정을 그대로 보여 주며, 공식 해석이 없는 쟁점은 「신중」과 꼭 지킬 조건으로 표시합니다. 미리보기용이며 공개 배포판이 아닙니다.</p>
+</main></div>
+
+<script>
+const D=/*__DATA__*/null;
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const won=n=>n==null||isNaN(n)?"":Math.round(n).toLocaleString("ko-KR")+"원";
+const IND=["요식업","소매","서비스업","학원·교육","미용·뷰티","병의원·약국"];
+const STAGES=["오픈전","가오픈","그랜드오픈","정착기","상시","비수기","리뉴얼","신메뉴","N주년","위기회복","폐업정리"];
+const GOALS=["신규손님","재방문","객단가","리뷰수","SNS노출","비피크채우기","비수기채우기","지역관계","재고소진","포장배달","신메뉴알리기","회전율"];
+const STAGE_MATCH={"그랜드오픈":["그랜드오픈","오픈N일"],"폐업정리":["폐업정리"]};
+const NAT_PREF={"오픈전":"오픈행사","가오픈":"오픈행사","그랜드오픈":"오픈행사","리뉴얼":"리뉴얼·신메뉴","신메뉴":"리뉴얼·신메뉴","N주년":"N주년","위기회복":"위기회복","폐업정리":"양도·폐업정리"};
+const TITLE={"오픈전":"오픈 준비 소식","가오픈":"가오픈 안내","그랜드오픈":"오픈 기념","정착기":"찾아 주셔서 감사합니다","상시":"이달의 혜택","비수기":"이달의 혜택","리뉴얼":"새 단장 기념","신메뉴":"신메뉴 출시","N주년":"주년 감사","위기회복":"다시 인사드립니다","폐업정리":"정리 안내"};
+const LIQ=/(^|[^가-힣])(술|소주|맥주|생맥|막걸리|하이볼|와인|사케|샴페인|주류|양주|위스키|칵테일)/;
+const LIQG=/(술|소주|맥주|생맥|막걸리|하이볼|와인|사케|샴페인|주류|양주|위스키|칵테일)/g;
+// 사례 칸에는 '시술'처럼 술이 붙은 낱말이 있어 앞 글자를 본다
+function hasLiq(t){let m;LIQG.lastIndex=0;while((m=LIQG.exec(t))){const p=t[m.index-1];if(!p||!/[가-힣]/.test(p)||m[0]!=="술")return true;}return false}
+// 고르기 칸 채우기
+const sel=(el,arr,blank)=>{el.innerHTML=(blank?`<option value="">${blank}</option>`:"")+arr.map(x=>`<option>${esc(x)}</option>`).join("")};
+sel($("#in-ind"),IND);sel($("#in-st"),STAGES);
+function subs(){const ind=$("#in-ind").value;const cnt={};D.cases.forEach(c=>{if(c.ind.split("|").includes(ind))c.sub.split("|").forEach(s=>{if(s&&s!=="기타")cnt[s]=(cnt[s]||0)+1})});
+ sel($("#in-sub"),Object.keys(cnt).sort((a,b)=>cnt[b]-cnt[a]).slice(0,30),"(고르지 않음)")}
+$("#in-ind").addEventListener("change",subs);subs();
+$("#in-goals").innerHTML=GOALS.map(g=>`<label class="chip"><input type="checkbox" value="${g}" id="g-${g}">${g}</label>`).join("");
+$("#meta").textContent=`자료: 사례 ${D.cases.length.toLocaleString()}건 · FAQ ${Object.keys(D.faq).length}문항 · 공지 문구 ${D.bank.length}행 (${D.built} 기준). 사례 DB 전체는 ${D.all.toLocaleString()}건이지만, 참고제외 ${D.nex}건과 원문이 막혀 확인하지 못한 ${D.nbl}건(합 ${D.all-D.cases.length}건)은 고르지 않습니다. 사례 종류: ${["행사","안내·참고","준비·절차","주의 사례"].map(k=>k+" "+D.cases.filter(c=>c.kd===k).length.toLocaleString()).join(" · ")}`;
+
+let SAMPLE=null;
+document.querySelectorAll("[data-sample]").forEach(b=>b.addEventListener("click",()=>{const s=D.samples[b.dataset.sample];SAMPLE=s;
+ $("#in-name").value=s.name;$("#in-ind").value=s.ind;subs();$("#in-sub").value=s.sub;$("#in-st").value=s.st;$("#in-bud").value=s.bud;$("#in-liq").value=s.liq;$("#in-who").value=s.who||"일반 손님";
+ document.querySelectorAll("#in-goals input").forEach(i=>i.checked=s.g.includes(i.value));run();}));
+["#in-ind","#in-sub","#in-st","#in-bud","#in-liq","#in-who"].forEach(q=>$(q).addEventListener("change",()=>{SAMPLE=null}));
+
+function inp(){return{name:$("#in-name").value.trim(),ind:$("#in-ind").value,sub:$("#in-sub").value,st:$("#in-st").value,bud:parseInt(($("#in-bud").value||"").replace(/[^0-9]/g,""))||null,liq:$("#in-liq").value,who:$("#in-who").value,g:[...document.querySelectorAll("#in-goals input:checked")].map(i=>i.value)}}
+
+function vClass(v){if(/^불가/.test(v))return["b-bad","불가"];if(/^조건부/.test(v))return["b-warn","조건부 가능"];if(/^확인/.test(v))return["b-info","신중"];if(/^가능/.test(v))return["b-ok","가능"];return["b-info","판정 없음"]}
+function score(c,I){
+ const ind=c.ind.split("|"),st=c.st.split("|"),na=c.na.split("|"),g=c.g.split("|"),tm=c.tm.split("|");let s=0;
+ if(I.sub&&c.sub.split("|").includes(I.sub))s+=5;
+ if(ind.includes(I.ind))s+=3;else if(ind.includes("공통"))s+=1;else return -99;
+ const want=STAGE_MATCH[I.st]||[I.st];
+ if(st.some(x=>want.includes(x)))s+=4;else if(st.includes("상시"))s+=1;
+ if(I.st==="비수기"&&tm.includes("비수기"))s+=2;
+ if(NAT_PREF[I.st]&&na.includes(NAT_PREF[I.st]))s+=2;
+ if(na.includes("양도·폐업정리")&&I.st!=="폐업정리")s-=6;
+ if(na.includes("위기회복")&&I.st!=="위기회복")s-=3;
+ I.g.forEach(x=>{if(g.includes(x))s+=1.5});
+ if(c.vs==="확인함")s+=1;if(c.co==="한국")s+=1;if(c.k==="실제")s+=.5;if(c.rep==="대표")s+=.5;
+ if(budHit(c,I))s-=2;
+ if(c.lq)s-=(I.liq==="아니오"?5:2);
+ const SP=["입점·가맹·임차","거래처","구직자"];if(c.wh===I.who&&I.who!=="일반 손님")s+=5;else if(SP.includes(c.wh)&&c.wh!==I.who)s-=8;else if(SP.includes(I.who)&&c.wh==="일반 손님")s-=2;
+ if(c.wh==="이웃·기관"&&I.g.includes("지역관계"))s+=1;
+ if(timeOff(c))s-=3;
+ if(c.fr===2)s-=3;
+ if(/^불가/.test(c.v))s-=4;else if(/^확인/.test(c.v))s-=.5;
+ s+=window.P7ADJ?P7ADJ(c):0;
+ return s}
+let PICKS=[],CUR=null;
+// 판 9: 2차 7업종(한식·베이커리·반찬가게·편의점·의류잡화·꽃집·세탁소) 추가. 순서가 중요(베이커리를 카페보다 먼저)
+const SUBMAP=s=>/치킨|호프|주점|포차|펍|이자카야/.test(s)?"치킨호프":/고깃집|고기|한우|갈비/.test(s)?"고깃집":/베이커리|빵|제과|떡/.test(s)?"베이커리":/카페|커피|디저트/.test(s)?"카페":/미용|헤어|네일/.test(s)?"미용실":/반찬/.test(s)?"반찬가게":/한식|백반|국밥|분식|국수|찌개|일식|중식|양식|식당/.test(s)?"한식":/편의점|슈퍼|마트/.test(s)?"편의점":/의류|옷|잡화|신발/.test(s)?"의류잡화":/꽃/.test(s)?"꽃집":/세탁|빨래/.test(s)?"세탁소":"";
+const STG=st=>({"오픈전":"오픈전","가오픈":"오픈전","그랜드오픈":"그랜드오픈","오픈N일":"그랜드오픈","정착기":"정착기","상시":"상시","비수기":"상시","위기회복":"위기회복","리뉴얼":"위기회복","신메뉴":"위기회복","N주년":"상시","폐업정리":""})[st]||"";
+const FAM={"고깃집":["치킨호프","한식"],"치킨호프":["고깃집","한식"],"카페":["베이커리","고깃집"],"미용실":[],"한식":["고깃집","반찬가게"],"베이커리":["카페"],"반찬가게":["한식","베이커리"],"편의점":[],"의류잡화":[],"꽃집":[],"세탁소":[]};
+// 달력에 있는 시점만 '지금 시기'로 본다(스포츠 경기는 달력 자료에 없어 늘 뒤로)
+function calHas(kind){const today=new Date().toISOString().slice(0,10),end=new Date(Date.now()+60*864e5).toISOString().slice(0,10);
+ const rows=D.cal.filter(r=>r[0]>=today&&r[0]<=end);const K={"시험·수능":r=>r[2]==="시험","명절":r=>r[2]==="명절·세시","공휴일·연휴":r=>r[2]==="공휴일","기념일":r=>r[2]==="국가기념일"||r[2]==="○○데이","연말송년회":r=>r[0].slice(5,7)==="12","스포츠경기":r=>false,"사회이슈":r=>false,"지역축제":r=>false};
+ return K[kind]?rows.some(K[kind]):true}
+const TIMED=["시험·수능","명절","공휴일·연휴","기념일","연말송년회","스포츠경기","사회이슈","지역축제"];
+function timeOff(c){const tags=(c.tm||"").split("|").filter(t=>TIMED.includes(t));if(!tags.length)return"";const ok=tags.some(calHas);return ok?"":tags.join("·")}
+function pickEx(I){const sub=SUBMAP(I.sub||""),stg=STG(I.st);if(!sub||!stg)return{list:[],note:sub?"이 단계(폐업 정리 등)의 응용 예시는 만들지 않았습니다.":"이 세부 업종에는 응용 예시가 없어 실제 사례만 보여 줍니다."};
+ let list=D.ex.filter(e=>e.sub===sub&&e.stg===stg),note=`${sub} · ${stg} 상황 예시 ${list.length}개.`;
+ if(!list.length){for(const alt of FAM[sub]){list=D.ex.filter(e=>e.sub===alt&&e.stg===stg);if(list.length){note=`「${sub} · ${stg}」 예시가 없어 가장 가까운 「${alt} · ${stg}」 예시를 보여 줍니다.`;break}}}
+ if(!list.length){list=D.ex.filter(e=>e.sub===sub);note=`「${sub} · ${stg}」 예시가 없어 「${sub}」의 다른 단계 예시를 보여 줍니다.`}
+ return{list,note}}
+// 예산: 30만 원 미만이면 1회 원가·원가율이 '높음'인 사례, 10만 원 미만이면 '중간'까지 뒤로
+function budHit(c,I){if(I.bud==null)return false;const hi=/높음/.test(c.cr)||/높음/.test(c.uc),mid=/중간/.test(c.cr)||/중간/.test(c.uc);return (I.bud<300000&&hi)||(I.bud<100000&&mid)}
+function budText(I){if(I.bud==null)return"예산을 넣지 않아 원가로 거르지 않았습니다.";if(I.bud<100000)return`예산 ${won(I.bud)}: 1회 원가가 '높음'·'중간'인 사례를 뒤로 뺐습니다.`;if(I.bud<300000)return`예산 ${won(I.bud)}: 1회 원가가 '높음'인 사례를 뒤로 뺐습니다.`;return`예산 ${won(I.bud)}: 30만 원 이상이라 원가로 거르지 않았습니다. 고른 안의 총비용은 「원가 확인」에서 예산과 비교합니다.`}
+// 보여 주는 순서: 가능 → 조건부 → 확인(화면 이름 「신중」) → 불가. 술 혜택·본사 전제 사례는 같은 판정 안에서도 뒤로
+function tier(c){const v=c.v,I0=inp();let t=(c.wh===I0.who&&I0.who!=="일반 손님")?-5:0;t+=/^가능/.test(v)?0:/^조건부/.test(v)?1:/^확인/.test(v)?2:/^불가/.test(v)?4:1.5;if(c.lq)t+=2;if(c.fr===2)t+=2;if(budHit(c,inp()))t+=.5;return t}
+function run(){
+ const I=inp();if(!I.ind){$("#go-msg").textContent="업종을 고르세요";return}
+ const sc=D.cases.map(c=>[score(c,I),c]).filter(x=>x[0]>0).sort((a,b)=>b[0]-a[0]);
+ const usedG=new Set(),natN={};PICKS=[];
+ const MAIN=sc.filter(x=>x[1].kd==="행사"),REST=sc.filter(x=>x[1].kd==="안내·참고");const POOL=MAIN.length>=6?MAIN:MAIN.concat(REST);
+ for(const [s,c] of POOL){if(PICKS.length>=6)break;if(c.grp&&usedG.has(c.grp))continue;const n=c.na.split("|")[0];if((natN[n]||0)>=2)continue;
+  PICKS.push(c);if(c.grp)usedG.add(c.grp);natN[n]=(natN[n]||0)+1}
+ PICKS=PICKS.map((c,j)=>[tier(c),j,c]).sort((a,b)=>a[0]-b[0]||a[1]-b[1]).map(x=>x[2]);
+ const NM=PICKS.length;const side=sc.filter(x=>x[1].kd!=="행사"&&!PICKS.includes(x[1])).slice(0,4).map(x=>x[1]);PICKS=PICKS.concat(side);
+ const EXP=pickEx(I);const exl=EXP.list.map(e=>Object.assign({},e,{to:timeOff(e)})).sort((a,b)=>(a.to?1:0)-(b.to?1:0)||tier(a)-tier(b));
+ const nWho=D.cases.filter(c=>c.wh===I.who).length;
+ const whoNote=I.who==="일반 손님"?"":(nWho?`혜택 받는 손님이 「${I.who}」인 사례 ${nWho}건을 먼저 보여 줍니다. `:`혜택 받는 손님이 「${I.who}」인 사례가 자료에 없어 가장 가까운 일반 손님 사례를 보여 줍니다. `);
+ $("#s2").hidden=false;$("#s3").hidden=true;CUR=null;
+ $("#s2-note").innerHTML=PICKS.length?`사례 ${D.cases.length.toLocaleString()}건 중 업종·단계·목표가 맞는 행사 ${NM}개를 골랐습니다(행사가 아닌 참고 사례 ${PICKS.length-NM}개는 아래 상자). 비슷한 사례는 하나만, 같은 성격은 2개까지입니다. 순서는 <b>가능 → 조건부 가능 → 신중 → 불가</b>이고, 술 혜택 사례, 본사 지원이 전제인 사례, 예산에 부담인 사례는 같은 판정 안에서 뒤로 둡니다.<br><b>예산 반영</b> — ${esc(budText(I))}`:"맞는 사례가 없습니다. 업종이나 단계를 바꿔 보세요.";
+ PICKS=exl.concat(PICKS);const NX=exl.length;
+ $("#explans").innerHTML=exl.map((c,i)=>planCard(c,i,I)).join("");$("#ex-note").textContent=EXP.note+(exl.length?" 응용 예시는 숫자(가격·할인율)를 비워 두었고 효과를 적지 않습니다. 판정은 근거 사례 중 가장 엄격한 것입니다.":"");
+ $("#plans").innerHTML=PICKS.slice(NX,NX+NM).map((c,i)=>planCard(c,NX+i,I)).join("");
+ $("#side").innerHTML=PICKS.slice(NX+NM).map((c,i)=>planCard(c,NX+NM+i,I)).join("");
+ $("#side-note").textContent=side.length?"행사로 쓰기보다 준비할 때 알아 둘 절차, 처분·논란 사례, 참고 이야기입니다. 빼지 않고 여기에 둡니다.":"이 입력에 맞는 참고 사례가 없습니다.";
+ if(whoNote)$("#s2-note").insertAdjacentHTML("afterbegin",`<b>${esc(whoNote)}</b><br>`);
+ document.querySelectorAll("[data-pick]").forEach(b=>b.addEventListener("click",()=>pick(+b.dataset.pick)));
+ cal();myBox();NAV.length=0;navPush("s2");$("#s2").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"start"});
+}
+function costLabel(c){const u=c.uc||c.cr;return /없음|0원|무비용/.test(u)?"거의 없음":/높음/.test(u)?"높음":/중간/.test(u)?"중간":/낮음/.test(u)?"낮음":"미상"}
+function planCard(c,i,I){
+ const [vc,vt]=vClass(c.v);const liq=c.lq?`<span class="badge b-bad">술 혜택 — 광고에 쓰면 안 됨</span>`:"";
+ const exb=c.k==="응용예시"?`<span class="badge b-ex">응용 예시 · 근거 사례 ${c.bi.map(b=>"#"+b).join("·")}</span>`:"";const tob=(c.to||timeOff(c))?`<span class="badge b-info">지금 시기 아님 — 달력에 ${esc(c.to||timeOff(c))} 없음</span>`:"";
+ const so=exb+tob+(c.kd!=="행사"?`<span class="badge b-info">${esc(c.kd)}</span>`:"")+(c.wh!=="일반 손님"?`<span class="badge b-info">손님: ${esc(c.wh)}</span>`:"")+(c.so?`<span class="badge b-warn">안전운영조건 있음</span>`:"")+(c.fr===2?`<span class="badge b-bad">본사·가맹 지원 전제 — 혼자 하는 가게는 따라 하기 어려움</span>`:c.fr===1?`<span class="badge b-info">큰 브랜드 사례 — 방식만 참고</span>`:"")+(budHit(c,I)?`<span class="badge b-warn">원가 높음 — 예산에 부담</span>`:"")+(window.myBadge?myBadge(c):"");
+ const src=c.k==="응용예시"?`응용 예시${c.ref&&c.ref.length?" · 같이 볼 주의 사례 "+c.ref.map(b=>"#"+b).join("·"):""}`:c.k==="응용"?`응용 아이디어(바탕 사례 ${esc(c.bi)})`:`실제 사례 #${c.i}${c.co&&c.co!=="한국"?" · "+esc(c.co):""}`;
+ return `<article class="plan${c.k==="응용예시"?" ex":""}" id="plan-${i}"><div class="badges"><span class="badge ${vc}">${vt}</span>${so}${liq}</div>
+ <h3>${esc(c.n)}</h3><p class="small" style="margin:0">${esc(c.s)}</p>
+ <dl class="kv"><dt>조건</dt><dd>${esc(c.c)}</dd><dt>혜택</dt><dd>${esc(c.b)}</dd><dt>1회 원가</dt><dd>${costLabel(c)}</dd></dl>
+ <div class="foot"><span class="small">${src}</span><button type="button" class="main" data-pick="${i}">이 안 고르기</button></div></article>`}
+function cal(){
+ const box=$("#calbox");const today=new Date();const iso=d=>d.toISOString().slice(0,10);
+ if(!D.cal.length){box.innerHTML=`<h3>다가오는 날짜</h3><p class="empty">달력 자료 없음</p>`;return}
+ const base=D.cal[0][4];const age=(today-new Date(base))/864e5;
+ if(age>90){box.innerHTML=`<h3>다가오는 날짜</h3><p class="empty">달력 자료 없음 (캘린더 기준일 ${esc(base)}이 90일 넘게 지남)</p>`;return}
+ const end=new Date(today.getTime()+60*864e5);
+ const rows=D.cal.filter(r=>r[0]>=iso(today)&&r[0]<=iso(end)).slice(0,14);
+ box.innerHTML=`<h3>행사에 쓸 만한 날 <span class="small">캘린더 ${esc(base)} 기준 · 60일 안</span></h3><p class="small" style="margin:4px 0 8px">고르는 기준: 공휴일·수능은 모두, 명절은 설·대보름·단오·복날·추석 등, 기념일은 가게 행사와 맞는 날(어버이날·스승의 날·소상공인의 날·김치의 날 등), ○○데이는 음식·선물 관련 날만. 추모일·항쟁 기념일·안전·직군 기념일과 상품 이름 ○○데이·술 ○○데이는 뺐습니다.</p>`+(rows.length?`<div class="tw"><table><tr><th>날짜</th><th>이름</th><th>종류</th><th>근거</th></tr>${rows.map(r=>`<tr><td class="num">${esc(r[0])}</td><td>${esc(r[1])}${r[2]==="○○데이"?' <span class="badge b-info">민간</span>':r[5]!=="확정"?' <span class="badge b-info">예정</span>':""}</td><td>${esc(r[2])}</td><td class="small">${esc(r[3]).slice(0,40)}</td></tr>`).join("")}</table></div>`:`<p class="empty">달력 자료 없음 (60일 안 항목 없음)</p>`)}
+
+// 3. 고른 안
+function pick(i){CUR=PICKS[i];document.querySelectorAll(".plan").forEach((p,j)=>p.classList.toggle("sel",j===i));
+ $("#s3").hidden=false;$("#s3-title").textContent="고른 행사안: "+CUR.n;CHSEL=null;notice();schedule();prep();risk();cost();tab("notice");navPush("s3");
+ $("#s3").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"start"})}
+document.querySelectorAll(".tab").forEach(t=>t.addEventListener("click",()=>tab(t.dataset.tab)));
+function tab(k){document.querySelectorAll(".tab").forEach(t=>t.setAttribute("aria-selected",t.dataset.tab===k));["notice","plan","prep","risk","cost"].forEach(x=>$("#tab-"+x).hidden=x!==k)}
+
+// 술 부분을 공지문에서 뺀다(표시 기준: 국민건강증진법 제8조의2 제2항 제1호)
+function stripLiq(t){t=t.replace(/\([^()]*(술|소주|맥주|생맥|막걸리|하이볼|와인|주류)[^()]*\)/g,"");const parts=t.split(/(?<!\d),|,(?!\d)|\s*\/\s*|·|\s+\+\s+/).map(x=>x.trim()).filter(Boolean);const keep=parts.filter(p=>!hasLiq(p));return{t:keep.join(", "),cut:keep.length<parts.length}}
+function topics(c){const t=c.n+" "+c.b+" "+c.c+" "+c.s;const T=[];
+ if(/개업|오픈/.test(t))T.push("개업 행사");if(/할인|%|1\+1|반값|특가/.test(t))T.push("할인 표시(종전가격·1+1)");if(/경품|추첨|응모|뽑기/.test(t))T.push("경품·추첨 이벤트");
+ if(c.lq||hasLiq(t)){T.push("술 행사");T.push("술 광고 표시")}if(/리뷰|체험단|인증/.test(t))T.push("리뷰·체험단(추가 제안)");if(/예약|노쇼/.test(t))T.push("노쇼·예약금");
+ if(/휴무|휴업/.test(t))T.push("휴무·영업시간 변경");if(/인상|원가 공개/.test(t))T.push("가격 인상·원가 공개");if(/키오스크|휠체어|보조견/.test(t))T.push("접근성(보조견·휠체어·키오스크)");
+ if(/배달/.test(t))T.push("배달가·매장가 차이(추가 제안)");if(/1인 1|시간 제한|이용 조건/.test(t))T.push("이용 조건 안내(추가 제안)");return T}
+function notice(){
+ const c=CUR,I=inp(),nm=I.name||"○○";const b=stripLiq(c.b),cd=stripLiq(c.c);const head=TITLE[I.st]||"행사 안내";
+ const dur="○월 ○일 ~ ○월 ○일";const NONE=/^(해당없음|해당 없음|없음|미상)/;const lim=c.li&&!/해당없음|미상|없음/.test(c.li)?c.li:"";
+ const benefit=b.t&&!NONE.test(b.t)?b.t:"";const cond=cd.t&&!NONE.test(cd.t)?cd.t:"";
+ const store=`${nm} ${head}\n\n${benefit?"혜택: "+benefit+"\n":""}${cond?"조건: "+cond+"\n":""}기간: ${dur}${lim?"\n한도: "+lim:""}\n\n자세한 내용은 직원에게 물어봐 주세요.`;
+ const sns=`${nm}에서 ${head} 소식을 전합니다. ${benefit?benefit+". ":""}${cond?"조건은 "+cond+"입니다. ":""}기간 ${dur}.`;
+ const sms=`(광고) ${nm} ☎ ○○○-○○○○-○○○○\n${head}${benefit?": "+benefit:""}\n기간 ${dur}\n무료 수신 거부: 080-○○○-○○○○`;
+ const cut=(b.cut||cd.cut);
+ const bank=D.bank.filter(r=>topics(c).includes(r["주제"])).slice(0,6);
+ $("#tab-notice").innerHTML=`<div style="display:flex;flex-direction:column;gap:12px">
+ <p class="small" style="margin:0">${c.k==="응용예시"?"응용 예시의 조건·혜택으로 만든 초안입니다. ○ 자리에 가게 값을 넣으세요.":`사례 #${c.i}의 조건·혜택으로 만든 초안입니다.`} 기간은 비워 두었습니다(사례의 기간: ${esc(c.du||"없음")}). 가게 사정에 맞게 고치세요. 고치는 동안 아래에서 피해야 할 표현을 바로 검사합니다.</p>
+ ${cut?`<div class="note bad">술 관련 혜택은 공지문에서 뺐습니다. 술의 할인·증정·쿠폰을 공지문·SNS·현수막에 쓰는 것은 국민건강증진법 제8조의2 제2항 제1호에 걸릴 수 있습니다(F075). 술 가격은 메뉴판·가격표에만 적으세요.</div>`:""}
+ <div id="ch-pick"></div>
+ <div class="cols" id="ch-box"></div>
+ <div id="sms-bytes" class="small"></div>
+ ${D.sms?smsBox(I):""}
+ <div id="nt-check"></div>
+ ${bank.length?`<details open><summary>이런 상황에 쓰는 문구 (공지문 문구 은행 ${bank.length}행)</summary><div class="tw" style="margin-top:8px"><table><tr><th>상황</th><th>권장 문구</th><th>피할 문구</th></tr>${bank.map(r=>`<tr><td class="small">${esc(r["쓰는 상황"])}</td><td>${esc(r["권장 문구"])}</td><td class="small">${esc(r["피해야 할 문구"])}<br>${esc(r["피해야 하는 이유"])}</td></tr>`).join("")}</table></div></details>`:""}
+ </div>`;
+ chRender({nm,head,benefit,cond,dur,lim,sub:I.sub,store,sns,sms});
+ $("#ch-box").addEventListener("input",check);
+ document.querySelectorAll("[data-ins]").forEach(b=>b.addEventListener("click",()=>insGreet(b.dataset.ins,+b.dataset.k)));
+ $("#sms-more")?.addEventListener("click",()=>{SMS_OFF+=4;notice()});check()}
+let SMS_OFF=0;
+// 문자샘플(사용자 제공)에서 고른 인사말: 이번 달 시작 인사말, 끝 인사말. 업종 행사 문자는 보기용
+function greet(){const mon=new Date().getMonth()+1;const st=D.sms.start.filter(x=>x[1].includes(mon));const en=D.sms.end.filter(x=>!x[1].length||x[1].includes(mon));
+ const srt=a=>a.slice().sort((x,y)=>(y[3]||0)-(x[3]||0));const pick=(a,n)=>{a=srt(a);return a.length?Array.from({length:Math.min(n,a.length)},(_,i)=>a[(SMS_OFF+i)%a.length]):[]};return{mon,st:pick(st,4),en:pick(en,4),nst:st.length,nen:en.length}}
+function smsBox(I){const g=greet();const ex=(D.sms.ex[I.ind]||[]);const exs=Array.from({length:Math.min(3,ex.length)},(_,i)=>ex[(SMS_OFF/4*3+i)%ex.length]);
+ return `<div class="faq"><h3>문자 인사말 넣기 <span class="small">사장님이 주신 문자샘플에서 ${g.mon}월에 맞는 것</span></h3>
+ <div style="display:flex;flex-direction:column;gap:6px;margin-top:6px">
+ ${g.st.map((x,k)=>gline(x,k,"s","앞에 넣기")).join("")}
+ ${g.en.map((x,k)=>gline(x,k,"e","끝에 넣기")).join("")}
+ <div class="row"><button type="button" class="ghost" id="sms-more">다른 문구 보기</button><span class="small">짧고 쉬운 문구부터 보여 줍니다(길이·문어체 낱말·문장 수로 매김)</span><span class="small">시작 ${g.nst}개 · 끝 ${g.nen}개 중</span></div></div>
+ ${exs.length?`<details style="margin-top:8px"><summary>같은 업종 행사 문자 예시 ${ex.length}개 (보기용)</summary><p class="small" style="margin:6px 0">다른 가게 이름·연락처 자리가 들어 있어 넣지 않고 보기만 합니다. 할인율·혜택은 사장님 가게 값으로 바꿔 쓰세요.</p>${exs.map(x=>`<div style="border-top:1px solid var(--line);padding:6px 0"><b class="small">${esc(x[0])}</b><div style="white-space:pre-line">${esc(x[1])}</div></div>`).join("")}</details>`:""}
+ <p class="small" style="margin:6px 0 0">거래처에 보내는 말(사업 번창·성과·하명 등)은 손님에게 맞는 말로 고쳐 「고쳐 씀」과 원문을 함께 보여 줍니다. 술이 나오는 문구, 최초·최저가, 건강 효과, 선거·유흥 분류 문구는 뺐습니다(문자샘플 ${D.sms.total.toLocaleString()}개 중 ${D.sms.skip}개 제외).</p></div>`}
+function gline(x,k,kind,lab){return `<div class="row" style="flex-wrap:nowrap;align-items:flex-start"><button type="button" data-ins="${kind}" data-k="${k}" style="flex:none">${lab}</button><span>${esc(x[0])} ${(x[3]||0)>=0?`<span class="badge b-ok">짧고 쉬움</span>`:(x[3]||0)<=-2?`<span class="badge b-warn">길고 딱딱함</span>`:""}${x[2]?` <span class="badge b-info" title="원문: ${esc(x[2])}">고쳐 씀</span><br><span class="small">원문: ${esc(x[2])}</span>`:""}</span></div>`}
+function insGreet(kind,k){const g=greet();const el=$("#nt-sms");const L=el.value.split("\n");
+ if(kind==="s"){L.splice(Math.min(1,L.length),0,g.st[k][0])}else{const i=L.findIndex(l=>/^수신 거부/.test(l));L.splice(i<0?L.length:i,0,g.en[k][0])}
+ el.value=L.join("\n");check()}
+function bytes(t){let n=0;for(const ch of t)n+=ch.charCodeAt(0)<128?1:2;return n}
+const NEG=/대신|하지 않|쓰지 않|않습니다|금지|불가|빼고/;
+function check(){
+ const W=[];const txt={};document.querySelectorAll("#ch-box label:not([hidden]) textarea.nt").forEach(t=>txt[t.dataset.l]=t.value);chCount();
+ if(/^\(광고\)/.test($("#nt-sms").value.trim())===false&&CHSEL&&CHSEL.has("sms"))W.push(["문자","맨 앞에 「(광고)」가 없음 — 정보통신망법 제50조","(광고) 표시"]);
+ if(CHSEL&&CHSEL.has("sms")&&!/수신 ?거부/.test($("#nt-sms").value))W.push(["문자","무료 수신 거부 방법이 없음 — 정보통신망법 제50조","수신 거부"]);
+ const PRO=/할인|반값|특가|1\+1|\d\s?%|기념가|무제한|무한|쿠폰|캐시백|증정|서비스|무료|공짜|한 ?잔 ?더|리필|덤/g;
+ for(const [k,t] of Object.entries(txt)){
+  t.split(/\n|[.!]/).forEach(l=>{
+   if(hasLiq(l)){let m;PRO.lastIndex=0;const lm=l.search(/술|소주|맥주|생맥|막걸리|하이볼|와인|사케|샴페인|주류|양주|위스키|칵테일/);
+    while((m=PRO.exec(l))){if(Math.abs(m.index-lm)<=26&&!NEG.test(l)){W.push([k,"술 할인·증정·쿠폰 표시 — 국민건강증진법 제8조의2 제2항 제1호(F075). 술 가격은 메뉴판에만",l]);break}}}
+   if(/마시자|마셔라|취하자|한 ?잔 ?더|술 ?무제한|무제한 ?(술|맥주|소주)/.test(l)&&(hasLiq(l)||hasLiq(t)))W.push([k,"음주 권유 — 같은 조 제2호",l]);
+   if(/숙취[^\n]{0,6}(없|해소|제로)|(건강에|몸에) ?좋은 (술|막걸리|와인)/.test(l))W.push([k,"술의 건강 효과 — 같은 조 제5호",l]);
+   [[/국내 ?최초|최저가 ?보장|업계 ?1위|원조/,"최초·최저가 같은 최상급 표현 — 근거가 있어야 함(F018)"],[/노키즈|어린이 ?출입 ?금지/,"아동 출입 제한 표현(F036·F059)"],[/환불 ?불가|절대 ?환불/,"일률적 환불 불가(F026·F027)"],[/리뷰 ?삭제/,"리뷰 삭제 조건(F048)"],[/복권|로또/,"복권 경품(F001)"]].forEach(([re,w])=>{if(re.test(l)&&!NEG.test(l))W.push([k,w,l])});
+  })}
+ if(window.linkCopyCheck)linkCopyCheck(txt,W);
+ const sb=bytes($("#nt-sms").value);$("#sms-bytes").textContent=`문자 ${sb.toLocaleString()}바이트 — `+(sb<=90?"단문(90바이트 이하)":sb<=2000?"장문(2,000바이트 이하)":"2,000바이트를 넘음: 줄이거나 두 번에 나눠 보내세요");
+ $("#nt-check").innerHTML=W.length?`<div class="note bad"><b>피해야 할 표현 ${W.length}건</b><ul class="clean">${W.map(w=>`<li>[${esc(w[0])}] ${esc(w[1])} — “${esc(w[2].trim().slice(0,50))}”</li>`).join("")}</ul></div>`:`<div class="note ok">검사한 표현(술 할인·증정 표시, 음주 권유, 건강 효과, 최초·최저가, 노키즈, 환불 불가, 리뷰 삭제, 복권, 문자 광고 표시·수신 거부)이 없습니다. 고른 채널 글만 검사합니다.</div>`}
+
+function prep(){const c=CUR;const it=(lab,v)=>v&&!/^(해당없음|미상)|원문에[^ ]* ?[^ ]* ?언급 없음|별도 연출 없음/.test(v)?`<li><b>${lab}</b> ${esc(v)}</li>`:"";
+ $("#tab-prep").innerHTML=`<div class="cols"><div><h3>준비물·연출</h3><ul class="clean" style="margin-top:6px">${it("물품",c.rs)+it("연출",c.sg)+it("기간",c.du)+it("한도",c.li)}</ul></div>
+ <div><h3>할 일 순서</h3><ul class="clean" style="margin-top:6px">
+ <li><b>7일 전</b> 물품·인쇄물 주문, 포스(POS)에 행사 메뉴나 할인 등록</li>
+ <li><b>3일 전</b> 직원에게 조건·한도·종료일 알려 주기 (손님마다 다르게 적용하지 않기)</li>
+ <li><b>1일 전</b> 안내문 붙이기, SNS 올리기${CUR.so?", 안전운영조건 다시 읽기":""}</li>
+ <li><b>당일</b> 참여 수 세기${c.kp?" — "+esc(c.kp):""}</li>
+ <li><b>끝난 뒤</b> 안내물 바로 떼기, 결과 적어 두기, 계속할지 정하기</li></ul></div>
+ <div><h3>손님이 더 사게 되는 길</h3><p style="margin:6px 0 0">${esc(c.up||"사례에 적힌 내용 없음")}</p></div>
+ <div><h3>바꿔 볼 만한 안</h3><p style="margin:6px 0 0">${esc(c.va||"사례에 적힌 내용 없음")}</p></div></div>`}
+
+function risk(){const c=CUR;const [vc,vt]=vClass(c.v);
+ const so=c.so?c.so.split(/\s*／\s*/).filter(Boolean):[];
+ const fids=(c.f.match(/F0\d\d/g)||[]).filter((x,i,a)=>a.indexOf(x)===i);
+ $("#tab-risk").innerHTML=`<div style="display:flex;flex-direction:column;gap:12px">
+ <div class="badges"><span class="badge ${vc}">${vt}</span><span class="badge b-info">근거: ${esc(c.ev||"표시 없음")}</span></div>
+ ${so.length?`<div class="note"><b>꼭 지킬 조건(안전운영조건)</b> — 공식 해석이 없는 쟁점이라 이 조건을 지킬 때만 진행하세요.<ul class="clean" style="margin-top:4px">${so.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>`:""}
+ ${c.lq?`<div class="note bad"><b>술이 들어간 안</b> — 두 가지를 따로 봅니다. ① 주기: 술을 공짜·덤·쿠폰으로 주면 주류 경품 제공 금지(국세청 고시, F004·F051) — 값을 받고 팔 것. ② 알리기: 술의 할인·증정·쿠폰을 광고물에 쓰지 않기(국민건강증진법 제8조의2 제2항 제1호, F075).</div>`:""}
+ ${c.k==="응용예시"?`<div class="note"><b>응용 예시</b> — 실제 사례 ${c.bi.map(b=>"#"+b).join("·")}를 바탕으로 지금 상황에 맞게 바꾼 안입니다. 효과는 알 수 없어 적지 않았습니다.${c.ref&&c.ref.length?" 같이 볼 주의 사례: "+c.ref.map(b=>"#"+b).join("·"):""}</div>`:""}
+ ${c.qb?`<div><h3>판정 이유</h3><p style="margin:4px 0 0">${esc(c.qb)}</p></div>`:""}
+ <div class="cols">${[["사업 위험",c.br],["운영 위험",c.orr],["평판 위험",c.rr]].map(([k,v])=>`<div><h3>${k}</h3><p style="margin:4px 0 0">${esc(v)}</p></div>`).join("")}</div>
+ ${fids.length?`<div><h3>관련 질문과 답 (FAQ)</h3><div style="display:flex;flex-direction:column;gap:8px;margin-top:6px">${fids.map(f=>{const q=D.faq[f];if(!q)return"";const [fc,ft]=vClass(q.v);return`<div class="faq"><div class="badges"><span class="badge ${fc}">${ft}</span><b class="small">${f}</b></div><p style="margin:4px 0">${esc(q.q)}</p>${q.c?`<details><summary>조건 보기</summary><p class="small" style="margin:4px 0 0">${esc(q.c)}</p></details>`:""}</div>`}).join("")}</div></div>`:""}
+ ${c.u?`<p class="small" style="margin:0">출처: <a href="${esc(c.u)}" target="_blank" rel="noopener">${esc(c.u.slice(0,70))}</a></p>`:""}
+ </div>`}
+
+function cost(){
+ const s=SAMPLE&&SAMPLE.m?SAMPLE:null;const m=s?s.m:[["",null,null,1],["",null,null,1],["",null,null,0]];
+ $("#tab-cost").innerHTML=`<div style="display:flex;flex-direction:column;gap:12px">
+ <p class="small" style="margin:0">숫자는 이 화면의 계산식으로만 냅니다. 빈칸이 있으면 「계산 불가」로 둡니다. ${s?"샘플 가게의 메뉴 값을 넣어 두었습니다(시험용 가상 값).":"메뉴 가격과 원가를 넣어 주세요."}</p>
+ <div class="tw"><table id="menu"><tr><th>메뉴</th><th class="num">판매가</th><th class="num">원가</th><th>주력</th><th class="num">원가율</th></tr>
+ ${m.map((r,i)=>`<tr><td><input id="mn${i}" value="${esc(r[0])}"></td><td><input id="mp${i}" inputmode="numeric" value="${r[1]??""}"></td><td><input id="mc${i}" inputmode="numeric" value="${r[2]??""}"></td><td><input type="checkbox" id="mk${i}" ${r[3]?"checked":""} style="width:auto"></td><td class="num" id="mr${i}"></td></tr>`).join("")}</table></div>
+ <div class="grid">
+  <label>객단가(손님 1명이 평균 쓰는 돈)<input id="c-ag" inputmode="numeric" value="${s?s.ag:""}"></label>
+  <label>혜택 방식<select id="c-type"><option>증정</option><option>할인</option></select></label>
+  <label>혜택 메뉴<select id="c-menu"></select></label>
+  <label>증정 수량 / 할인 행사가(원)<input id="c-q" inputmode="numeric" value="1"></label>
+  <label>예상 참여 수(명)<input id="c-n" inputmode="numeric" placeholder="근거 있는 숫자만"></label>
+  <label>고정비(인쇄·현수막·인건비, 원)<input id="c-fix" inputmode="numeric" placeholder="예: 30000"></label>
+  <label>행사 때문에 새로 올 손님 수(명)<input id="c-add" inputmode="numeric" placeholder="모르면 비움 — 본전 손님 수만 봄"></label>
+ </div>
+ <div class="out" id="c-out"></div>
+ <p class="small" style="margin:0">계산식: 손님 1명당 이익 = 객단가 × (1 − 주력 메뉴 원가율). 본전 필요 추가 손님 수 = 총비용 ÷ 손님 1명당 이익(올림). 늘어날 매출 = 새로 올 손님 수 × 객단가, 남는 돈 = 새로 올 손님 수 × 손님 1명당 이익 − 총비용. 새로 올 손님 수는 사장님이 짐작하는 값이라 결과도 짐작입니다. 지난 행사 결과(행사 도구 → 결과 기록)가 있으면 그 숫자를 참고하세요.</p>
+ </div>`;
+ const fill=()=>{const o=[...Array(m.length).keys()].map(i=>$("#mn"+i).value).filter(Boolean);const cur=$("#c-menu").value;$("#c-menu").innerHTML=o.map(x=>`<option>${esc(x)}</option>`).join("");if(o.includes(cur))$("#c-menu").value=cur};
+ fill();$("#tab-cost").addEventListener("input",e=>{if(e.target.id&&e.target.id.startsWith("mn"))fill();calc()});$("#tab-cost").addEventListener("change",calc);calc()}
+const num=q=>{const v=($(q)?.value||"").replace(/[^0-9.]/g,"");return v===""?null:+v};
+function calc(){
+ const rows=[];for(let i=0;$("#mn"+i);i++){const p=num("#mp"+i),c=num("#mc"+i);rows.push({n:$("#mn"+i).value,p,c,k:$("#mk"+i).checked});$("#mr"+i).textContent=p&&c!=null?(c/p*100).toFixed(1)+"%":""}
+ const main=rows.filter(r=>r.k&&r.p&&r.c!=null);const acr=main.length?main.reduce((a,r)=>a+r.c,0)/main.reduce((a,r)=>a+r.p,0):null;
+ const ag=num("#c-ag"),type=$("#c-type").value,menu=rows.find(r=>r.n===$("#c-menu").value),q=num("#c-q"),n=num("#c-n"),fix=num("#c-fix");
+ const miss=[];let unit=null,disc=null;
+ if(!menu||menu.p==null||menu.c==null)miss.push("혜택 메뉴의 판매가·원가");
+ else if(type==="증정"){if(q==null)miss.push("증정 수량");else unit=menu.c*q}
+ else{if(q==null)miss.push("할인 행사가");else if(q>=menu.p)miss.push("행사가가 판매가보다 낮아야 함");else{unit=menu.p-q;disc=unit/menu.p*100}}
+ const per=ag&&acr!=null?ag*(1-acr):null;if(per==null)miss.push(ag?"주력 메뉴 원가":"객단가");
+ if(n==null)miss.push("예상 참여 수");
+ const tot=unit!=null&&n!=null?unit*n+(fix||0):null;const be=tot!=null&&per?Math.ceil(tot/per):null;
+ const cell=(v,l)=>`<div><span>${l}</span><b>${v}</b></div>`;const NA=`<span class="small">계산 불가</span>`;
+ $("#c-out").innerHTML=cell(acr!=null?(acr*100).toFixed(1)+"%":NA,"주력 메뉴 원가율")+cell(unit!=null?won(unit):NA,"혜택 1회 원가")+cell(disc!=null?disc.toFixed(1)+"%":(type==="할인"?NA:"해당 없음"),"할인율")+cell(per!=null?won(per):NA,"손님 1명당 이익")+cell(tot!=null?won(tot):NA,"총비용(혜택+고정비)")+cell(be!=null?be+"명":NA,"본전 필요 추가 손님 수")+(()=>{const b=inp().bud;if(b==null)return cell(NA,"예산과 비교(예산 입력 없음)");if(tot==null)return cell(NA,`예산 ${won(b)}과 비교`);return cell(tot<=b?`예산 안 (${won(b-tot)} 남음)`:`예산 초과 (${won(tot-b)})`,`예산 ${won(b)}과 비교`)})()
+  +(()=>{const add=num("#c-add");if(add==null)return cell(be!=null?`${be}명 넘게 와야 남음`:NA,"남는지 손해인지(새로 올 손님 수 없음)");const rev=ag?add*ag:null,gain=per!=null?add*per:null;const left=gain!=null&&tot!=null?gain-tot:null;
+   return cell(rev!=null?won(rev):NA,"늘어날 매출")+cell(left==null?NA:left>=0?`남음 ${won(left)}`:`손해 ${won(-left)}`,"남는 돈(늘어날 이익 − 총비용)")})()
+  +(miss.length?`<div style="grid-column:1/-1"><span>계산 불가(입력 없음)</span><b style="font-size:.9rem;font-weight:500">${esc(miss.join(", "))}</b></div>`:"")
+  +(disc!=null?`<div style="grid-column:1/-1"><span>할인율을 광고에 쓸 때</span><b style="font-size:.9rem;font-weight:500">최근 실제로 판매한 가격(종전거래가격)을 기준으로만 (F017). 개업 직후라 판매 기록이 없으면 할인율 표시는 쓰지 않습니다.</b></div>`:"");
+}
+$("#go").addEventListener("click",run);
+/*__PLUS__*/
+</script>

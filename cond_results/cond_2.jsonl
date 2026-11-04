@@ -1,0 +1,124 @@
+{"case": "ERA-025", "edits": [{"field": "condition", "after": "해당없음(혜택이 없는 방송 노출·손님 몰림 사례)"}], "flag": ""}
+{"case": "ERA-044", "edits": [{"field": "condition", "after": "해당없음(블로거 무료 식사 요구를 거절한 대응 사례로 손님 혜택 없음)"}], "flag": ""}
+{"case": "ISS-022", "edits": [{"field": "condition", "after": "해당없음(스포츠 특수 무산 업계 동향 사례)"}], "flag": ""}
+{"case": "ISS-028", "edits": [{"field": "condition", "after": "해당없음(비후원 브랜드 앰부시 노출과 FIFA 단속 사례)"}], "flag": ""}
+{"case": "LAW-012", "edits": [{"field": "condition", "after": "해당없음(부당광고 시정조치 처분 사례)"}], "flag": ""}
+{"case": "LAW-026", "edits": [{"field": "condition", "after": "해당없음(비후원사 연상 광고 시정권고 처분 사례)"}], "flag": ""}
+{"case": "LAW-028", "edits": [{"field": "condition", "after": "해당없음(상표 사용 제한·로열티 요구 사례)"}], "flag": ""}
+{"case": "LAW-030", "edits": [{"field": "condition", "after": "해당없음(불법 현수막 과태료 처분 사례)"}], "flag": ""}
+{"case": "LAW-032", "edits": [{"field": "condition", "after": "해당없음(입간판·에어라이트 정비 규정 사례)"}], "flag": ""}
+{"case": "LAW-035", "edits": [{"field": "condition", "after": "해당없음(부당광고 적발 처분 사례)"}], "flag": ""}
+{"case": "LAW-037", "edits": [{"field": "condition", "after": "해당없음(위생 점검·처분 사례)"}], "flag": ""}
+{"case": "LAW-039", "edits": [{"field": "condition", "after": "해당없음(광고 문자 법 위반 처분 사례)"}], "flag": ""}
+{"case": "MST-003", "edits": [{"field": "condition", "after": "해당없음(가격표 게시 규정·처분 사례)"}], "flag": ""}
+{"case": "NFD-056", "edits": [{"field": "condition", "after": "해당없음(학원 과태료 처분 사례)"}], "flag": ""}
+{"case": "ONL-015", "edits": [{"field": "condition", "after": "해당없음(유튜버 주장으로 생긴 위기 사례)"}], "flag": ""}
+{"case": "ONL-044", "edits": [{"field": "condition", "after": "해당없음(주류 광고 규제 판정 사례)"}], "flag": ""}
+{"case": "CLS-003", "edits": [{"field": "condition", "after": "해당없음(허가 없는 점포 정리 세일 벌금 처분 사례)"}], "flag": ""}
+{"case": "CLS-005", "edits": [{"field": "condition", "after": "해당없음(허위 정상가 할인 표시 합의 처분 사례)"}], "flag": ""}
+{"case": "CLS-008", "edits": [{"field": "condition", "after": "해당없음(혜택 없는 폐업 공지 사례)"}], "flag": ""}
+{"case": "CLS-019", "edits": [{"field": "condition", "after": "해당없음(상품권 승계 거부 논란 사례)"}], "flag": ""}
+{"case": "CSR-019", "edits": [{"field": "condition", "after": "해당없음(손님 혜택 없는 가게 정기기부 사례)"}], "flag": ""}
+{"case": "CSR-024", "edits": [{"field": "condition", "after": "해당없음(판매가 아닌 복지시설 상시 기부 사례)"}], "flag": ""}
+{"case": "CSR-030", "edits": [{"field": "condition", "after": "해당없음(손님 혜택 없는 상가 정기기부 사례)"}], "flag": ""}
+{"case": "JPN-048", "edits": [{"field": "condition", "after": "원문: 회원 한정 점포(会員様限定店舗)에서 런치 11:00~15:00(L.O.14:30)에만 영업, 298엔은 카레 보통(並盛) 기준이며 토핑은 별도 요금(대략 2026년 10월 말까지 예정)"}], "flag": ""}
+{"case": "JPN-051", "edits": [{"field": "condition", "after": "원문에 조건 언급 없음(日野店에서 2026-10-31~11-01 이틀간 이시카와산 상품 판매만 명시)"}], "flag": ""}
+{"case": "CLS-022", "edits": [{"field": "condition", "after": "해당없음(땡처리 매장 할인 표시·환불 논란 사례)"}], "flag": ""}
+{"case": "CLS-032", "edits": [{"field": "condition", "after": "해당없음(혜택 없는 폐업 사례)"}], "flag": ""}
+{"case": "JPN-056", "edits": [{"field": "condition", "after": "해당없음(가게가 무료 지면에 소개된 노출 사례)"}], "flag": ""}
+{"case": "PRE-012", "edits": [{"field": "condition", "after": "해당없음(지자체 가림벽 디자인 규정 사례)"}], "flag": ""}
+{"case": "APP1-036", "edits": [{"field": "condition", "after": "해당없음(상시 가격 공개 연출로 받을 조건이 있는 혜택 없음)"}], "flag": ""}
+{"case": "APP1-059", "edits": [{"field": "condition", "after": "해당없음(폐업 안내문으로 혜택 없음)"}], "flag": ""}
+{"case": "APP1-064", "edits": [{"field": "condition", "after": "해당없음(가격 이벤트 없는 개원 정보 광고)"}], "flag": ""}
+{"case": "APP1-067", "edits": [{"field": "condition", "after": "제안: 대기 손님·방문객 누구나 구매 조건 없이 이용, 혈압계는 1회 측정 후 다음 사람에게 양보 안내, 측정값 상담은 약사 응대 가능 시간에만(진단 아님 고지)"}], "flag": ""}
+{"case": "APP1-069", "edits": [{"field": "condition", "after": "해당없음(정보 기고로 혜택 없음)"}], "flag": ""}
+{"case": "APP1-073", "edits": [{"field": "condition", "after": "제안: 측정 코너는 방문객 누구나 구매 조건 없이 이용, 개별 복약 상담실은 조제·상담 손님 순번제로 1인 10분 안팎, 혼잡 시간대(점심·퇴근)는 예약 손님 우선"}], "flag": ""}
+{"case": "APP1-076", "edits": [{"field": "condition", "after": "해당없음(진료 시간 안내만, 할인·쿠폰 없음)"}], "flag": ""}
+{"case": "APP1-079", "edits": [{"field": "condition", "after": "해당없음(손님 혜택 없는 헌혈증 기부함)"}], "flag": ""}
+{"case": "APP1-082", "edits": [{"field": "condition", "after": "해당없음(경품 없는 정보 콘텐츠)"}], "flag": ""}
+{"case": "BIZ-002", "edits": [{"field": "condition", "after": "해당없음(손님 대상 혜택이 아닌 정기 기부 가입 사례)"}], "flag": ""}
+{"case": "BIZ-023", "edits": [{"field": "condition", "after": "해당없음(기부 사례)"}], "flag": ""}
+{"case": "BIZ-025", "edits": [{"field": "condition", "after": "해당없음(독거 어르신 대상 기부·시범 공연 사례로 손님 혜택 아님)"}], "flag": ""}
+{"case": "BIZ-028", "edits": [{"field": "condition", "after": "해당없음(개업 화환 대신 쌀 기부, 손님 혜택 없음)"}], "flag": ""}
+{"case": "BIZ-030", "edits": [{"field": "condition", "after": "해당없음(할인·증정 없는 설비 개선 재개장)"}], "flag": ""}
+{"case": "BIZ-036", "edits": [{"field": "condition", "after": "원문에 조건 언급 없음(마지막 영업일 DJ·기부 음식 블록파티와 GoFundMe 모금만 언급)"}], "flag": ""}
+{"case": "BIZ-041", "edits": [{"field": "condition", "after": "해당없음(손님 혜택 없는 재개장 리본 커팅 행사)"}], "flag": ""}
+{"case": "RET-003", "edits": [{"field": "condition", "after": "해당없음(내레이터 모델 관행 회고 사례)"}], "flag": ""}
+{"case": "RET-005", "edits": [{"field": "condition", "after": "해당없음(이동소음 규제고시 사례)"}], "flag": ""}
+{"case": "RET-009", "edits": [{"field": "condition", "after": "해당없음(손님 혜택이 없는 개업 홍보 관행)"}], "flag": ""}
+{"case": "RET-011", "edits": [{"field": "condition", "after": "해당없음(전단 배포 노출·소음 논란 사례)"}], "flag": ""}
+{"case": "RET-014", "edits": [{"field": "condition", "after": "조건 없음(누구나 — 원문: 개업 쪽지에 과자 봉지를 달아 '가정마다 직접 전달', 방문·구매 조건 언급 없음)"}], "flag": ""}
+{"case": "RET-017", "edits": [{"field": "condition", "after": "해당없음(손님 혜택이 없는 개업 홍보 연출)"}], "flag": ""}
+{"case": "RET-019", "edits": [{"field": "condition", "after": "해당없음(혜택 없는 현장 홍보)"}], "flag": ""}
+{"case": "RET-022", "edits": [{"field": "condition", "after": "해당없음(손님 혜택 없는 개원 쌀 기부 사례)"}], "flag": ""}
+{"case": "RET-029", "edits": [{"field": "condition", "after": "해당없음(전단 범람 보도 사례)"}], "flag": ""}
+{"case": "RET-032", "edits": [{"field": "condition", "after": "해당없음(혜택 없는 무단 광고 사례)"}], "flag": ""}
+{"case": "RET-034", "edits": [{"field": "condition", "after": "해당없음(예식장 방문 홍보, 손님 혜택 없음)"}], "flag": ""}
+{"case": "TIM-017", "edits": [{"field": "condition", "after": "해당없음(손님 혜택이 없는 모금 사례)"}], "flag": ""}
+{"case": "TIM-022", "edits": [{"field": "condition", "after": "해당없음(상시 운영 방식 사례)"}], "flag": ""}
+{"case": "TIM-032", "edits": [{"field": "condition", "after": "원문에 조건 언급 없음(학과가 대학 인근 식당 25곳에 무상 제작·전달했다고만 하고 선정 기준·신청 조건은 없음)"}], "flag": ""}
+{"case": "TIM-042", "edits": [{"field": "condition", "after": "해당없음(공유주방 운영 구조, 손님 혜택 없음)"}], "flag": ""}
+{"case": "EMP-002", "edits": [{"field": "condition", "after": "해당없음(혜택 없는 기념 행사)"}], "flag": ""}
+{"case": "EMP-009", "edits": [{"field": "condition", "after": "해당없음(손님 혜택 없는 단체 기부)"}], "flag": ""}
+{"case": "EMP-020", "edits": [{"field": "condition", "after": "원문에 조건 언급 없음(재개장 축하 때 경품·케이크가 있었다는 언급뿐, 받는 조건은 없음)"}], "flag": ""}
+{"case": "EMP-026", "edits": [{"field": "condition", "after": "해당없음(혜택 없는 진료 재개 공지)"}], "flag": ""}
+{"case": "EMP-031", "edits": [{"field": "condition", "after": "해당없음(폐업 안내 사례로 혜택 없음)"}], "flag": ""}
+{"case": "EMP-036", "edits": [{"field": "condition", "after": "해당없음(구체 혜택 없는 그랜드 재개장)"}], "flag": ""}
+{"case": "EMP-046", "edits": [{"field": "condition", "after": "해당없음(재고 기부 사례)"}], "flag": ""}
+{"case": "EMP-050", "edits": [{"field": "condition", "after": "해당없음(혜택 없는 폐업 안내)"}], "flag": ""}
+{"case": "EMP-052", "edits": [{"field": "condition", "after": "해당없음(손님 혜택이 없는 재개장 축하 행사)"}], "flag": ""}
+{"case": "JP2-007", "edits": [{"field": "condition", "after": "원문: 지역 아이들의 방과후 거처로 운영, 영업은 월~금(공휴일 제외) 15:00~18:00, 토·일·공휴일·오봉·연말연시 휴무"}], "flag": ""}
+{"case": "JP2-013", "edits": [{"field": "condition", "after": "원문 확인 불가(도쿄신문 유료 회원 한정 기사로 앞부분만 공개 — 공개 부분엔 이벤트 참가 조건 언급 없음)"}], "flag": ""}
+{"case": "JP2-016", "edits": [{"field": "condition", "after": "해당없음(혜택 없는 서점 양도 사례)"}], "flag": ""}
+{"case": "JP2-018", "edits": [{"field": "condition", "after": "해당없음(폐점 세일 표시 논란 사례)"}], "flag": ""}
+{"case": "JP2-025", "edits": [{"field": "condition", "after": "원문 확인 불가(홋카이도신문 유료 기사로 앞부분만 공개 — 공개 부분엔 참가 조건 언급 없음)"}], "flag": ""}
+{"case": "JP2-029", "edits": [{"field": "condition", "after": "조건 없음(누구나 — 원문: 오쓰카 음악제는 '무료로 즐길 수 있는' 행사). 합동 세일·제비뽑기 조건은 원문에 언급 없음"}], "flag": ""}
+{"case": "JP2-032", "edits": [{"field": "condition", "after": "원문 확인 불가(도쿄신문 유료 회원 한정 기사로 앞부분만 공개 — 공개 부분엔 관람 조건 언급 없음)"}], "flag": ""}
+{"case": "JP2-034", "edits": [{"field": "condition", "after": "해당없음(드라마 노출 효과, 혜택 없음)"}], "flag": ""}
+{"case": "JP2-036", "edits": [{"field": "condition", "after": "해당없음(혜택 없는 운영 공지)"}], "flag": ""}
+{"case": "EMP-064", "edits": [{"field": "condition", "after": "해당없음(혜택 없는 도움 요청 사례)"}], "flag": ""}
+{"case": "RT2-018", "edits": [{"field": "condition", "after": "해당없음(상시 기만 할인 표시 비판 사례)"}], "flag": ""}
+{"case": "KRA-011", "edits": [{"field": "condition", "after": "해당없음(장학기금 기부 사례)"}], "flag": ""}
+{"case": "KRA-022", "edits": [{"field": "condition", "after": "해당없음(손님 혜택이 없는 공익 활동)"}], "flag": ""}
+{"case": "KRA-026", "edits": [{"field": "condition", "after": "해당없음(상시 공간 구성, 할인·증정 없음)"}], "flag": ""}
+{"case": "KRA-028", "edits": [{"field": "condition", "after": "해당없음(상시 정보 콘텐츠·공간 서비스)"}], "flag": ""}
+{"case": "KRA-031", "edits": [{"field": "condition", "after": "원문에 조건 언급 없음(갤러리는 무인으로 운영되며 365일 문을 열어 둔다고만 함)"}], "flag": ""}
+{"case": "KRA-033", "edits": [{"field": "condition", "after": "해당없음(상시 숍인숍 운영)"}], "flag": ""}
+{"case": "KRA-035", "edits": [{"field": "condition", "after": "해당없음(가격 제도 논란 사례)"}], "flag": ""}
+{"case": "KRB-018", "edits": [{"field": "condition", "after": "해당없음(혜택 없는 휴업 안내)"}], "flag": ""}
+{"case": "KRB-028", "edits": [{"field": "condition", "after": "해당없음(손님 혜택 없는 정기기부)"}], "flag": ""}
+{"case": "KRB-036", "edits": [{"field": "condition", "after": "해당없음(정보 글 홍보로 할인·증정 없음)"}], "flag": ""}
+{"case": "KRC-004", "edits": [{"field": "condition", "after": "해당없음(폐점 인사, 혜택 없음)"}], "flag": ""}
+{"case": "KRC-006", "edits": [{"field": "condition", "after": "해당없음(혜택 없는 폐업 안내)"}], "flag": ""}
+{"case": "KRC-008", "edits": [{"field": "condition", "after": "해당없음(땡처리 폐업 세일 피해 사례)"}], "flag": ""}
+{"case": "KRC-010", "edits": [{"field": "condition", "after": "해당없음(혜택 없는 공공 소개)"}], "flag": ""}
+{"case": "KRC-013", "edits": [{"field": "condition", "after": "조건 없음(누구나 — 원문: 70주년 기념전은 '올해 말까지 무료로 진행되는 전시', 딸기시루 동상은 인스타그램으로 공개)"}], "flag": ""}
+{"case": "KRC-017", "edits": [{"field": "condition", "after": "원문: 개업 때와 매년 개업 기념일에 주인 부인이 인근 은행 부서를 일일이 찾아가 떡을 전달"}], "flag": ""}
+{"case": "KRC-020", "edits": [{"field": "condition", "after": "해당없음(혜택 없는 재개장)"}], "flag": ""}
+{"case": "KRC-023", "edits": [{"field": "condition", "after": "해당없음(재개업 후 상시 메뉴·가격 운영)"}], "flag": ""}
+{"case": "KRC-025", "edits": [{"field": "condition", "after": "해당없음(혜택 없는 재오픈)"}], "flag": ""}
+{"case": "KRC-027", "edits": [{"field": "condition", "after": "해당없음(가게 혜택이 없는 손님 자발 응원 방문 사례)"}], "flag": ""}
+{"case": "KRC-029", "edits": [{"field": "condition", "after": "원문: 자격 제한 없이 '형편이 안 돼도 미안한 마음 없이' 먹도록 백반을 1000원에 판매, 영업은 오전 11시~오후 2시(주인 퇴원 때까지 휴일 제외 매일)"}], "flag": ""}
+{"case": "KRC-031", "edits": [{"field": "condition", "after": "해당없음(혜택이 없는 재개업 사례)"}], "flag": ""}
+{"case": "KRC-036", "edits": [{"field": "condition", "after": "해당없음(재난 복구 사례, 혜택 없음)"}], "flag": ""}
+{"case": "KRC-039", "edits": [{"field": "condition", "after": "해당없음(혜택 없는 방문 연출)"}], "flag": ""}
+{"case": "NT1-015", "edits": [{"field": "condition", "after": "해당없음(혜택 없는 감사 편지)"}], "flag": ""}
+{"case": "NT1-017", "edits": [{"field": "condition", "after": "해당없음(가격·중량 논란 사례)"}], "flag": ""}
+{"case": "NT1-019", "edits": [{"field": "condition", "after": "해당없음(가격 인상 사례)"}], "flag": ""}
+{"case": "NT1-021", "edits": [{"field": "condition", "after": "원문: 묶음 할인은 기본 양말 4켤레를 함께 사야 990엔(일본, 낱개는 290엔 유지)"}], "flag": ""}
+{"case": "NT1-026", "edits": [{"field": "condition", "after": "해당없음(쿠폰 차액 요구 논란 사례)"}], "flag": ""}
+{"case": "NT1-037", "edits": [{"field": "condition", "after": "해당없음(지역화폐 부정유통 단속 사례)"}], "flag": ""}
+{"case": "NT1-039", "edits": [{"field": "condition", "after": "해당없음(행정 처분 사례)"}], "flag": ""}
+{"case": "NT3-004", "edits": [{"field": "condition", "after": "해당없음(노쇼 피해와 손님 응원 사례로 혜택 없음)"}], "flag": ""}
+{"case": "NT3-015", "edits": [{"field": "condition", "after": "해당없음(메뉴 구성 변경 테스트 운영 사례)"}], "flag": ""}
+{"case": "NT3-017", "edits": [{"field": "condition", "after": "해당없음(소용량 상품 판매 동향 사례)"}], "flag": ""}
+{"case": "NT3-019", "edits": [{"field": "condition", "after": "해당없음(선물세트 소용량화 동향 사례)"}], "flag": ""}
+{"case": "NT3-022", "edits": [{"field": "condition", "after": "해당없음(소포장 상품 판매 방식으로 받을 조건이 있는 혜택 없음)"}], "flag": ""}
+{"case": "NT3-025", "edits": [{"field": "condition", "after": "해당없음(접근성 키오스크·테이블 서비스 운영 정책 사례)"}], "flag": ""}
+{"case": "NT3-027", "edits": [{"field": "condition", "after": "해당없음(키오스크 접근성 평가 사례)"}], "flag": ""}
+{"case": "NT3-029", "edits": [{"field": "condition", "after": "해당없음(지자체 디지털 안내 캠페인 정책 사례)"}], "flag": ""}
+{"case": "NT3-032", "edits": [{"field": "condition", "after": "해당없음(주문 방식 전환 운영 사례)"}], "flag": ""}
+{"case": "NT3-034", "edits": [{"field": "condition", "after": "해당없음(QR 테이블오더 운영 사례)"}], "flag": ""}
+{"case": "NT3-044", "edits": [{"field": "condition", "after": "해당없음(포장 주문 채널 동향 사례)"}], "flag": ""}
+{"case": "NT3-055", "edits": [{"field": "condition", "after": "해당없음(지자체 다국어 QR 메뉴 보급 정책 사례)"}], "flag": ""}
+{"case": "NT3-061", "edits": [{"field": "condition", "after": "해당없음(무인점포 보안 운영 사례)"}], "flag": ""}

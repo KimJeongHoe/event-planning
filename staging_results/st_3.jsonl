@@ -1,0 +1,277 @@
+{"case": "CAL-003", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "CAL-006", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "CAL-009", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "CAL-012", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "CAL-015", "edits": [{"field": "staging", "after": "해당없음(온라인몰·오픈마켓 할인으로 현장 연출 없음)"}], "flag": ""}
+{"case": "CAL-018", "edits": [{"field": "staging", "after": "해당없음(카카오톡 선물하기 온라인 교환권 할인으로 현장 연출 없음)"}], "flag": ""}
+{"case": "CAL-021", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "CAL-025", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "CAL-032", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "CAL-035", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "CAL-038", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "CAL-042", "edits": [{"field": "staging", "after": "이비스 앰배서더 명동 패키지는 객실 풍선 세팅을 해 주고, 이비스 스타일 앰배서더 명동은 초콜릿·마카롱 등으로 꾸민 '발렌타인 플레이트'를 객실에 제공(원문 기준)"}], "flag": ""}
+{"case": "CAL-046", "edits": [{"field": "staging", "after": "해당없음(자사 앱·배달앱 쿠폰 할인으로 현장 연출 없음)"}], "flag": ""}
+{"case": "ERA-004", "edits": [{"field": "staging", "after": "원문 확인 불가(한국경제 원문 403 차단)"}], "flag": ""}
+{"case": "ERA-009", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "ERA-014", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "ERA-017", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "ERA-024", "edits": [{"field": "staging", "after": "해당없음(가격 정책(무한리필 단가·창업비) 사례)"}], "flag": ""}
+{"case": "ERA-027", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "ERA-030", "edits": [{"field": "staging", "after": "해당없음(허위 리뷰 처분 사례)"}], "flag": ""}
+{"case": "ERA-033", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "ERA-041", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "INT-005", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "INT-010", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "INT-014", "edits": [{"field": "staging", "after": "해당없음(정부 외식비 보전 제도(가격 정책))"}], "flag": ""}
+{"case": "INT-017", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "INT-022", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "INT-029", "edits": [{"field": "staging", "after": "해당없음(월정액 음료 구독(가격 정책))"}], "flag": ""}
+{"case": "INT-035", "edits": [{"field": "staging", "after": "원문 확인 불가(303magazine 원문 요청 제한(429))"}], "flag": ""}
+{"case": "INT-039", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "INT-042", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "INT-055", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "ISS-002", "edits": [{"field": "staging", "after": "국가대표 경기 날 오전 조기 영업 매장에 손님이 몰려 오피스 상권 매장에서 대형 스크린으로 경기를 함께 관람했고, 공식 인스타그램에 월드컵 콘텐츠를 게시(원문 기준)"}], "flag": ""}
+{"case": "ISS-005", "edits": [{"field": "staging", "after": "해당없음(배달앱 할인 쿠폰으로 현장 연출 없음)"}], "flag": ""}
+{"case": "ISS-013", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "ISS-016", "edits": [{"field": "staging", "after": "해당없음(자사 앱 응원 참여 쿠폰으로 현장 연출 없음)"}], "flag": ""}
+{"case": "ISS-019", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "ISS-023", "edits": [{"field": "staging", "after": "홈페이지 온라인 배너에 'Pyengchang together' 언어유희 문구를 내걸었고 올림픽 엠블럼·상징은 쓰지 않음(원문 기준)"}], "flag": ""}
+{"case": "ISS-031", "edits": [{"field": "staging", "after": "원문 확인 불가(thestar.co.uk 원문 403 차단)"}], "flag": ""}
+{"case": "ISS-036", "edits": [{"field": "staging", "after": "원문 확인 불가(원문 재접속 시 본문이 비어 있음)"}], "flag": ""}
+{"case": "ISS-045", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "LAW-001", "edits": [{"field": "staging", "after": "해당없음(공정위 처분 사례)"}], "flag": ""}
+{"case": "LAW-004", "edits": [{"field": "staging", "after": "해당없음(공정위 처분 사례)"}], "flag": ""}
+{"case": "LAW-012", "edits": [{"field": "staging", "after": "해당없음(공정위 처분 사례)"}], "flag": ""}
+{"case": "LAW-016", "edits": [{"field": "staging", "after": "해당없음(약사법 회신·처분 판단 사례)"}], "flag": ""}
+{"case": "LAW-020", "edits": [{"field": "staging", "after": "해당없음(공정위 처분 사례)"}], "flag": ""}
+{"case": "LAW-024", "edits": [{"field": "staging", "after": "해당없음(약관 시정·환불 규정 사례)"}], "flag": ""}
+{"case": "LAW-035", "edits": [{"field": "staging", "after": "해당없음(식약처 부당광고 적발 사례)"}], "flag": ""}
+{"case": "LAW-038", "edits": [{"field": "staging", "after": "해당없음(공정위 수사의뢰·과태료 처분 사례)"}], "flag": ""}
+{"case": "MST-001", "edits": [{"field": "staging", "after": "해당없음(식약처 부당광고 적발 사례)"}], "flag": ""}
+{"case": "MST-004", "edits": [{"field": "staging", "after": "해당없음(법령 개정 사례)"}], "flag": ""}
+{"case": "NFD-005", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": "당근 업체 페이지 원문에 '5만원 이상 구매 시 꽃 한 송이 추가' 오픈 혜택 문구가 보이지 않음(확인 필요)"}
+{"case": "NFD-008", "edits": [{"field": "staging", "after": "고객 후기에 '다양한 꽃·식물로 가게를 산뜻하게 꾸며 아늑하다'는 언급이 있고, 소개글에서 '카페 가듯 들를 수 있는 감성꽃집'을 내세움(당근 업체 페이지 기준)"}], "flag": ""}
+{"case": "NFD-012", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "NFD-019", "edits": [{"field": "staging", "after": "해당없음(온라인 주문·편의점 픽업 기프티콘 증정으로 현장 연출 없음)"}], "flag": ""}
+{"case": "NFD-023", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "NFD-026", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "NFD-029", "edits": [{"field": "staging", "after": "당근 오픈 공지에 등수표(1등 2만원 3명~5등 1천원 82명)를 내건 적립금 뽑기 방식으로 진행(원문 기준)"}], "flag": ""}
+{"case": "NFD-034", "edits": [{"field": "staging", "after": "해당없음(온라인 무료체험 피해주의보 사례)"}], "flag": ""}
+{"case": "NFD-038", "edits": [{"field": "staging", "after": "해당없음(복지부 행정처분 요청 사례)"}], "flag": ""}
+{"case": "NFD-046", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "NFD-051", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "NFD-054", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "NFD-057", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "NFD-061", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "NFD-064", "edits": [{"field": "staging", "after": "전단지·인스타그램 신청자 대상으로 리뉴얼 오픈 이틀(7/9·10) 무료 개방일을 열고, 오픈 후 SNS 센터 인증 후기 이벤트를 함께 진행(당근 업체 페이지 기준)"}], "flag": ""}
+{"case": "NFD-067", "edits": [{"field": "staging", "after": "해당없음(환급 분쟁 사례)"}], "flag": ""}
+{"case": "NFD-070", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "NFD-073", "edits": [{"field": "staging", "after": "해당없음(정부 주도 가격 할인 행사)"}], "flag": ""}
+{"case": "NFD-077", "edits": [{"field": "staging", "after": "시장별로 떡국떡 썰기·떡메치기·윷놀이·제기차기·투호·팔씨름대회 등 전통놀이 이벤트, 관악 신원·인헌시장의 소망 메시지 '소망나무' 꾸미기, 중랑 시장들의 점포 앞 친절명패·상인 이름표 달기를 운영(서울시 보도 기준)"}], "flag": ""}
+{"case": "ONL-004", "edits": [{"field": "staging", "after": "해당없음(배달앱 리뷰 분쟁(온라인)으로 현장 연출 없음)"}], "flag": ""}
+{"case": "ONL-007", "edits": [{"field": "staging", "after": "해당없음(인스타그램 지표 구매(온라인)로 현장 연출 없음)"}], "flag": ""}
+{"case": "ONL-011", "edits": [{"field": "staging", "after": "해당없음(온라인 쿠폰 솔루션 사례)"}], "flag": ""}
+{"case": "ONL-014", "edits": [{"field": "staging", "after": "해당없음(유튜브 리뷰 노출(온라인) 사례)"}], "flag": ""}
+{"case": "ONL-017", "edits": [{"field": "staging", "after": "원문 확인 불가(캐시 원문 본문이 비어 있음(textmarketer 페이지))"}], "flag": ""}
+{"case": "ONL-021", "edits": [{"field": "staging", "after": "신규 매장 인근 유동인구 많은 거리에 브랜드 앰배서더를 세워 행인에게 직접 말을 걸며 추적용 할인 쿠폰 전단을 건네고, 인근 주택 우편함에도 같은 전단을 넣음(배포 대행사 사례 페이지 기준)"}], "flag": ""}
+{"case": "ONL-026", "edits": [{"field": "staging", "after": "원문 확인 불가(americanspa.com 원문 403 차단)"}], "flag": ""}
+{"case": "ONL-029", "edits": [{"field": "staging", "after": "해당없음(지자체 점심 식대 지원 제도(가격 정책))"}], "flag": ""}
+{"case": "ONL-032", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "ONL-035", "edits": [{"field": "staging", "after": "'나는 친구랑 함께 어바니엘에 산다'라는 테마 문구를 내건 친구 추천 이벤트로 진행(원문 기준)"}], "flag": ""}
+{"case": "ONL-038", "edits": [{"field": "staging", "after": "해당없음(지역상품권 페이백(가격 정책))"}], "flag": ""}
+{"case": "ONL-041", "edits": [{"field": "staging", "after": "해당없음(지역상품권 할인·공공배달앱 쿠폰(가격 정책·온라인))"}], "flag": ""}
+{"case": "ONL-045", "edits": [{"field": "staging", "after": "해당없음(온라인 리워드 플랫폼 사례)"}], "flag": ""}
+{"case": "ONL-048", "edits": [{"field": "staging", "after": "제안: 카운터 옆에 '당근 단골 맺으면 두피 스케일링 무료' 아크릴 스탠드와 QR을 두고, 스케일링 전후 두피 확대 사진을 보여 주며 다음 방문 쿠폰을 안내한다. 비용은 스탠드 정도이며 '탈모 개선' 같은 효능 문구는 쓰지 않는다."}], "flag": ""}
+{"case": "ONL-051", "edits": [{"field": "staging", "after": "제안: 평가단 날에는 '신메뉴 평가단' 이름표와 1~5점 평가 카드를 테이블에 두고 사장이 직접 메뉴를 설명한 뒤, 결과를 사진과 함께 스레드에 공개한다. 무상 시식이므로 참가자 후기에는 '시식 제공' 표시를 부탁한다."}], "flag": ""}
+{"case": "ONL-054", "edits": [{"field": "staging", "after": "제안: 현수막은 구청 지정 게시대에만 '○월 ○일 오픈' 한 줄 문구로 걸고, 오픈 당일 사장이 가게 앞치마 차림으로 매장 앞·역 출구에서 QR 쿠폰 전단을 직접 건넨다. 전단 무단 부착이나 통행 방해는 하지 않는다."}], "flag": ""}
+{"case": "ONL-057", "edits": [{"field": "staging", "after": "제안: 계산대 앞에 '영상 보고 오셨어요? 말씀만 하시면 사이드 증정' 작은 POP와 영상 QR을 두고, 말한 손님 수를 날짜별로 기록해 효과를 잰다. 협찬 영상에는 유료광고 표시를 반드시 넣는다."}], "flag": ""}
+{"case": "OPN-004", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "OPN-010", "edits": [{"field": "staging", "after": "원문 확인 불가(미디어데일 원문 접속 실패(재시도 포함))"}], "flag": ""}
+{"case": "OPN-015", "edits": [{"field": "staging", "after": "테이블마다 '네이버 영수증 리뷰 작성 시 음료·디저트 제공' 안내문을 두고 '정성스러운 리뷰'와 사진을 강조했으며, 작성 화면을 직원에게 보여 주면 제공하는 방식(소비자 매체 취재 기준)"}], "flag": ""}
+{"case": "OPN-018", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "OPN-023", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "OPN-028", "edits": [{"field": "staging", "after": "원문 확인 불가(castanetkamloops 원문 403 차단)"}], "flag": ""}
+{"case": "OPN-031", "edits": [{"field": "staging", "after": "해당없음(자사 주문 채널 첫 주문 쿠폰(온라인)으로 현장 연출 없음)"}], "flag": ""}
+{"case": "OPN-035", "edits": [{"field": "staging", "after": "해당없음(리워드 앱 적립·이용권 혜택(온라인)으로 현장 연출 없음)"}], "flag": ""}
+{"case": "OPN-038", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "SVC-008", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "SVC-011", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "SVC-015", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "SVC-020", "edits": [{"field": "staging", "after": "해당없음(착한가격 유지(가격 정책) 사례)"}], "flag": ""}
+{"case": "SVC-024", "edits": [{"field": "staging", "after": "해당없음(가격 동결(가격 정책) 사례)"}], "flag": ""}
+{"case": "SVC-028", "edits": [{"field": "staging", "after": "논산 삼촌국수 내동점은 '잔칫날에 먹던 국수'에서 착안해 매장을 결혼식 콘셉트로 꾸몄고, 매년 어버이날 국수 100그릇 무료 나눔을 한다고 안내(당근 업체 페이지 기준). 파주 대원리국수 쪽 원문에는 연출 언급 없음"}], "flag": ""}
+{"case": "SVC-035", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "SVC-041", "edits": [{"field": "staging", "after": "해당없음(배달앱 스탬프 기능(온라인)으로 현장 연출 없음)"}], "flag": ""}
+{"case": "SVC-044", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "SVC-047", "edits": [{"field": "staging", "after": "해당없음(공깃밥 가격 인상(가격 정책) 사례)"}], "flag": ""}
+{"case": "JPN-002", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "JPN-005", "edits": [{"field": "staging", "after": "'호크스 일본 제일 축하' 캠페인명과 '일본 제일의 기쁨을 돈돈테이에서 건배로 나누자'는 문구를 내걸고 우승 다음 날부터 전 점포에서 진행(보도자료 기준)"}], "flag": ""}
+{"case": "CLS-004", "edits": [{"field": "staging", "after": "해당없음(검찰 합의·처분 사례)"}], "flag": ""}
+{"case": "CLS-015", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "CLS-019", "edits": [{"field": "staging", "after": "해당없음(파산 인수 후 상품권 승계 분쟁 사례)"}], "flag": ""}
+{"case": "JPN-015", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "JPN-021", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "JPN-026", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "JPN-034", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "CSR-003", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "CSR-007", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "CSR-011", "edits": [{"field": "staging", "after": "'멋지게 머리하는 날'이라는 이름을 붙여 미용실 인력이 경로당 3곳을 매달 직접 찾아가 순회 봉사(강남구 보도자료 기준)"}], "flag": ""}
+{"case": "CSR-014", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "CSR-020", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "CSR-023", "edits": [{"field": "staging", "after": "메뉴판 하단에 '군인 학생 곱빼기 서비스' 문구를 표시했고, 인근 부대에서 받은 감사장들이 함께 공개됨(원문 기준)"}], "flag": ""}
+{"case": "CSR-026", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "CSR-029", "edits": [{"field": "staging", "after": "배달앱 요청사항의 사연을 보고 무료로 피자를 만들어 '부담 갖지 말고 다음에 또 주문해 달라'는 메모를 피자 박스에 붙여 보냄(원문 기준)"}], "flag": ""}
+{"case": "JPN-050", "edits": [{"field": "staging", "after": "해당없음(사업 승계 사례)"}], "flag": ""}
+{"case": "CLS-024", "edits": [{"field": "staging", "after": "해당없음(폐업 직전 회원권 판매 사기 분쟁 사례)"}], "flag": ""}
+{"case": "CLS-027", "edits": [{"field": "staging", "after": "해당없음(소유권 이전 후 회원 모집 분쟁 사례)"}], "flag": ""}
+{"case": "CLS-032", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "PRE-021", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "REL-001", "edits": [{"field": "staging", "after": "해당없음(월 정액 빵 구독(가격 정책))"}], "flag": ""}
+{"case": "REL-004", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "REL-007", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "REL-010", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "REL-015", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "REL-018", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "REL-021", "edits": [{"field": "staging", "after": "체험 구성에 캐릭터 막대과자·초코펜 3종·스프링클과 OPP 포장지를 넣어 '친구·가족·연인과 추억 남기기', '사랑하는 사람에게 줄 선물 만들기'로 안내하고 '1년 중 이맘때만 열리는 메뉴'라고 강조(당근 소식 기준)"}], "flag": ""}
+{"case": "REL-025", "edits": [{"field": "staging", "after": "해당없음(환불 분쟁·피해구제 통계 사례)"}], "flag": ""}
+{"case": "REL-028", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "APP1-001", "edits": [{"field": "staging", "after": "제안: 시식권은 국밥 사진 한 장과 '신메뉴 반 그릇 시식' 큰 글씨, 유효기간·약도만 넣은 A5로 만들고, 매장 입구에 '들깨순댓국 개시' 손글씨 입간판을 세워 시식권 손님이 바로 알아보게 한다. 게시는 관리사무소 승인을 받은 곳에만 한다."}], "flag": ""}
+{"case": "APP1-021", "edits": [{"field": "staging", "after": "제안: '2시간 내 단지 배달·소분 무료'와 전화번호, 원산지·등급·가격표를 표로 담은 단정한 A4 안내문을 만들고 매장 진열대에도 같은 가격표를 붙여 보이는 정보를 일치시킨다. 마트 비교·비방 문구는 넣지 않는다."}], "flag": ""}
+{"case": "APP1-035", "edits": [{"field": "staging", "after": "제안: 달력은 계절 사진 한 장, 관리 팁 3줄, 휴무일 표시만 담은 A4로 인쇄비를 낮추고, 단골 가게 카운터에는 작은 아크릴 꽂이에 꽂아 두도록 부탁한다. 탈모 개선 같은 효능 표현은 피하고 승인받은 게시판에만 붙인다."}], "flag": ""}
+{"case": "APP1-040", "edits": [{"field": "staging", "after": "제안: 예약 오픈 안내 이미지에 '매일 11시 · 3자리'를 크게 넣고, 예약 손님이 오면 관리 베드 위에 '출시 기념' 작은 카드와 진정 관리 과정 설명 카드를 놓아 둔다. '트러블 완치' 같은 효과 과장 문구는 쓰지 않는다."}], "flag": ""}
+{"case": "APP1-051", "edits": [{"field": "staging", "after": "제안: 꾸러미 상자에 원장 손글씨 '2주 뒤 건강히 돌아올게요' 카드와 사용 순서 카드를 넣고, 복귀 첫날 매장 문에 '다시 문 엽니다' 안내를 붙인다. 소분 판매는 관련 규정을 먼저 확인한다."}], "flag": ""}
+{"case": "APP1-058", "edits": [{"field": "staging", "after": "해당없음(온라인 폐업 공지·환불 절차 안내로 현장 연출 없음)"}], "flag": ""}
+{"case": "APP1-065", "edits": [{"field": "staging", "after": "해당없음(진료 후 알림 메시지(의료 관계 관리)로 현장 연출 없음)"}], "flag": ""}
+{"case": "APP1-071", "edits": [{"field": "staging", "after": "해당없음(비급여 감면 가격 구조, 광고하지 않는 사례)"}], "flag": ""}
+{"case": "APP1-076", "edits": [{"field": "staging", "after": "제안: 안내문은 진료 시간표와 응급 연락처를 큰 글씨로 담은 A4 한 장으로 만들고, 병원 유리문에도 같은 시간표를 붙여 야간에도 보이게 조명을 켜 둔다. 할인·이벤트 문구는 넣지 않는다."}], "flag": ""}
+{"case": "APP1-083", "edits": [{"field": "staging", "after": "제안: 게시물은 '15년 동안 감사했습니다' 인사와 강좌 일정표만 담은 단정한 A4로 만들고, 강좌 당일엔 생활 건강 체크리스트 유인물만 준비한다. 진료 권유·할인처럼 의료광고로 볼 만한 표현은 넣지 않는다."}], "flag": ""}
+{"case": "APP2-006", "edits": [{"field": "staging", "after": "해당없음(재진 환자 개별 연락(진료 연속성)으로 현장 연출 없음)"}], "flag": ""}
+{"case": "APP2-013", "edits": [{"field": "staging", "after": "해당없음(폐업 약국 재고·자리 승계 매칭 절차)"}], "flag": ""}
+{"case": "APP2-017", "edits": [{"field": "staging", "after": "제안: 미디어보드 화면에 교습소 이름·개원일·교습비·신고번호를 한 화면에 담고, 교습소 입구에도 같은 교습비 게시표를 붙여 정보를 일치시킨다. 개원 첫 상담 때는 학습 진단지와 교재 샘플만 둔다."}], "flag": ""}
+{"case": "APP2-027", "edits": [{"field": "staging", "after": "제안: 소식지 공지에 '주 1회 30분 취미반'과 교습비를 함께 싣고, 첫 수업 날 교습소 앞에 '취미반 환영' 작은 입간판과 쉬운 체험 악보를 준비한다. 교습비는 신고 금액 범위 안에서만 표기한다."}], "flag": ""}
+{"case": "APP2-037", "edits": [{"field": "staging", "after": "제안: 강좌 당일 도서관 강의실 입구에 강좌명 배너 1개와 진로 자료 유인물만 두고, 학원 로고 홍보물이나 등록 권유물은 두지 않는다(도서관 규정 준수)."}], "flag": ""}
+{"case": "APP2-048", "edits": [{"field": "staging", "after": "제안: 안내문에 실제 정원 6명 교실 사진 한 장과 교습비 표를 넣어 소규모 반을 눈으로 보여 주고, 무료 학습 진단 날엔 진단지와 결과 상담표를 준비한다. 대형 학원과 비교하는 문구는 쓰지 않는다."}], "flag": ""}
+{"case": "APP2-054", "edits": [{"field": "staging", "after": "해당없음(온라인 양도 공지로 현장 연출 없음)"}], "flag": ""}
+{"case": "APP2-057", "edits": [{"field": "staging", "after": "해당없음(폐원 반환·상담 절차 사례)"}], "flag": ""}
+{"case": "APP2-064", "edits": [{"field": "staging", "after": "제안: 달력의 빈 시간대에 색 스티커를 붙이는 방식으로 쉽게 갱신하고, 귀퉁이에 단골 반려견 사진(보호자 동의분) 한 장과 예약 QR을 넣는다. 관리사무소 승인 게시판에만 붙인다."}], "flag": ""}
+{"case": "APP2-068", "edits": [{"field": "staging", "after": "제안: 촬영 공간 옆에 '취업 준비 응원합니다' 작은 문구와 대여용 재킷·넥타이를 걸어 두고, 촬영 후 모니터로 함께 사진을 고른다. 증빙 서류는 확인만 하고 사본은 남기지 않는다."}], "flag": ""}
+{"case": "APP2-078", "edits": [{"field": "staging", "after": "제안: 첫 미용 사진과 최근 사진을 나란히 붙인 손바닥 크기 앨범에 '5년 함께해 줘서 고마워요' 손글씨 카드를 넣어 미용 후 인계할 때 건넨다. 사진은 보호자 동의분만 쓴다."}], "flag": ""}
+{"case": "APP2-085", "edits": [{"field": "staging", "after": "제안: 대피소 연계 접수대에 '이재민 반려동물 임시 보호' 안내판과 동물 이름표·보호자 연락 카드를 준비하고, 보호 중 사진을 하루 한 번 보호자에게 보낸다. 수용 한도를 미리 정해 과밀·감염 위험을 막는다."}], "flag": ""}
+{"case": "BIZ-004", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "BIZ-009", "edits": [{"field": "staging", "after": "고객 후기 기준으로, 매장에 강아지가 쉴 쿠션·장난감·간식을 두고 미용 후 매달 바뀌는 포토존에서 사진을 찍어 줌(당근 업체 페이지 후기)"}], "flag": ""}
+{"case": "BIZ-014", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "BIZ-030", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "BIZ-038", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "RET-014", "edits": [{"field": "staging", "after": "개업 안내 쪽지에 과자 봉지를 달아 가정마다 직접 전달(원문 기준)"}], "flag": ""}
+{"case": "RET-024", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "RET-028", "edits": [{"field": "staging", "after": "해당없음(약값 덤핑(가격 정책) 사례)"}], "flag": ""}
+{"case": "RET-031", "edits": [{"field": "staging", "after": "해당없음(불법 광고물 단속·과태료 처분 사례)"}], "flag": ""}
+{"case": "RET-034", "edits": [{"field": "staging", "after": "주점이지만 미팅·회의·회식 장소로 쓸 수 있는 서구식 개방형으로 매장을 꾸밈. 예식장 방문 홍보의 구체 방식은 원문에 없음"}], "flag": ""}
+{"case": "RET-037", "edits": [{"field": "staging", "after": "입점 기념 이틀간 선착순 무료 이용권에 이어 24·25일에 스타크래프트 경진대회를 열어 입상자에게 상품권을 시상(원문 기준)"}], "flag": ""}
+{"case": "RET-040", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "RET-044", "edits": [{"field": "staging", "after": "해당없음(당국 개입으로 중단된 경품 경쟁(규제) 사례)"}], "flag": ""}
+{"case": "RET-047", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "TIM-006", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "TIM-020", "edits": [{"field": "staging", "after": "기사 사진 설명 기준, '따스한 분위기'의 본점에서 바리스타 자격을 딴 미혼 양육모들이 직접 만든 카페라테·쿠키와 수제 차를 냄"}], "flag": ""}
+{"case": "TIM-028", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "TIM-035", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "TIM-042", "edits": [{"field": "staging", "after": "해당없음(공유주방 비용 구조(가격 정책) 사례)"}], "flag": ""}
+{"case": "TIM-046", "edits": [{"field": "staging", "after": "부부가 어르신들께 전단지를 직접 건네며 전화 주문 무료 배달을 약속했고, 평소 배달기사에게 시원한 음료를 내주고 기다리는 어린이 손님과 가위바위보 게임을 해 줌(원문 기준)"}], "flag": ""}
+{"case": "EMP-005", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "EMP-026", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "EMP-033", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "EMP-046", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "EMP-051", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "JP2-008", "edits": [{"field": "staging", "after": "선물용으로 '금상 멘치카쓰'와 반찬 세트를 무료로 래핑해 전국 발송하고, 지역 고교 문화제에서 매년 약 2,000개를 판매(보도자료 기준). 보도자료가 언급한 '식탁을 설레게 하는 연출'의 구체 내용은 없음"}], "flag": ""}
+{"case": "JP2-017", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "JP2-024", "edits": [{"field": "staging", "after": "해당없음(유료 우선입장권(가격 구조) 서비스 사례)"}], "flag": ""}
+{"case": "JP2-034", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "EMP-057", "edits": [{"field": "staging", "after": "해당없음(형편별 차등 요금제(가격 정책))"}], "flag": ""}
+{"case": "RT2-001", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "RT2-004", "edits": [{"field": "staging", "after": "해당없음(일별 한정 미끼상품(가격 정책) 사례)"}], "flag": ""}
+{"case": "RT2-007", "edits": [{"field": "staging", "after": "성냥공장이 다방·음식점 등 개업 업소용 '기념성냥'을 만들어 개업 답례품으로 공급(원문 기준, 성냥 디자인 세부는 없음)"}], "flag": ""}
+{"case": "RT2-010", "edits": [{"field": "staging", "after": "해당없음(구청 지원 이·미용비 반값(가격 정책))"}], "flag": ""}
+{"case": "RT2-013", "edits": [{"field": "staging", "after": "해당없음(협회 자율규약·공정위 심의(규제) 사례)"}], "flag": ""}
+{"case": "RT2-018", "edits": [{"field": "staging", "after": "재고 상설매장들이 '대특매'·'특별할인' 표시를 내걸었으나 표시 할인율과 달리 값을 받았다는 비판(반면교사, 사설 기준)"}], "flag": ""}
+{"case": "RT2-023", "edits": [{"field": "staging", "after": "개업·창립 답례품에 회사 로고와 인사 문구를 인쇄해 돌림: 광고용 성냥, 열쇠고리·라이터·병따개, 메모꽂이 등(원문 기준)"}], "flag": ""}
+{"case": "RT2-026", "edits": [{"field": "staging", "after": "10번 이상 주문 고객에게 우산 등 기념품과 회원번호가 적힌 '패밀리카드'를 발급(원문 기준)"}], "flag": ""}
+{"case": "RT2-029", "edits": [{"field": "staging", "after": "명함 크기 할인권·교환권·이미지 광고를 높이 170cm·너비 40cm 진열대에 꽂아 우체국·은행·도서관 앞 등 20여 곳에 세워 둠(원문 기준)"}], "flag": ""}
+{"case": "RT2-033", "edits": [{"field": "staging", "after": "'고객 사은 행사' 간판을 내걸고 한 주간 진행(원문 기준). 같은 기사에 인근 C사우나가 '새로운 모습으로 찾아뵙겠다' 현수막을 6개월째 걸어 둔 사례도 나옴"}], "flag": ""}
+{"case": "RT2-036", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "RT2-041", "edits": [{"field": "staging", "after": "경품 추첨을 대구시 약사회관에서 공개로 실시하고 당첨자를 신문으로 발표하는 방식(원문 기준)"}], "flag": ""}
+{"case": "KRB-006", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "KRA-003", "edits": [{"field": "staging", "after": "태권도장에서 복지재단과 후원물품 기탁식을 열고, 원생들과 함께 준비한 라면 20박스를 전달(원문 기준)"}], "flag": ""}
+{"case": "KRA-009", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "KRA-023", "edits": [{"field": "staging", "after": "해당없음(보건소 무료 틀니 공공사업(가격 지원 제도))"}], "flag": ""}
+{"case": "KRB-013", "edits": [{"field": "staging", "after": "기사에서 '조용하고 아늑한 분위기'의 매장으로 고기를 주방에서 구워 서빙해 옷에 냄새가 배지 않게 한다고 소개. 신메뉴 출시 자체의 현장 연출은 원문에 없음"}], "flag": ""}
+{"case": "KRB-016", "edits": [{"field": "staging", "after": "안경 구매자에게 1인 1회 '럭키박스'(무작위 금액 안경상품권·사은품, 100% 당첨)를 팔고, 2~3명이 함께 사면 추가 할인하는 '뭉치면 싸다' 이벤트명을 내걸음(원문 기준)"}], "flag": ""}
+{"case": "KRB-023", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "KRB-027", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "KRB-032", "edits": [{"field": "staging", "after": "해당없음(지자체 책값 환불 제도(가격 정책))"}], "flag": ""}
+{"case": "KRB-036", "edits": [{"field": "staging", "after": "해당없음(당근 비즈 소식 글(온라인 콘텐츠) 홍보로 현장 연출 없음)"}], "flag": ""}
+{"case": "KRC-010", "edits": [{"field": "staging", "after": "로컬큐레이터 기사 기준, 과한 인테리어 없이 널찍한 홀과 신발 벗고 올라가는 좌식 테이블, 양은그릇에 담아 먼저 내는 보리밥·동치미·겉절이 등 레트로 분위기로 소개됨"}], "flag": ""}
+{"case": "KRC-026", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "KRC-032", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "NT1-004", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "NT1-020", "edits": [{"field": "staging", "after": "해당없음(메뉴 가격 인상·동결(가격 정책))"}], "flag": ""}
+{"case": "NT1-024", "edits": [{"field": "staging", "after": "해당없음(배달가 인상(가격 정책))"}], "flag": ""}
+{"case": "NT1-027", "edits": [{"field": "staging", "after": "해당없음(기프티콘 차액 정책(가격 정책))"}], "flag": ""}
+{"case": "NT1-036", "edits": [{"field": "staging", "after": "해당없음(특사경 단속·적발 사례)"}], "flag": ""}
+{"case": "NT1-039", "edits": [{"field": "staging", "after": "해당없음(상품권 부정유통 과태료·가맹 취소 처분 사례)"}], "flag": ""}
+{"case": "NT2-003", "edits": [{"field": "staging", "after": "해당없음(인권위 차별 시정 권고 사례)"}], "flag": ""}
+{"case": "NT2-006", "edits": [{"field": "staging", "after": "매장에 '20대 대학생 또는 직장인의 출입을 금합니다'라는 'NO 20대 존' 안내문을 붙임(커뮤니티 사진 보도 기준, 반면교사)"}], "flag": ""}
+{"case": "NT2-009", "edits": [{"field": "staging", "after": "가게 공식 SNS 최상단에 'Only No China restaurant' 문구의 게시물을 고정하고, 가게 외벽에 내건 태극기 사진을 함께 올림(보도 기준, 반면교사)"}], "flag": ""}
+{"case": "NT2-012", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "NT2-016", "edits": [{"field": "staging", "after": "스타벅스는 전국 매장에 '쾌적한 매장 이용을 위한 안내' 공지문을 게시하고 위반 시 매장 파트너가 구두 안내하는 방식. 투썸플레이스는 카공 고객이 많은 매장에 1인 좌석을 설치(보도 기준)"}], "flag": ""}
+{"case": "NT2-019", "edits": [{"field": "staging", "after": "캠핑장 공지사항에 '40대 이상 연인' 등 예약 제한 이용 수칙을 내걸었고, 캠핑장을 2030 젊은 여성 취향으로 조성했다고 설명(보도 기준, 반면교사)"}], "flag": ""}
+{"case": "NT2-022", "edits": [{"field": "staging", "after": "해당없음(장애인복지법 위반 조사 사례)"}], "flag": ""}
+{"case": "NT2-025", "edits": [{"field": "staging", "after": "허위 영상 피해를 막으려 매장에 'NO 유튜브존'·'NO SNS존'을 내걸어 촬영·입장을 제한(보도 기준)"}], "flag": ""}
+{"case": "NT2-028", "edits": [{"field": "staging", "after": "해당없음(배달앱 악성 리뷰 분쟁(온라인)으로 현장 연출 없음)"}], "flag": ""}
+{"case": "NT2-031", "edits": [{"field": "staging", "after": "해당없음(허위 리뷰 형사 판례 사례)"}], "flag": ""}
+{"case": "NT2-034", "edits": [{"field": "staging", "after": "해당없음(배달앱 리뷰 정책 개정(플랫폼 정책))"}], "flag": ""}
+{"case": "NT2-038", "edits": [{"field": "staging", "after": "해당없음(허위 후기 민·형사 판결 사례)"}], "flag": ""}
+{"case": "NT2-041", "edits": [{"field": "staging", "after": "해당없음(축제 먹거리 균일가·가격 사전공개(가격 정책))"}], "flag": ""}
+{"case": "NT2-044", "edits": [{"field": "staging", "after": "해당없음(정부 축제 가격 공개 정책)"}], "flag": ""}
+{"case": "NT2-047", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "NT2-052", "edits": [{"field": "staging", "after": "조리 시설과 조리 과정을 CCTV로 실시간 공개해 소비자가 프랜차이즈 앱에서 주방을 볼 수 있게 하는 방식(식약처 시범사업 보도 기준)"}], "flag": ""}
+{"case": "NT2-056", "edits": [{"field": "staging", "after": "매장에 '여행객은 점심시간을 피해 달라, 근처 직장인·학생을 우선한다'는 안내문을 일본어·영어·한국어·광둥어·번체·간체 중국어로 붙였다가 본사 지시로 철거(보도 기준, 반면교사)"}], "flag": ""}
+{"case": "NT2-059", "edits": [{"field": "staging", "after": "해당없음(온라인 리뷰 폭탄·플랫폼 조치 사례)"}], "flag": ""}
+{"case": "NT2-063", "edits": [{"field": "staging", "after": "해당없음(지자체 미스터리쇼퍼·노점 실명제 단속 정책)"}], "flag": ""}
+{"case": "NT2-067", "edits": [{"field": "staging", "after": "해당없음(배달앱 리뷰 수정 요청 논란(온라인)으로 현장 연출 없음)"}], "flag": ""}
+{"case": "K5B-007", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "K5B-012", "edits": [{"field": "staging", "after": "해당없음(지자체 가업 승계 지원사업)"}], "flag": ""}
+{"case": "K5B-018", "edits": [{"field": "staging", "after": "해당없음(기간 보상 가격 경쟁(가격 정책) 사례)"}], "flag": ""}
+{"case": "K5B-026", "edits": [{"field": "staging", "after": "해당없음(점포 철거비 지원사업)"}], "flag": ""}
+{"case": "NT3-002", "edits": [{"field": "staging", "after": "해당없음(예약금 환불 분쟁 사례)"}], "flag": ""}
+{"case": "NT3-005", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "NT3-008", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "NT3-012", "edits": [{"field": "staging", "after": "해당없음(노쇼 수수료 법령 개정 사례)"}], "flag": ""}
+{"case": "NT3-016", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "NT3-020", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "NT3-025", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "NT3-032", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "NT3-035", "edits": [{"field": "staging", "after": "해당없음(배달앱 포장 수수료(가격 구조) 사례)"}], "flag": ""}
+{"case": "NT3-038", "edits": [{"field": "staging", "after": "해당없음(배달앱 포장 수수료·환급 정책(가격 구조))"}], "flag": ""}
+{"case": "NT3-041", "edits": [{"field": "staging", "after": "해당없음(가맹점 배달가 인상(가격 정책))"}], "flag": ""}
+{"case": "NT3-044", "edits": [{"field": "staging", "after": "해당없음(배달앱 포장 수수료 채널 선택(가격 구조))"}], "flag": ""}
+{"case": "NT3-053", "edits": [{"field": "staging", "after": "업소마다 메뉴 사진 촬영·번역·디자인을 거친 QR 메뉴판 5세트(외부용 아크릴 1개 포함)를 무료로 설치(보도 기준)"}], "flag": ""}
+{"case": "NT3-057", "edits": [{"field": "staging", "after": "QR 메뉴판에 음식 정보와 먹는 법, 비건 여부, 알레르기 유발 원재료를 한·영·중(번체·간체)·일어로 표시(보도 기준)"}], "flag": ""}
+{"case": "K5A-009", "edits": [{"field": "staging", "after": "개원 축하로 지인·관계자에게 받은 쌀화환의 쌀 290kg을 의원에서 사회복지공동모금회에 기탁(보도 기준)"}], "flag": ""}
+{"case": "K5A-013", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "K5A-016", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "K5A-021", "edits": [{"field": "staging", "after": "해당없음(학원 환불 분쟁 사례)"}], "flag": ""}
+{"case": "NT3-063", "edits": [{"field": "staging", "after": "해당없음(지자체 용품비 지원사업)"}], "flag": ""}
+{"case": "NT4-003", "edits": [{"field": "staging", "after": "해당없음(구독형 도시락 가격 구조 사례)"}], "flag": ""}
+{"case": "NT4-006", "edits": [{"field": "staging", "after": "해당없음(구내식당 가격 정책 사례)"}], "flag": ""}
+{"case": "NT4-009", "edits": [{"field": "staging", "after": "해당없음(앱 코드·카드 결제 할인(온라인·가격 정책))"}], "flag": ""}
+{"case": "NT4-012", "edits": [{"field": "staging", "after": "해당없음(커피 원가 공개 논평(가격 정책))"}], "flag": ""}
+{"case": "NT4-015", "edits": [{"field": "staging", "after": "해당없음(가격 인상 사유 설명(가격 정책))"}], "flag": ""}
+{"case": "NT4-018", "edits": [{"field": "staging", "after": "분식집이 1년 고민 끝에 매장에 '가격 인상 안내문'을 붙여 소폭 인상을 알림(보도 사진 기준)"}], "flag": ""}
+{"case": "NT4-021", "edits": [{"field": "staging", "after": "해당없음(가격 인상·기프티콘 정책(가격 정책))"}], "flag": ""}
+{"case": "NT4-024", "edits": [{"field": "staging", "after": "해당없음(회비 인상 판례)"}], "flag": ""}
+{"case": "NT4-027", "edits": [{"field": "staging", "after": "해당없음(후기 명예훼손 판례)"}], "flag": ""}
+{"case": "NT4-030", "edits": [{"field": "staging", "after": "해당없음(후기 명예훼손 판례)"}], "flag": ""}
+{"case": "NT4-033", "edits": [{"field": "staging", "after": "해당없음(후기 명예훼손 판례)"}], "flag": ""}
+{"case": "NT4-036", "edits": [{"field": "staging", "after": "해당없음(허위 후기 조작 수사·송치 사례)"}], "flag": ""}
+{"case": "NT4-039", "edits": [{"field": "staging", "after": "원문에 연출 언급 없음"}], "flag": ""}
+{"case": "NT4-042", "edits": [{"field": "staging", "after": "해당없음(가격 동결(가격 정책) 사례)"}], "flag": ""}

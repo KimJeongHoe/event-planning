@@ -1,0 +1,154 @@
+호스트	응답코드	건수	어디서
+www.ftc.go.kr	000	23	기존출처 일괄받기
+www.mfds.go.kr	000	15	기존출처 일괄받기
+www.kca.go.kr	000	6	FAQ2_faq_log.md, FAQ3_faq_log.md, 기존출처 일괄받기
+www.i-boss.co.kr	403	6	기존출처 일괄받기
+www.qsrmagazine.com	403	6	기존출처 일괄받기
+www.hankyung.com	403	5	TIM_log.md, 기존출처 일괄받기
+brunch.co.kr	302	4	PRE_log.md, 기존출처 일괄받기
+namu.wiki	403	4	기존출처 일괄받기
+www.kukinews.com	403	4	기존출처 일괄받기
+futurechosun.com	000	4	TIM_log.md
+www.cnbc.com	403	3	TIM_log.md, 기존출처 일괄받기
+daangn.com	404	2	REL_log.md, 기존출처 일괄받기
+hospitalitytech.com	403	2	기존출처 일괄받기
+retailwire.com	429	2	기존출처 일괄받기
+thedieline.com	429	2	기존출처 일괄받기
+www.axios.com	403	2	기존출처 일괄받기
+www.foodnetwork.com	403	2	기존출처 일괄받기
+www.siksinhot.com	429	2	기존출처 일괄받기
+hani.co.kr	400	2	RET_log.md
+month.foodbank.co.kr	000	1	기존출처 일괄받기
+www.mediadale.com	000	1	기존출처 일괄받기
+303magazine.com	429	1	기존출처 일괄받기
+beta.campaignasia.com	404	1	기존출처 일괄받기
+albup.co.kr	403	1	기존출처 일괄받기
+denverite.com	403	1	기존출처 일괄받기
+itv.com	000	1	기존출처 일괄받기
+jab-guyver.co.kr	404	1	기존출처 일괄받기
+m.boannews.com	301	1	기존출처 일괄받기
+m.ppomppu.co.kr	403	1	기존출처 일괄받기
+mediahub.seoul.go.kr	000	1	기존출처 일괄받기
+moneylife.in	403	1	기존출처 일괄받기
+odt.co.nz	404	1	기존출처 일괄받기
+pizzatoday.com	403	1	기존출처 일괄받기
+qz.com	403	1	기존출처 일괄받기
+pdf.jnilbo.com	000	1	기존출처 일괄받기
+vator.tv	404	1	기존출처 일괄받기
+www.americanspa.com	403	1	기존출처 일괄받기
+www.bloomberg.com	403	1	기존출처 일괄받기
+www.businesswire.com	000	1	기존출처 일괄받기
+www.castanetkamloops.net	403	1	기존출처 일괄받기
+www.82cook.com	000	1	기존출처 일괄받기
+www.convenience.org	403	1	기존출처 일괄받기
+socialperks.onrender.com	000	1	기존출처 일괄받기
+www.euronews.com	406	1	기존출처 일괄받기
+www.findlaw.com	403	1	기존출처 일괄받기
+www.grocerygazette.co.uk	429	1	기존출처 일괄받기
+www.huffingtonpost.kr	404	1	기존출처 일괄받기
+www.iusm.co.kr	000	1	기존출처 일괄받기
+www.journal-news.com	404	1	기존출처 일괄받기
+www.knightfrank.com	404	1	기존출처 일괄받기
+www.krispykreme.co.uk	403	1	기존출처 일괄받기
+www.koreancenter.or.kr	000	1	기존출처 일괄받기
+www.mediaite.com	403	1	기존출처 일괄받기
+www.mediapost.com	403	1	기존출처 일괄받기
+www.mafra.go.kr	000	1	기존출처 일괄받기
+www.quantisnow.com	403	1	기존출처 일괄받기
+www.retailgazette.co.uk	429	1	기존출처 일괄받기
+www.share-talk.com	429	1	기존출처 일괄받기
+www.sussexexpress.co.uk	403	1	기존출처 일괄받기
+www.thestar.co.uk	403	1	기존출처 일괄받기
+www.trvlogue.com	429	1	기존출처 일괄받기
+www.yorkshirepost.co.uk	403	1	기존출처 일괄받기
+www.zazzle.ca	403	1	기존출처 일괄받기
+hankyung.com	403	1	TIM_log.md
+cnbc.com	403	1	TIM_log.md
+doncasterfreepress.co.uk	403	1	BIZ_log.md
+opticianonline.net	403	1	BIZ_log.md
+streetinsider.com	403	1	BIZ_log.md
+northcountrynow.com	403	1	BIZ_log.md
+news9.com	404	1	BIZ_log.md
+heraldk.com	000	1	BIZ_log.md
+help.instagram.com	400	1	FAQ3_faq_log.md
+www.facebook.com	400	1	FAQ3_faq_log.md
+transparency.meta.com	400	1	FAQ3_faq_log.md
+seoul.co.kr	404	1	RT2_log.md
+kookje.co.kr	404	1	RT2_log.md
+portsmouth.co.uk	403	1	PRE_log.md
+okgazette.com	429	1	PRE_log.md
+goodfellow.af.mil	403	1	PRE_log.md
+ampedfitness.com	403	1	PRE_log.md
+damoang.net	403	1	PRE_log.md
+bestcalendar.jp	410	1	PRE_log.md
+cdispatch.com	000	1	EMP_log.md
+mcdn.i-scmp.com	403	1	CLS_log.md
+wtaw.com	404	1	CLS_log.md
+www.nts.go.kr	000(연결 끊김)	-	1차 접속 점검
+www.ppc.go.kr	502	-	1차 접속 점검
+www.kipo.go.kr	000(연결 끊김)	-	1차 접속 점검
+www.donga.com	000(시간 초과)	-	1차 접속 점검
+ce.baemin.com	502	-	1차 접속 점검
+web.archive.org	000(연결 끊김)	-	1차 접속 점검(우회 수단이라 쓰지 않음)
+www.mk.co.kr	403	-	1차 접속 점검
+squareup.com	429	-	1차 접속 점검
+help.instagram.com / facebook.com / transparency.meta.com	400	-	FAQ3 보고
+law.go.kr 별표 첨부파일(법령별표서식)	000/빈 본문	-	FAQ4 보고(별표 수치 확인 불가 원인)
+www.threads.com	빈 페이지(JS 전용)	-	원문확인 5·6
+www.heraldk.com	000(일시적, 수집 때는 열림)	-	CSR 숫자 점검
+www.kwangju.co.kr	000(호스트 못 찾음)	-	RT2 보고
+www.seoul.co.kr 검색	404	-	RT2 보고
+경인일보 1990년대 지면	PDF 이미지(본문 없음)	-	RT2 보고
+www.jiji.com 등 일본 기사 일부	404(삭제)	-	JP2 보고
+williamsonchamber.com, mathnasium.com, carwash.com, beckersdental.com, beckersasc.com, energeticcity.ca, nsnews.com, ksdk.com, hbsdealer.com	403	-	EMP 보고
+orlandoweekly.com, artsatl.org	429	-	EMP 보고
+cdispatch.com / events.newhavenarts.org	410 / 000	-	EMP 보고
+webtoonguide.com	403	-	회차4 원문 불일치 재확인(NFD-052 유일 원문)
+www.fmkorea.com	430	-	회차4 NT1
+community.se.com	403	-	회차4 NT1
+www.bpi.com.ph / robinsonsbank.com.ph	404 / 합병 안내로 이동	-	회차4 NT1
+kansaspublicradio.org	200이나 본문 없음	-	회차4 NT2
+www.news1.kr (지역 기사)	403	-	회차4 KRC
+www.kookje.co.kr 모바일 / www.knnews.co.kr	000	-	회차4 KRC
+지역지 사이트 검색(부산일보·매일신문·경기·경인·전북·경북매일·대전일보·경남도민일보·강원일보 등)	JS 전용·검색어 무시·404	-	회차4 KRB·KRC(기사 본문은 열림)
+hangyo.com 모바일 기사	200이나 본문 없음	-	회차4 KRA
+gonggam.korea.kr (희망리턴 기사)	500	-	회차5 K5B
+www.cctoday.co.kr 기사 목록	000	-	회차5 K5B
+www.news1.kr/articles	403(Akamai)	-	회차5 NT4
+imnews.imbc.com (2017 기사)	000	-	회차5 NT4
+m.seoul.co.kr / m.go.seoul.co.kr 일부 기사	200이나 본문 대신 목록·제목만	-	회차5 NT3
+www.metroseoul.co.kr (일부)	000	-	회차5 NT3
+지역지 사이트 내부 검색 16곳 이상(검색어 무시·JS 전용·404), search.daum.net(빈 페이지)	-	-	회차5 K5A·K5B·NT4(기사 본문은 열림)
+law.go.kr 미등재: 가격표시제 실시요령, 경품류 제공 지정고시(2016 폐지), 신유형 상품권 표준약관, 온라인 플랫폼 공정화법(미제정)	목록 없음	-	회차5 법 재판정
+www.humanrights.go.kr	000	-	회차6 적용 해석 FAQ(인권위 결정문 못 엶)
+금융위 법령해석포털(목록)	JS 전용	-	회차6 적용 해석 FAQ
+law.go.kr 고시 첨부(식품의 기준 및 규격)	첨부 링크가 이미지 반환	-	회차6 별표 대조
+mcst.go.kr 보도자료(본문 첨부)	본문 없음	-	회차6 NT5
+gndomin·djtimes·idjnews·idojung·jndn 일부 기사	000	-	회차6 K6A
+www.news1.kr / hankyung.com 일부 / smithsonianmag.com	403	-	회차6 NT6
+queen.co.kr / specialtimes.co.kr / imnews.imbc.com	000	-	회차6 NT6
+law.nec.go.kr	000	1	회차7 적용 해석(선거법규포털 질의회답)
+www.nec.go.kr	200(질의회답 못 찾음·상세 링크 추출 안 됨)	2	회차7 적용 해석(투표 인증 할인)
+www.acrc.go.kr	000	2	회차7 적용 해석(청탁금지법 해석)
+www.humanrights.go.kr	000	1	회차7 적용 해석(차별 결정례)
+www.pipc.go.kr	200(검색어 미적용·상세 링크 추출 안 됨)	2	회차7 적용 해석(개인정보위 결정·보도자료)
+www.privacy.go.kr	200(상담사례 검색 결과 스크립트 로딩)	1	회차7 적용 해석
+www.lep.co.uk	403	1	회차7 빈 조합(K7A)
+www.clarendonlive.com	403	1	회차7 빈 조합(K7A)
+www.wcnc.com	403	1	회차7 빈 조합(K7A)
+www.comicsbeat.com	403	1	회차7 빈 조합(K7A)
+www.aol.com	404	1	회차7 빈 조합(K7A)
+www.mountainlake.org	404	1	회차7 빈 조합(K7A)
+www.jejusori.net	000	1	회차7 빈 조합(K7A)
+news20.busan.com	000	1	회차7 빈 조합(K7A)
+mediahub.seoul.go.kr	000	1	회차7 빈 조합(K7A)
+www.wemakenews.co.kr	200(본문 비어 있음)	1	회차7 빈 조합(K7A)
+www.pressreader.com	200(본문 비어 있음)	1	회차7 빈 조합(K7A)
+calgary.ctvnews.ca	200(본문 비어 있음)	1	회차7 빈 조합(K7A)
+www.imaeil.com	404	1	회차7 새 유형(NT7)
+www.ablenews.co.kr(구 주소 NewsContent.aspx)	302→000	1	회차7 새 유형(NT7)
+www.gokorea.kr	000	1	회차7 새 유형(NT7)
+news.yahoo.com	404	1	회차7 새 유형(NT7)
+www.chosun.com	200(본문 스크립트 로딩)	1	회차7 새 유형(NT7)
+biz.sbs.co.kr	200(본문 비어 있음)	1	회차7 새 유형(NT7)
+www.cafe051.com	200(이벤트 본문 안 나옴)	1	회차7 새 유형(NT7)

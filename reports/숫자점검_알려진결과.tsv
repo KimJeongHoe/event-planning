@@ -1,0 +1,52 @@
+수집ID	본문길이	원문에서 못 찾은 숫자
+BIZ-023	3028	known_result:2,900
+CLS-019	6518	known_result:2,600
+CSR-005	3364	known_result:100
+CSR-012	2669	known_result:2025
+CSR-029	5186	known_result:2021
+ERA-019	9802	known_result:2017
+ERA-031	4867	known_result:2018
+INT-003	6807	known_result:150
+INT-004	41511	known_result:800
+INT-008	4880	known_result:2019
+INT-009	3686	known_result:12
+INT-014	38117	known_result:2,660; known_result:4,450
+INT-021	30206	known_result:215
+INT-027	10217	known_result:2,740
+INT-045	206	known_result:102; known_result:3,200; known_result:31; known_result:64; known_result:7,100; known_result:847
+INT-049	3281	known_result:2025; known_result:3.85; known_result:4.25
+INT-056	761	known_result:1,000; known_result:2013
+JP2-037	4792	known_result:2023
+JPN-043	1994	known_result:2017
+K5B-006	6847	known_result:38,517; known_result:51,297; known_result:98,233
+K5B-017	5247	known_result:2024
+K5B-022	10947	known_result:2019
+KRA-005	4102	known_result:2014
+KRA-006	6691	known_result:7,017; known_result:7,441
+KRA-016	2640	known_result:52,024; known_result:87,637
+KRB-009	7602	known_result:1229
+KRB-010	3867	known_result:1230
+KRC-020	9080	known_result:1.3; known_result:1.5; known_result:3.5
+MST-001	114	known_result:10; known_result:2026; known_result:23; known_result:235; known_result:28; known_result:41; known_result:71
+MST-003	114	known_result:02; known_result:10; known_result:15; known_result:20; known_result:2026; known_result:25
+MST-004	114	known_result:2024; known_result:29
+MST-005	228	known_result:03; known_result:19; known_result:2026; known_result:287; known_result:3.19; known_result:3.6; known_result:802
+NFD-056	2702	known_result:2,730
+NT3-007	8402	known_result:2024
+NT3-013	7256	known_result:2,700
+NT3-055	122	known_result:88
+NT3-061	9315	known_result:2020
+ONL-006	2801	known_result:1,000; known_result:700
+ONL-017	97	known_result:10,500; known_result:280; known_result:472
+OPN-008	141	known_result:30
+REL-025	3782	known_result:1,148; known_result:1,364
+RET-010	11269	known_result:1,008
+RET-021	5834	known_result:1,600
+RET-026	6436	known_result:300
+RET-030	5664	known_result:450
+RET-031	4683	known_result:1,200; known_result:2,900
+RET-038	2337	known_result:100
+RT2-001	5670	known_result:1995.6
+RT2-010	5551	known_result:290
+RT2-013	12705	known_result:1995.3
+RT2-028	3064	known_result:600

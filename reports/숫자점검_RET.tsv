@@ -1,0 +1,21 @@
+수집ID	본문길이	원문에서 못 찾은 숫자
+RET-001	7584	summary:1990
+RET-006	6154	summary:2000
+RET-009	9512	summary:2000
+RET-010	11269	known_result:1,008
+RET-013	6359	summary:2005
+RET-015	6359	summary:2005
+RET-016	6359	summary:2000
+RET-020	6020	summary:1,200
+RET-021	5834	known_result:1,600; summary:1,600
+RET-023	6052	summary:9,900
+RET-025	5842	summary:1993; summary:4,200; summary:600
+RET-026	6436	condition:100; known_result:300
+RET-030	5664	known_result:450; summary:450
+RET-031	4683	known_result:1,200; known_result:2,900; summary:2,900
+RET-038	2337	benefit:1,500; known_result:100; summary:1,500; summary:100
+RET-039	12840	summary:1994; summary:1997
+RET-040	4552	benefit:100; summary:100
+RET-041	5888	benefit:8,800; summary:3,480
+RET-042	7413	summary:1997
+RET-043	7339	summary:1996; summary:1997

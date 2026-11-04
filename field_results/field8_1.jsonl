@@ -1,0 +1,149 @@
+{"case": "ERA-009", "edits": [{"field": "duration", "after": "원문에 기간 언급 없음(2002-06-05 보도, 월드컵 첫 승 직후 경품 제공 '하기로 함'만 언급)"}], "flag": ""}
+{"case": "ERA-016", "edits": [{"field": "duration", "after": "원문에 기간 언급 없음(2011-08 보도, '최근' 쿠폰 3,000장 판매로만 언급)"}], "flag": ""}
+{"case": "ERA-030", "edits": [{"field": "duration", "after": "원문에 기간 언급 없음(판결 인용 '적지 않은 기간'·총 350회 계약만 언급)"}], "flag": "이름의 '(2017~2020)' 연도는 캐시된 원문(오피니언뉴스·헤럴드경제)에서 확인되지 않음. 한국경제 원문은 캐시가 비어 있음"}
+{"case": "ERA-041", "edits": [{"field": "duration", "after": "원문에 기간 언급 없음(2026-01-15 기자회견에서 '계획 중'이라고만 밝힘)"}], "flag": ""}
+{"case": "INT-033", "edits": [{"field": "resources", "after": "해당없음(규제·처분 사례 — 원문상 처분 업소는 청구(빌링) 소프트웨어를 고쳐 서비스차지를 기본 부과하지 않도록 수정하라는 명령을 받음)"}], "flag": ""}
+{"case": "INT-043", "edits": [{"field": "resources", "after": "계산대에서 교사 학교 ID 확인(원문 조건), 무료 쿠키·레귤러 탄산음료 재고 추가 확보(추정)"}], "flag": ""}
+{"case": "ISS-022", "edits": [{"field": "resources", "after": "해당없음(업계 동향 사례 — 원문상 치킨 점주들이 WBC 대비 닭을 대량 준비했으나 '반도 안 나감', 업계는 집관족 메뉴·할인 쿠폰 준비)"}, {"field": "unit_cost", "after": "원문에 원가 언급 없음"}], "flag": ""}
+{"case": "ISS-023", "edits": [{"field": "resources", "after": "온라인 판촉 배너(원문: 피자헛 코리아 웹사이트 배너), 무료 치즈 토핑·펩시 1.25L 재고(추정)"}], "flag": ""}
+{"case": "ISS-027", "edits": [{"field": "resources", "after": "해당없음(광고 철회 사례 — 원문상 Sunday Times 신문 광고 1회 게재 후 FIFA 통지로 철회)"}, {"field": "unit_cost", "after": "원문에 원가 언급 없음(손님 혜택이 없는 광고 사례)"}], "flag": ""}
+{"case": "ISS-028", "edits": [{"field": "unit_cost", "after": "원문에 원가 언급 없음(캐시된 원문이 오류 페이지라 확인 불가)"}], "flag": "원문(campaignasia) 캐시가 Azure Front Door 오류 페이지 — 사실 칸을 원문으로 재확인 못 함"}
+{"case": "ISS-030", "edits": [{"field": "resources", "after": "골 수 연동 할인 공지용 트위터 게시(원문), 몰린 손님(여러 매장 긴 줄) 응대 인력(추정)"}], "flag": ""}
+{"case": "ISS-033", "edits": [{"field": "unit_cost", "after": "원문 수치: 경품 총 1억 원(1등 10명 모바일 온누리상품권 각 200만 원 등) — 응모자 1인당 원가는 원문에 언급 없음"}], "flag": ""}
+{"case": "ISS-035", "edits": [{"field": "unit_cost", "after": "원문에 원가 언급 없음(경품 품목만 제시: 아이폰13·스타일러·갤럭시 Z플립3·아이패드·다이슨, 선착순 모바일 온누리상품권 — 금액 미기재)"}], "flag": ""}
+{"case": "ISS-036", "edits": [{"field": "unit_cost", "after": "원문에 원가 언급 없음(출처 페이지 본문이 비어 있어 확인 불가)"}], "flag": ""}
+{"case": "ISS-050", "edits": [{"field": "resources", "after": "해당없음(플랫폼의 배달 수수료 면제 정책 — 식당 측이 준비할 인력·물품은 원문에 언급 없음)"}], "flag": ""}
+{"case": "LAW-004", "edits": [{"field": "duration", "after": "원문에 기간 언급 없음(공정위 원문 접속 불가, 이름 기준 2024년 처분)"}], "flag": ""}
+{"case": "LAW-005", "edits": [{"field": "resources", "after": "해당없음(공정위 처분 사례)"}, {"field": "unit_cost", "after": "해당없음(공정위 처분 사례 — 손님 혜택 없음)"}], "flag": ""}
+{"case": "LAW-007", "edits": [{"field": "unit_cost", "after": "해당없음(공정위 처분 사례 — 원문(공정위) 접속 불가)"}], "flag": ""}
+{"case": "LAW-008", "edits": [{"field": "resources", "after": "해당없음(표시 개선 권고 사례)"}, {"field": "unit_cost", "after": "해당없음(표시 개선 권고 사례 — 원문(공정위) 접속 불가)"}], "flag": ""}
+{"case": "LAW-009", "edits": [{"field": "resources", "after": "해당없음(공정위 처분 사례)"}, {"field": "unit_cost", "after": "해당없음(공정위 처분 사례 — 원문(공정위) 접속 불가)"}], "flag": ""}
+{"case": "LAW-010", "edits": [{"field": "resources", "after": "해당없음(공정위 처분 사례)"}, {"field": "unit_cost", "after": "해당없음(공정위 처분 사례 — 원문(공정위) 접속 불가)"}], "flag": ""}
+{"case": "LAW-011", "edits": [{"field": "unit_cost", "after": "해당없음(공정위 처분 사례 — 손님 혜택 없음)"}, {"field": "duration", "after": "원문에 기간 언급 없음(공정위 원문 접속 불가, 이름 기준 2017년 처분)"}], "flag": ""}
+{"case": "LAW-012", "edits": [{"field": "resources", "after": "해당없음(부당광고 시정조치 사례)"}, {"field": "unit_cost", "after": "해당없음(부당광고 시정조치 사례 — 손님 혜택 없음)"}, {"field": "duration", "after": "원문에 기간 언급 없음(공정위 원문 접속 불가, 이름 기준 2011년 시정조치)"}], "flag": ""}
+{"case": "LAW-013", "edits": [{"field": "unit_cost", "after": "원문 수치: 라식·라섹 체험가 1인 90만 원(응모자 중 20명이 그 가격에 수술) — 병원 원가는 원문에 언급 없음"}], "flag": ""}
+{"case": "LAW-014", "edits": [{"field": "unit_cost", "after": "원문에 원가 언급 없음(혜택은 수술 당일 인근 호텔·레지던스 1박 — 법원은 '숙박비에 해당하는 진료비 할인' 취지로 봄)"}, {"field": "duration", "after": "원문: 2012년 병원 홈페이지에 상시 광고 문구로 게재(제공 종료 시점 언급 없음)"}], "flag": ""}
+{"case": "LAW-015", "edits": [{"field": "resources", "after": "해당없음(공정위 처분 사례)"}], "flag": ""}
+{"case": "LAW-017", "edits": [{"field": "unit_cost", "after": "해당없음(시행되지 않은 질의·회신 사례 — 적립률 언급 없음)"}, {"field": "duration", "after": "해당없음(시행되지 않은 질의·회신 사례 — 원문에 기간 언급 없음)"}], "flag": ""}
+{"case": "LAW-018", "edits": [{"field": "unit_cost", "after": "원문 수치: 멤버십 가입 시 커피 쿠폰, 건강기기 구매 시 최대 10만 원 상당 전자랜드 포인트, 정수기 행사 모델 구매 시 5만 원권 백화점 상품권, 스탬프 완성 선착순 400명 쿠키 — 1인 원가 합계는 원문에 없음"}], "flag": ""}
+{"case": "LAW-019", "edits": [{"field": "resources", "after": "해당없음(공정위 처분 사례)"}, {"field": "unit_cost", "after": "해당없음(공정위 처분 사례 — 원문(공정위) 접속 불가, 경품 가액 미확인)"}], "flag": ""}
+{"case": "LAW-020", "edits": [{"field": "resources", "after": "해당없음(공정위 처분 사례)"}, {"field": "unit_cost", "after": "해당없음(공정위 처분 사례 — 원문(공정위) 접속 불가, 경품 가액 미확인)"}], "flag": ""}
+{"case": "LAW-021", "edits": [{"field": "unit_cost", "after": "해당없음(공정위 처분 사례 — 원문(공정위) 접속 불가, 할인율·분담 비율 미확인)"}], "flag": ""}
+{"case": "LAW-022", "edits": [{"field": "unit_cost", "after": "해당없음(약관 시정 처분 사례)"}], "flag": ""}
+{"case": "LAW-023", "edits": [{"field": "unit_cost", "after": "해당없음(표시 의무 점검 사례)"}], "flag": ""}
+{"case": "LAW-024", "edits": [{"field": "resources", "after": "해당없음(약관 시정·표준약관 개정 사례)"}, {"field": "unit_cost", "after": "해당없음(약관 시정·표준약관 개정 사례)"}], "flag": ""}
+{"case": "LAW-025", "edits": [{"field": "unit_cost", "after": "해당없음(소비자분쟁조정 사례 — 손님 지불액 85,000원(쿠폰 2매)은 요약 기준이며 원문 캐시가 비어 재확인 못 함, 업소 원가 언급 없음)"}], "flag": ""}
+{"case": "LAW-026", "edits": [{"field": "resources", "after": "해당없음(특허청 시정권고 사례 — 원문상 TV 캠페인 광고, 2017-12-01부터 방송·2018-01-17 중단)"}, {"field": "unit_cost", "after": "해당없음(손님 혜택 없는 광고 처분 사례)"}], "flag": ""}
+{"case": "LAW-027", "edits": [{"field": "resources", "after": "해당없음(조직위 앰부시 마케팅 권고 사례)"}, {"field": "unit_cost", "after": "해당없음(손님 혜택 없는 권고 사례)"}], "flag": ""}
+{"case": "LAW-028", "edits": [{"field": "unit_cost", "after": "해당없음(상표 사용 제한 사례 — 원문 수치는 로열티: 월드컵 문구·로고 사용 시 FIFA 라이선스 대행사에 1억~3억 원, 쉬메릭 품목당 평균 1억5천만 원)"}], "flag": ""}
+{"case": "LAW-029", "edits": [{"field": "resources", "after": "해당없음(경쟁당국 벌금 처분 사례)"}, {"field": "unit_cost", "after": "해당없음(손님 혜택 없는 광고 처분 사례 — 원문 수치는 6개사 벌금 총 약 250만 유로)"}], "flag": ""}
+{"case": "LAW-030", "edits": [{"field": "unit_cost", "after": "해당없음(과태료 처분 사례 — 원문 수치는 현수막 1,006건에 과태료 2억2,100만 원)"}], "flag": ""}
+{"case": "LAW-031", "edits": [{"field": "resources", "after": "해당없음(불법 현수막 과태료 처분 사례)"}, {"field": "unit_cost", "after": "해당없음(과태료 처분 사례 — 원문 수치는 1,352건에 과태료 1억6,259만 원)"}], "flag": ""}
+{"case": "LAW-032", "edits": [{"field": "unit_cost", "after": "해당없음(입간판·에어라이트 정비 규정 사례)"}], "flag": ""}
+{"case": "LAW-033", "edits": [{"field": "duration", "after": "원문에 기간 언급 없음(커뮤니티 사연상 전단 배포 2주 후 관리실 경고, 이후 경찰 고발 연락)"}], "flag": ""}
+{"case": "LAW-035", "edits": [{"field": "resources", "after": "해당없음(부당광고 적발 처분 사례)"}, {"field": "unit_cost", "after": "해당없음(부당광고 적발 처분 사례 — 식약처 원문 캐시 비어 있음)"}], "flag": ""}
+{"case": "LAW-036", "edits": [{"field": "resources", "after": "해당없음(표시·광고 실증 규제 제도 사례)"}, {"field": "unit_cost", "after": "해당없음(규제 제도 사례 — 식약처 원문 캐시 비어 있음)"}], "flag": ""}
+{"case": "LAW-037", "edits": [{"field": "resources", "after": "해당없음(위생 점검·처분 사례)"}, {"field": "unit_cost", "after": "해당없음(위생 점검·처분 사례 — 식약처 원문 캐시 비어 있음)"}], "flag": ""}
+{"case": "LAW-038", "edits": [{"field": "resources", "after": "해당없음(공정위 수사의뢰·과태료 사례)"}, {"field": "unit_cost", "after": "해당없음(공정위 수사의뢰·과태료 사례 — 원문(공정위) 접속 불가)"}], "flag": ""}
+{"case": "LAW-039", "edits": [{"field": "unit_cost", "after": "해당없음(광고 문자 처분 사례 — 원문은 과태료 750만~3,000만 원 전망만 언급)"}], "flag": ""}
+{"case": "LAW-040", "edits": [{"field": "unit_cost", "after": "해당없음(개인정보 과태료 처분 사례)"}, {"field": "duration", "after": "해당없음(처분 사례 — 원문상 개인정보위 2021-02-24 전체회의 의결, 설명회 신청 접수 기간은 언급 없음)"}], "flag": ""}
+{"case": "MST-001", "edits": [{"field": "resources", "after": "해당없음(부당광고 적발 처분 사례)"}, {"field": "duration", "after": "원문에 기간 언급 없음(식약처 원문 캐시 비어 확인 불가 — 요약상 2026년 수능 앞 점검)"}], "flag": ""}
+{"case": "MST-003", "edits": [{"field": "duration", "after": "상시(개정 규정 — 요약상 2026-09-01 공포, 식약처 원문 캐시 비어 시행일 재확인 못 함)"}], "flag": ""}
+{"case": "MST-004", "edits": [{"field": "duration", "after": "상시(개정 법령 — 요약상 2024년 3월 말 개정·시행, 식약처 원문 캐시 비어 재확인 못 함)"}], "flag": ""}
+{"case": "NFD-032", "edits": [{"field": "duration", "after": "원문에 행사 기간 언급 없음(2008년 말 무료 피부검사 후 1년 시술 계약 240만 원)"}], "flag": ""}
+{"case": "NFD-033", "edits": [{"field": "duration", "after": "원문에 기간 언급 없음(2016년 보도 — 응모지 수집 후 '다음 주 내방' 전화로 유도)"}], "flag": ""}
+{"case": "NFD-034", "edits": [{"field": "duration", "after": "원문: 무료 체험 기간 예 '7일'(A씨 사례) 후 월 구독 자동결제 전환 — 피해 집계 기간 2022~2025년 1분기"}], "flag": ""}
+{"case": "NFD-037", "edits": [{"field": "unit_cost", "after": "해당없음(광고 실태조사 사례 — 할인액 언급 없음)"}, {"field": "duration", "after": "원문: 실태조사 10~11월 두 달간(조사 연도는 원문 발췌에 명시 없음) — 이벤트 할인 기간 언급 없음"}], "flag": ""}
+{"case": "NFD-038", "edits": [{"field": "duration", "after": "원문에 기간 언급 없음(2016년 보도 시점 '최근' 민원·제보로만 언급)"}], "flag": ""}
+{"case": "NFD-055", "edits": [{"field": "resources", "after": "해당없음(공정위 처분 사례)"}, {"field": "duration", "after": "해당없음(처분 사례 — 2008-10-26 공정위 발표, 위반 기간은 원문에 언급 없음)"}], "flag": ""}
+{"case": "NFD-056", "edits": [{"field": "resources", "after": "해당없음(과태료 처분 사례)"}, {"field": "duration", "after": "해당없음(처분 사례 — 원문상 공정위 실태조사 전년 12월~당해 3월, 전국 70개 학원 대상)"}, {"field": "goals", "after": "해당없음(과태료 처분 사례 — 원문상 점검 취지: 수강료 외 교재비 등 부대비용·환불 규정 고지 여부 확인)"}], "flag": ""}
+{"case": "NFD-060", "edits": [{"field": "resources", "after": "해당없음(소비자 피해예방주의보 사례)"}, {"field": "unit_cost", "after": "해당없음(피해예방주의보 사례)"}, {"field": "duration", "after": "원문에 기간 언급 없음(소비자원 원문 캐시에 본문 없이 제목만 있음)"}], "flag": "소비자원 원문 캐시에 제목만 있고 본문이 없어 '2026-10-22'·'피해자 절반 아동·청소년' 외 세부 사실 재확인 못 함"}
+{"case": "NFD-067", "edits": [{"field": "unit_cost", "after": "원문에 원가 언급 없음(요약상 손님 지불액 PT 50회 275만 원=회당 5.5만 원, 업체 주장 정상가 1회 10만 원 — 원문에서 확인 안 됨)"}, {"field": "duration", "after": "원문에 기간 언급 없음"}], "flag": "PT 50회 275만 원·잔여 39회·정상가 1회 10만 원 사례가 캐시된 원문(전북일보 2019-12-02, 세계일보 2019-10-02)에서 확인되지 않음 — 원문은 헬스장 장기계약 할인(40.4~59.3%)·정상가 기준 환급 분쟁 일반 통계만 다룸"}
+{"case": "NFD-068", "edits": [{"field": "unit_cost", "after": "해당없음(약관 조사 사례)"}, {"field": "duration", "after": "해당없음(약관 조사 사례 — 원문상 피해구제 집계 2022-01~2025-03)"}], "flag": ""}
+{"case": "NFD-069", "edits": [{"field": "resources", "after": "해당없음(소비자 피해 사례)"}, {"field": "unit_cost", "after": "원문 수치(손님 지불액): 헬스장 12개월 이용료 39만3천 원(A씨), 59만4천 원(B씨) — 업소 원가 언급 없음"}, {"field": "duration", "after": "원문: 12개월 이용권(A씨 2025-01 결제 후 이용 전 해지 요구, B씨 2025-03 결제 후 4월 폐업)"}], "flag": ""}
+{"case": "NFD-074", "edits": [{"field": "resources", "after": "해당없음(공정위 처분 사례)"}, {"field": "duration", "after": "해당없음(처분 사례 — 대상 상품은 9개월 이상 장기과정, 2008-10-26 공정위 발표, 위반 기간 언급 없음)"}], "flag": ""}
+{"case": "ONL-015", "edits": [{"field": "duration", "after": "해당없음(위기 사례 — 원문상 2020-12 영상 공개 후 영업 중단, 중단 기간 언급 없음)"}], "flag": ""}
+{"case": "ONL-024", "edits": [{"field": "duration", "after": "해당없음(논란 사례 — 2018년 보도, 원문에 기간 언급 없음)"}], "flag": "주 원문(쿠키뉴스) 캐시가 보안 차단 페이지라 '상인들이 해명 글·증거 공개로 대응' 부분을 재확인 못 함(아주경제는 맘카페 폐쇄 청원만 다룸)"}
+{"case": "ONL-043", "edits": [{"field": "resources", "after": "학생회 퀴즈 나이트용 맥주 피처 판촉분(정가와 $3.50 차액은 학생회가 보조, 원문), 당일 매니저(원문상 자격 정지 대상) — 별도 추가 인력은 원문에 언급 없음"}], "flag": ""}
+{"case": "OPN-015", "edits": [{"field": "resources", "after": "리뷰 이벤트 안내문(테이블마다 비치, 원문), 무료 음료·디저트 재고, 리뷰 작성 화면을 확인하는 직원(원문)"}], "flag": ""}
+{"case": "SVC-030", "edits": [{"field": "resources", "after": "추가 면·국물·고명 재료(추정) — 별도 인력·물품 원문에 언급 없음"}], "flag": "원문 중 식신(siksinhot) 캐시는 캡차 페이지, polle 후기에는 '공주 도깨비터국수'·'수원 콩국수집'·'양 많이 요청 시 동일 가격' 내용이 보이지 않아 사실 칸을 원문으로 재확인 못 함"}
+{"case": "SVC-035", "edits": [{"field": "duration", "after": "해당없음(논란·지자체 권고 사례 — 원문상 2025-07-16 여수시 공문 발송)"}], "flag": ""}
+{"case": "SVC-036", "edits": [{"field": "resources", "after": "해당없음(1인 손님 입장 거부 사례)"}, {"field": "duration", "after": "해당없음(입장 거부 사례 — 원문상 CNN 트래블 '5일(현지시간)' 보도)"}], "flag": ""}
+{"case": "SVC-043", "edits": [{"field": "duration", "after": "해당없음(서비스 요구 논란 사례 — 원문상 '8일' 자영업자 커뮤니티 게시)"}], "flag": ""}
+{"case": "SVC-047", "edits": [{"field": "duration", "after": "원문에 기간 언급 없음(2021년 2월 보도 시점 '공깃밥 1500원 받기 운동' 게시글, 종료 시점 없음)"}], "flag": ""}
+{"case": "CLS-002", "edits": [{"field": "resources", "after": "해당없음(소비자청 처분 사례 — 원문상 계열 매장 가구로 재고를 채워 넣은 것이 위반 사유)"}, {"field": "unit_cost", "after": "해당없음(처분 사례 — 원문 수치는 행정비용 1만 달러 지급)"}], "flag": ""}
+{"case": "CLS-003", "edits": [{"field": "resources", "after": "해당없음(검찰총장 벌금 합의 사례)"}, {"field": "unit_cost", "after": "해당없음(처분 사례 — 원문 수치는 벌금 3만 달러)"}], "flag": ""}
+{"case": "CLS-004", "edits": [{"field": "unit_cost", "after": "해당없음(처분 사례 — 원문상 '전 품목 20~40%' 광고, 실제 일부 10%)"}, {"field": "duration", "after": "원문에 폐점 세일 기간 언급 없음(2006-09-14 합의 발표)"}], "flag": ""}
+{"case": "CLS-005", "edits": [{"field": "unit_cost", "after": "해당없음(처분 사례 — 원문상 허구의 원래 가격을 붙인 신상품 80만 달러 이상, 고객 약 15% 환불)"}], "flag": ""}
+{"case": "CLS-006", "edits": [{"field": "faq_ids", "after": "F052|F011"}], "flag": ""}
+{"case": "CLS-009", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "CLS-010", "edits": [{"field": "resources", "after": "해당없음(할인·증정 없는 폐업 사례 — 원문에 별도 준비 언급 없음)"}, {"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "CLS-012", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "CLS-019", "edits": [{"field": "resources", "after": "해당없음(상품권 승계 거부 논란 사례)"}, {"field": "unit_cost", "after": "해당없음(승계 거부 사례 — 원문 수치는 사용 못 하게 된 상품권 총 2,600만 달러)"}, {"field": "duration", "after": "해당없음(승계 거부 사례 — 원문에 기간 언급 없음)"}], "flag": ""}
+{"case": "JPN-018", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "JPN-019", "edits": [{"field": "resources", "after": "오토시용 과자·테킬라 재고(원문: '과자 or 테킬라' 선택), 다트 설비(일부 점포, 원문) — 추가 인력은 원문에 언급 없음"}], "flag": ""}
+{"case": "JPN-030", "edits": [{"field": "resources", "after": "대상 점포 1곳(soen by HEADLIGHT 光の森店)의 이틀간 평소 영업 인력·시술 재료(원문상 매출 전액 기부) — 추가 인력·물품 원문에 언급 없음"}], "flag": ""}
+{"case": "JPN-032", "edits": [{"field": "resources", "after": "라멘·아부라소바 특가 재료, 무료 밥(중) 1그릇분 쌀(추정), 특가 안내 POP(추정)"}], "flag": ""}
+{"case": "JPN-033", "edits": [{"field": "faq_ids", "after": "F017|F045"}], "flag": ""}
+{"case": "JPN-040", "edits": [{"field": "resources", "after": "폐점 특가 메뉴 식자재·주류 재고(추정) — 인력·물품은 원문에 언급 없음"}], "flag": ""}
+{"case": "CSR-008", "edits": [{"field": "resources", "after": "국가유공자 무료 국밥분 식재료(추정), 사장 직접 응대(원문)"}], "flag": ""}
+{"case": "CSR-021", "edits": [{"field": "resources", "after": "해당없음(급식카드 부정사용 적발 사례)"}, {"field": "duration", "after": "해당없음(적발 사례 — 원문상 조사 결과 2026-06-24 발표, 사용 내역 분석 기간 2025년 1~8월)"}], "flag": ""}
+{"case": "CSR-029", "edits": [{"field": "resources", "after": "피자 1판 무료 제작·배달, 피자 박스에 붙인 메모(원문) — 이후 몰린 '돈쭐' 주문으로 재료 소진 조기 마감한 날도 있음(원문)"}], "flag": ""}
+{"case": "CSR-031", "edits": [{"field": "resources", "after": "해당없음(손님 혜택 없는 정기기부 — 원문상 수익금 일부를 모금회에 기부)"}], "flag": ""}
+{"case": "JPN-049", "edits": [{"field": "resources", "after": "감사 데이 점심 파스타 재료(원문: 4종 중 매월 랜덤 1종), 500엔 안내 고지(추정)"}], "flag": ""}
+{"case": "JPN-050", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "JPN-052", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "PRE-004", "edits": [{"field": "resources", "after": "프리오픈 3일 단축 영업(11~15시, 원문) 인력, 결제 시 20% 할인 처리용 계산대 설정(추정)"}], "flag": ""}
+{"case": "CLS-021", "edits": [{"field": "unit_cost", "after": "원문에 원가 언급 없음(원문 수치는 깔세 임대 구조 예: 보증금 없이 월 300만 원, 계약 15일~1개월 단위)"}], "flag": ""}
+{"case": "CLS-022", "edits": [{"field": "resources", "after": "해당없음(땡처리 매장 할인 표시·환불 논란 사례)"}, {"field": "unit_cost", "after": "원문에 원가 언급 없음(표방 할인율 '30~40% 기본, 최대 90%'만 언급)"}, {"field": "duration", "after": "원문에 기간 언급 없음(2020년 보도 시점 '최근' 성행)"}], "flag": ""}
+{"case": "CLS-023", "edits": [{"field": "resources", "after": "해당없음(허위·과장 폐업세일 논란 사례)"}, {"field": "unit_cost", "after": "원문에 원가 언급 없음(원문 가격 비교: 패딩 할인가 18만9천 원 vs 백화점 공식몰 11만4천 원, 맨투맨 5만9천 원 vs 온라인 4만1천 원)"}, {"field": "duration", "after": "원문에 기간 언급 없음"}], "flag": ""}
+{"case": "CLS-024", "edits": [{"field": "resources", "after": "해당없음(선결제 후 잠적 분쟁 사례)"}, {"field": "unit_cost", "after": "원문 수치(손님 지불액): 회원권 100만 원 상당, 1인 피해 40만~80만 원 — 업소 원가 언급 없음"}, {"field": "duration", "after": "원문에 기간 언급 없음(폐업 직전 회원권 판매 후 며칠 만에 잠적)"}], "flag": ""}
+{"case": "CLS-025", "edits": [{"field": "resources", "after": "해당없음(선결제 후 폐업 통보 분쟁 사례)"}, {"field": "unit_cost", "after": "원문 수치: 선결제 시 20% 할인(A씨 약 200만 원 선결제) — 업소 원가 언급 없음"}, {"field": "duration", "after": "원문: 선결제 할인 안내 2024-09(A씨 사례), 2025-04-01 문자로 폐업 통보"}], "flag": ""}
+{"case": "CLS-026", "edits": [{"field": "resources", "after": "해당없음(피해 통계 사례)"}, {"field": "unit_cost", "after": "해당없음(피해 통계 사례)"}, {"field": "duration", "after": "해당없음(통계 사례 — 원문상 최근 5년 집계, 2021년 37건→2024년 264건)"}], "flag": ""}
+{"case": "CLS-027", "edits": [{"field": "resources", "after": "해당없음(운영 중단·고소 분쟁 사례)"}, {"field": "unit_cost", "after": "원문 수치(손님 지불액): 헬스·사우나 10개월 회원권 49만9천 원, PT 회원권 81만 원 — 재등록 할인율·업소 원가 언급 없음"}, {"field": "duration", "after": "원문에 할인 모집 기간 언급 없음(소유권 이전 2023-09-14 뒤에도 '최근까지' 모집, 2023-11 운영 중단)"}], "flag": ""}
+{"case": "CLS-028", "edits": [{"field": "resources", "after": "해당없음(폐원·선납금 미반환 수사 사례)"}, {"field": "unit_cost", "after": "원문 수치: 월 교습비 170만 원+차량비·특별활동비 20만~30만 원(월 약 200만 원), 12개월 선납 시 전체 10% 할인(한 학부모 2,000만 원 선납)"}, {"field": "duration", "after": "원문: '선납 할인 행사' 2024-02-23 진행(12개월분 선납), 2024-04-08 폐원 통보"}], "flag": ""}
+{"case": "CLS-029", "edits": [{"field": "resources", "after": "해당없음(법적 분석 사례)"}, {"field": "unit_cost", "after": "해당없음(법적 분석 사례)"}, {"field": "duration", "after": "해당없음(법적 분석 사례 — 원문상 2017년 3월 기존 클럽 폐쇄, 2018년 2월 새 클럽 개장)"}], "flag": ""}
+{"case": "JPN-056", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "PRE-012", "edits": [{"field": "unit_cost", "after": "해당없음(지자체 가림벽 디자인 규정 사례)"}], "flag": ""}
+{"case": "PRE-018", "edits": [{"field": "resources", "after": "창립 회원 대상 무제한 수업 코칭 인력(원문상 임대료·난방비·직원비·보험료 부담), 회고상 대안 물품: 창립 회원 티셔츠(원문)"}], "flag": ""}
+{"case": "PRE-019", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "PRE-023", "edits": [{"field": "unit_cost", "after": "원문에 원가 언급 없음(가오픈 재료는 실전의 50%만 준비했다는 언급뿐)"}, {"field": "faq_ids", "after": "F058"}], "flag": ""}
+{"case": "PRE-024", "edits": [{"field": "faq_ids", "after": "F052"}], "flag": ""}
+{"case": "REL-005", "edits": [{"field": "resources", "after": "리뷰 확인 후 쿠폰 발급(5천 원·1만 원 할인쿠폰, 정답자 1회 무료 쿠폰 — 원문), 무료 시술(속눈썹 펌 또는 피부 기본 관리) 시간 확보(추정)"}], "flag": ""}
+{"case": "REL-008", "edits": [{"field": "resources", "after": "형제·자매 할인·특강 후 정규 등록 할인 안내(당근 업체 프로필, 원문) — 추가 인력·물품은 원문에 언급 없음"}], "flag": ""}
+{"case": "REL-009", "edits": [{"field": "resources", "after": "당근 비즈 소식 공지(원문 게시글), 형제·특강 할인 적용 관리(추정)"}], "flag": "당근 원문 캐시에 제목만 있고 본문이 없어 사실 칸(가격·조건·기간)을 원문으로 재확인 못 함"}
+{"case": "REL-010", "edits": [{"field": "resources", "after": "선착순 5명 개별 진도 수업 강사 시간(요약 기준 주 2회), 1회 무료 체험 수업 쿠폰(추정)"}], "flag": "당근 원문 캐시에 제목만 있고 본문이 없어 사실 칸(가격·조건·기간)을 원문으로 재확인 못 함"}
+{"case": "REL-011", "edits": [{"field": "resources", "after": "수험표·본인 확인하는 카운터 직원(추정), 평일 할인 적용(추정)"}], "flag": "당근 원문 캐시에 제목만 있고 본문이 없어 사실 칸(가격·조건·기간)을 원문으로 재확인 못 함"}
+{"case": "REL-012", "edits": [{"field": "resources", "after": "할인 안내 입간판·SNS·유튜브 홍보(원문), 수험표 확인(추정)"}], "flag": ""}
+{"case": "REL-017", "edits": [{"field": "resources", "after": "당근 비즈프로필 단골 전용 쿠폰 발행(원문), 쿠폰 기간·개수 관리(요약 기준) — 사장이 오전 8시~오후 11시 직접 운영(원문)"}], "flag": ""}
+{"case": "REL-020", "edits": [{"field": "resources", "after": "네이버 예약 메모·수험표 확인(요약 기준), 펌·염색·클리닉 시술 디자이너 시간 확보(추정)"}], "flag": "당근 원문 캐시에 제목만 있고 본문이 없어 사실 칸(가격·조건·기간)을 원문으로 재확인 못 함"}
+{"case": "REL-023", "edits": [{"field": "resources", "after": "수제 뚱빼빼로 재료(요약 기준 초코·딸기 크런키 등)·제작 시간, 선주문 공지(당근 비즈 소식, 원문) — 수량은 원문에 언급 없음"}], "flag": "당근 원문 캐시에 제목만 있고 본문이 없어 사실 칸(가격·조건·기간)을 원문으로 재확인 못 함"}
+{"case": "REL-025", "edits": [{"field": "resources", "after": "해당없음(환불 분쟁 기사)"}, {"field": "duration", "after": "해당없음(환불 분쟁 기사 — 원문상 피해구제 집계 2013~2015년)"}], "flag": ""}
+{"case": "BIZ-009", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "BIZ-016", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "BIZ-030", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "BIZ-034", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "RET-045", "edits": [{"field": "resources", "after": "해당없음(경품 사칭 사기 사례)"}, {"field": "unit_cost", "after": "해당없음(사기 사례 — 원문 수치는 피해자가 송금 요구받은 택배비 5천 원·제세공과금 3만 원)"}, {"field": "duration", "after": "원문에 기간 언급 없음(2004년 독자 투고, '최근' 전화)"}], "flag": ""}
+{"case": "TIM-013", "edits": [{"field": "resources", "after": "매월 매출액 일정액 기부금(원문), 착한가게 현판(현판식, 원문)"}], "flag": ""}
+{"case": "TIM-020", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "TIM-022", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "TIM-030", "edits": [{"field": "resources", "after": "30% 할인 촬영 선물권 발행(원문), 평소 촬영·인화 인력(영업시간 월~토 10~19시·일 11~18시, 원문) — 추가 인력은 원문에 언급 없음"}], "flag": ""}
+{"case": "TIM-031", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "TIM-032", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "TIM-034", "edits": [{"field": "resources", "after": "비·눈 오는 날 서비스용 피자 치즈 토핑·커피(원문) — 인력은 원문에 언급 없음"}], "flag": ""}
+{"case": "TIM-035", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "TIM-038", "edits": [{"field": "resources", "after": "매월 3만 원 이상 정기기부금(원문), 착한가게 현판(동 행정복지센터 전달, 원문)"}], "flag": ""}
+{"case": "TIM-039", "edits": [{"field": "resources", "after": "매월 정기기부금(원문), 착한가게 현판(개업일 전달, 원문)"}], "flag": ""}
+{"case": "TIM-040", "edits": [{"field": "resources", "after": "무료 음료(12/24~25 연인·빨간 옷 손님 1잔), 12/31 무료 다과, 1/1 새벽 4시30분 개점 인력, 새해 소망메시지 게시 이벤트 용품(원문)"}], "flag": ""}
+{"case": "TIM-043", "edits": [{"field": "duration", "after": "해당없음(가게 양도 사례 — 원문상 공유주방 매장을 1~2년 운영 후 양도, 2021-11-10 보도)"}], "flag": ""}
+{"case": "TIM-044", "edits": [{"field": "resources", "after": "어르신 직원 15명 교대 근무(하루 4~5시간·월 10회 출근, 원문), 65세 이상 나이 확인(추정), 반찬 1팩 포장 용기(추정)"}], "flag": ""}
+{"case": "EMP-030", "edits": [{"field": "resources", "after": "해당없음(혜택 없는 폐업 사례)"}], "flag": ""}
+{"case": "EMP-036", "edits": [{"field": "resources", "after": "해당없음(구체 혜택 없는 그랜드 재개장 — 원문 캐시에 준비물 언급 없음)"}], "flag": ""}
+{"case": "EMP-053", "edits": [{"field": "resources", "after": "재개장 프로모션 안내(지역 방송 보도, 원문) — 프로모션 내용·인력·물품은 원문에 언급 없음(영업시간 매일 6~22시)"}], "flag": ""}
+{"case": "JP2-004", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "JP2-006", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "JP2-009", "edits": [{"field": "faq_ids", "after": "F016"}], "flag": ""}
+{"case": "JP2-011", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "JP2-014", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "JP2-018", "edits": [{"field": "resources", "after": "해당없음(폐점 세일 표시 논란 사례)"}], "flag": ""}
+{"case": "JP2-019", "edits": [{"field": "resources", "after": "오토시 안주 재료(원문 예: 업무용 자차이·콩나물 1인 30g, 원가 약 15~30엔), 착석 즉시 내는 홀 인력(추정)"}], "flag": ""}

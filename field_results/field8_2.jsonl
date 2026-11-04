@@ -1,0 +1,149 @@
+{"case": "JP2-021", "edits": [{"field": "faq_ids", "after": "F014|F015"}], "flag": ""}
+{"case": "JP2-026", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "JP2-030", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "JP2-031", "edits": [{"field": "resources", "after": "해당없음(가게가 연 행사 없음 — 원문상 중학교 전교생 106명이 메시지 카드를 모아 점주에게 전달한 학생 쪽 자발 행동)"}], "flag": ""}
+{"case": "JP2-032", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "JP2-033", "edits": [{"field": "resources", "after": "점주 1인 조리(매일 아침 7시 넘어 밑준비), 고교야구 시즌엔 쌀 약 90kg 세척·돈가스 100장 이상 튀김, 정기휴일은 연말연시 정도. 판매 중단 때는 '가쓰동 대는 그만뒀다' 안내문 1장"}], "flag": ""}
+{"case": "JP2-034", "edits": [{"field": "resources", "after": "점주 부부 2명이 늘어난 손님 응대(원문). 드라마 출연 외에 가게가 따로 준비한 행사·물품은 원문에 언급 없음"}], "flag": ""}
+{"case": "JP2-037", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "EMP-066", "edits": [{"field": "resources", "after": "리본 커팅 행사(의사 3명 — 창업 의사·아들 부부), 진료 인원을 늘리려고 고친 사무실 공개, 일반인도 이용할 수 있는 검사(lab) 서비스 신설. 행사 진행 인력·물품 수량은 원문에 언급 없음"}], "flag": ""}
+{"case": "RT2-007", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "RT2-018", "edits": [{"field": "unit_cost", "after": "원문에 원가 언급 없음(재고품에 '대특매'·'특별할인'을 붙이고 표시 할인율과 달리 값을 올려 받았다는 비판만 있음)"}], "flag": ""}
+{"case": "RT2-022", "edits": [{"field": "unit_cost", "after": "원문에 원가 언급 없음(즉석 경품권은 무료 배포, 경품은 학습지 구독 조건으로만 지급)"}], "flag": ""}
+{"case": "RT2-028", "edits": [{"field": "unit_cost", "after": "원문에 원가 언급 없음(1만원 이상 구매 시 경품권 1장, 3만여 장 발부·344명 추첨. 항의 고객이 요구한 '경품권 1장당 5천원 환불'은 원가가 아님)"}], "flag": ""}
+{"case": "RT2-030", "edits": [{"field": "unit_cost", "after": "원문에 원가 언급 없음(사인회·로드쇼·게임대회·경품 추첨 비용과 상가협의회·제조사 분담 내역 미기재)"}], "flag": ""}
+{"case": "RT2-037", "edits": [{"field": "unit_cost", "after": "원문에 원가 언급 없음(판매가 예: 화장지 10개들이 3,700원 — 시중가 5,800원보다 2,100원 낮음. 사은품 내용·원가는 미기재)"}], "flag": ""}
+{"case": "RT2-038", "edits": [{"field": "unit_cost", "after": "원문에 원가 언급 없음(경품 목록만: 생수·남성화장품·세제·공기청정기·연수기, 냉장고·김치냉장고·세탁기 각 1대)"}], "flag": ""}
+{"case": "RT2-043", "edits": [{"field": "unit_cost", "after": "원문에 원가 언급 없음(손님이 내는 값만: 사격 코르크탄 10발 1,000원, 미니당구 1게임 500원, 롤러스케이트 1시간 800원. 경품 원가 미기재)"}], "flag": ""}
+{"case": "KRA-010", "edits": [{"field": "resources", "after": "해당없음(교습비 특별점검·처분 사례 — 점검 측 투입은 원문상 서울 11개 교육지원청 지도점검 인력 36명, 2~4월)"}, {"field": "goals", "after": "(점검 측) 민생물가 특별관리 기조에 맞춰 학부모 사교육비 부담 경감 · 교습비 편법 인상 바로잡기 · 교습비 안정화"}], "flag": ""}
+{"case": "KRA-015", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "KRA-016", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "KRA-017", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "KRA-018", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "KRA-020", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "KRA-021", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "KRA-022", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "KRA-026", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "KRA-035", "edits": [{"field": "resources", "after": "해당없음(약국 가격 제도 논란 보도 — 행사 없음)"}, {"field": "goals", "after": "(약국가 요구) 약국 간 약값 시비 해소 · 초대형 약국 저가 공세 대응(일반약 적정 마진 유지)"}], "flag": ""}
+{"case": "KRB-013", "edits": [{"field": "unit_cost", "after": "원문에 원가 언급 없음(구성만: 소갈비살 200g·파스타면 230g·새우 10마리. 판매가도 미기재)"}], "flag": ""}
+{"case": "KRB-015", "edits": [{"field": "unit_cost", "after": "1대당 할인액: 접이식 16인치 8만원(소비자가 30만원→22만원), 20인치 13만5천원(39만원→25만5천원) — 표시 소비자가 기준, 매장 원가는 원문에 언급 없음"}], "flag": ""}
+{"case": "KRB-017", "edits": [{"field": "unit_cost", "after": "원문에 원가 언급 없음(2시간 코스 판매가 55,000원만 있고 평소 가격·할인폭 미기재)"}], "flag": "원문 기사 제목은 '2시간 코스 5만원', 본문은 5만5000원 — 사례는 본문 기준(55,000원)으로 맞음"}
+{"case": "KRB-019", "edits": [{"field": "unit_cost", "after": "원문에 원가 언급 없음(대표 프로그램 최대 55% 할인, 목표 체중 미달 시 관리비 전액 환불 — 정가·관리비 금액 미기재)"}], "flag": ""}
+{"case": "KRB-021", "edits": [{"field": "unit_cost", "after": "원문에 원가 언급 없음(석포면 주민 무료, 제련 공정 잔여 열로 온수 공급 — 운영비·리모델링비 미기재)"}], "flag": ""}
+{"case": "KRB-031", "edits": [{"field": "unit_cost", "after": "책값의 50%(1가족 3권까지, 할인분은 대덕문화원이 모금한 기부금으로 서점에 지원) — 권당 금액은 원문에 언급 없음"}], "flag": ""}
+{"case": "KRB-032", "edits": [{"field": "unit_cost", "after": "책값 전액 환불(구 부담, 1인 월 3권까지·인기 베스트셀러는 선착순 15권) — 권당 금액은 원문에 언급 없음. 반납 책은 구립도서관 장서로 비치"}], "flag": ""}
+{"case": "KRC-002", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "KRC-010", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "KRC-011", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "KRC-019", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "KRC-023", "edits": [{"field": "faq_ids", "after": "F018"}], "flag": ""}
+{"case": "KRC-027", "edits": [{"field": "resources", "after": "해당없음(가게가 연 행사 없음 — 원문상 노부부 2명이 직원 없이 칼국수·김치(매일 담금)·보리밥을 직접 만들어 운영, 응원 방문은 손님 자발)"}], "flag": ""}
+{"case": "KRC-030", "edits": [{"field": "resources", "after": "해당없음(가게가 연 행사 없음 — '돈쭐' 방문은 시민 자발. 원문상 인천시가 공무원·산하기관 임직원 상가 이용 캠페인, 인천경찰청이 치안 강화·직원 소비 촉진 활동 계획)"}], "flag": ""}
+{"case": "KRC-031", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "KRC-032", "edits": [{"field": "resources", "after": "2호점 직원 6명 급여 40% 자진 반납·1호점 직원 30% 반납, 저녁 대신 낮장사로 전환. 월 인건비 2,000만원·월 임대료 350만원(부가세 별도). 폐업 때 가전제품은 주변 상인에게 나눔(철거비 50만원 요구 때문)"}, {"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "KRC-036", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "KRC-038", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "KRC-039", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "KRC-040", "edits": [{"field": "resources", "after": "해당없음(바가지 논란 뒤 상권 침체 보도 — 행사 없음)"}], "flag": ""}
+{"case": "NT1-014", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT1-015", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT1-016", "edits": [{"field": "resources", "after": "해당없음(사과에만 가격표를 떼는 표시 방식 사례 — 따로 드는 인력·물품 없음)"}], "flag": ""}
+{"case": "NT1-017", "edits": [{"field": "resources", "after": "해당없음(가격 유지·중량 축소 정책 논란 — 행사 아님. 원문상 리뉴얼 때 소스 바르기를 붓질에서 버무림(텀블링)으로 바꿨다가 원복)"}], "flag": ""}
+{"case": "NT1-018", "edits": [{"field": "resources", "after": "해당없음(가격 유지·중량 조정 정책 논란 — 행사 아님. 원문상 '부분육 운영 기준 조정 안내' 공지)"}, {"field": "goals", "after": "닭고기 수급난(겨울 조류독감)·중동 전쟁발 물류비 등 원가 압력 흡수 · 판매가는 동결 유지(중량 조정으로 우회)"}], "flag": ""}
+{"case": "NT1-019", "edits": [{"field": "resources", "after": "해당없음(가격 인상 발표 — 행사 아님)"}, {"field": "goals", "after": "급증한 외부 비용 부담 반영(회사 설명: '더 이상 감내하기 어려운 수준') · 빽다방은 인상에서 빼 저가 커피 가격 경쟁력 유지"}], "flag": ""}
+{"case": "NT1-021", "edits": [{"field": "resources", "after": "해당없음(가격 인상 철회 결정 — 행사 인력·물품 없음)"}, {"field": "duration", "after": "2026-10 하순(인상 발표 2주도 안 돼 철회, 2026-10-29 AFP 보도) — 낱개 290엔·4켤레 990엔 묶음 유지(종료 시점 언급 없음), 재킷·바지 등은 다음 달부터 예정대로 인상"}], "flag": ""}
+{"case": "NT1-022", "edits": [{"field": "duration", "after": "2025-10 무렵(앞다릿살 도매가가 2025-02 kg 8,656원→8개월 뒤 11,286원으로 오른 뒤 인상) — 정확한 인상일은 원문에 언급 없음, 2026-01-16 보도"}], "flag": ""}
+{"case": "NT1-023", "edits": [{"field": "resources", "after": "해당없음(배달 이중가격 도입·공지 논란 — 행사 아님)"}], "flag": ""}
+{"case": "NT1-024", "edits": [{"field": "resources", "after": "해당없음(본사·점주의 배달가 인상 정책 — 행사 아님)"}], "flag": ""}
+{"case": "NT1-026", "edits": [{"field": "resources", "after": "해당없음(가맹점 쿠폰 차액 요구 논란 — 행사 아님)"}, {"field": "duration", "after": "2023-02 보도(인사이트 2023-02-14, SBS Biz 2023-02-20) — 차액을 받은 정확한 기간은 원문에 언급 없음"}, {"field": "goals", "after": "(일부 점주) 가격 인상분 차액 보전 — '제품 가격이 매장마다 다를 수 있다'는 사전고지를 근거로 함"}], "flag": ""}
+{"case": "NT1-027", "edits": [{"field": "resources", "after": "해당없음(본사 가격 정책 — 인상분을 기존 기프티콘 사용 시 차액 미부과로 흡수, 별도 인력·물품 없음)"}, {"field": "duration", "after": "2024-06 보도 시점 상시(인사이트 2024-06-12, BBQ 23개 메뉴 평균 6.3% 인상 뒤) — 시작일은 원문에 언급 없음"}], "flag": ""}
+{"case": "NT1-030", "edits": [{"field": "faq_ids", "after": "F060"}], "flag": ""}
+{"case": "NT1-033", "edits": [{"field": "faq_ids", "after": "F060"}], "flag": ""}
+{"case": "NT1-034", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT1-035", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT1-036", "edits": [{"field": "resources", "after": "해당없음(단속 사례 — 단속 측 투입은 원문상 경기도 특사경 20명 손님 위장, 신고 매장 중심 40여곳 조사)"}, {"field": "goals", "after": "(경기도) 재난기본소득 카드·지역화폐 결제 손님 차별(웃돈) 근절 — 적발 업소 고발·세무조사, 31개 시군으로 조사 확대"}], "flag": ""}
+{"case": "NT1-037", "edits": [{"field": "resources", "after": "해당없음(단속 사례 — 단속 측은 원문상 주민 신고 접수 가맹점·데이터 분석 이상거래 현장 단속, 부정유통 방지 홍보)"}, {"field": "goals", "after": "(이천시) 지역화폐 부정유통 근절·건전한 유통질서 확립 → 지역 소상공인 매출 증대·지역경제 활성화"}], "flag": ""}
+{"case": "NT1-038", "edits": [{"field": "resources", "after": "해당없음(단속 사례 — 단속 측은 원문상 시·운영대행업체 합동 단속반, 이상거래탐지 시스템·일련번호 추적 프로그램, 신고센터 제보 현장 확인)"}, {"field": "goals", "after": "(영주시) 부정 유통 사전 차단 · 상품권 운영 정책의 신뢰성·지속 가능성 확보"}], "flag": ""}
+{"case": "NT1-039", "edits": [{"field": "resources", "after": "해당없음(처분 사례 — 처분 측은 원문상 298곳 청문, 부정유통 모니터링시스템(FDS) 추적, 신고 포상금 최대 1,000만원)"}, {"field": "goals", "after": "(중기부) 국민 세금으로 지원하는 전통시장 혜택의 부정 편취 차단 · 부정유통 관리 강화"}], "flag": ""}
+{"case": "NT1-040", "edits": [{"field": "resources", "after": "해당없음(법 개정·처분 강화 사례 — 행사 없음)"}, {"field": "goals", "after": "(중기부) 온누리상품권 부정유통 종합 정비 — 전통시장·골목상권 중심 본래 취지 보호, 유령·위장 가맹점 차단"}], "flag": ""}
+{"case": "K5B-002", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "K5B-006", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "K5B-007", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "K5B-009", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "K5B-010", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "K5B-011", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "K5B-012", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "K5B-013", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "K5B-016", "edits": [{"field": "resources", "after": "해당없음(폐업·환불 거부 분쟁 사례 — 행사 없음)"}], "flag": ""}
+{"case": "K5B-019", "edits": [{"field": "resources", "after": "해당없음(사립유치원 폐원 통보 분쟁 사례 — 행사 없음)"}], "flag": ""}
+{"case": "K5B-021", "edits": [{"field": "resources", "after": "해당없음(작별 행사 없음 — 원문상 상영 중단 뒤 리모델링 공사로 의자 철거, '운영 종료' 팻말은 시민이 직접 만듦)"}, {"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "K5B-023", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "K5B-024", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "K5B-025", "edits": [{"field": "resources", "after": "해당없음(몰래 폐업·사기 처분 사례 — 행사 없음)"}], "flag": ""}
+{"case": "K5B-026", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "K5B-029", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-006", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-007", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-008", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-009", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-010", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-012", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-014", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-015", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-016", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-017", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-018", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-019", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-020", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-022", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-023", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-024", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-025", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-026", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-027", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-028", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-029", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-031", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-032", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-033", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-034", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-042", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-044", "edits": [{"field": "resources", "after": "해당없음(포장 주문 채널 동향 사례 — 행사 없음)"}], "flag": ""}
+{"case": "NT3-047", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-050", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-052", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-053", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-054", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-055", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-056", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-057", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-058", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-059", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-060", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-061", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-062", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT3-063", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT5-008", "edits": [{"field": "resources", "after": "해당없음(해외 감독기관 조사 사례 — 행사 없음)"}], "flag": ""}
+{"case": "NT5-022", "edits": [{"field": "resources", "after": "해당없음(차별 가격 논란·점검 사례 — 점검 측은 원문상 내·외국인 미스터리쇼퍼 2개월 집중점검, 노점 실명제 벌점 운영)"}], "flag": ""}
+{"case": "NT5-024", "edits": [{"field": "resources", "after": "해당없음(택시 부당요금 신고·처분 통계 — 행사 없음)"}], "flag": ""}
+{"case": "NT5-027", "edits": [{"field": "resources", "after": "해당없음(해외 언어별 메뉴판 가격 차이 논란 — 행사 없음)"}], "flag": ""}
+{"case": "NT5-028", "edits": [{"field": "resources", "after": "해당없음(카드 결제 웃돈·현금 유도 관행 — 따로 드는 인력·물품 없음)"}], "flag": ""}
+{"case": "NT5-030", "edits": [{"field": "resources", "after": "해당없음(계좌이체 할인 유도 관행 — 원문상 계산대 앞 개인 계좌번호 안내 외 인력·물품 없음)"}], "flag": ""}
+{"case": "NT5-031", "edits": [{"field": "resources", "after": "해당없음(현금가 할인 유도 관행 — 상담실장 견적 제시 외 인력·물품 없음)"}], "flag": ""}
+{"case": "NT6-011", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT6-012", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT6-013", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT6-021", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT7-007", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT7-008", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT7-009", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT7-010", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT7-011", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT7-012", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT7-013", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT7-014", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT7-015", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT7-018", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT7-024", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT7-029", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}
+{"case": "NT7-031", "edits": [{"field": "faq_ids", "after": "없음(해당 FAQ 없음)"}], "flag": ""}

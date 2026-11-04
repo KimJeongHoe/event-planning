@@ -1,0 +1,215 @@
+{"case": "CAL-012", "edits": [{"field": "source_dates", "after": "2024-11-14"}], "flag": ""}
+{"case": "CAL-020", "edits": [{"field": "source_dates", "after": "2025-07-18"}], "flag": "원문 입력 2025-07-18 '초복 초특가' 기사인데 사례명·요약은 2026년으로 적음(연도 오류 의심)"}
+{"case": "CAL-028", "edits": [{"field": "source_dates", "after": "2025-09-28"}], "flag": ""}
+{"case": "ERA-005", "edits": [{"field": "source_dates", "after": "날짜 미상 | 2016-06-27"}], "flag": ""}
+{"case": "ERA-006", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "ERA-014", "edits": [{"field": "source_dates", "after": "2010-12-26 | 2024-06-02 | 날짜 미상 | 2026-07-13"}], "flag": ""}
+{"case": "ERA-023", "edits": [{"field": "source_dates", "after": "2016-11-02 | 2016-10-18 | 2026-08-31"}], "flag": ""}
+{"case": "ERA-036", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "ERA-037", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "INT-035", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "INT-045", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "INT-053", "edits": [{"field": "source_dates", "after": "2017-01-16"}], "flag": ""}
+{"case": "INT-056", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "ISS-022", "edits": [{"field": "benefit", "after": "해당없음(스포츠 특수 무산 업계 동향 사례 — 원문은 업계가 할인 쿠폰·배달앱 혜택을 준비했다고만 언급)"}], "flag": ""}
+{"case": "ISS-027", "edits": [{"field": "benefit", "after": "해당없음(앰부시 마케팅 광고 철회 사례)"}], "flag": ""}
+{"case": "ISS-028", "edits": [{"field": "benefit", "after": "해당없음(앰부시 마케팅 단속 사례)"}], "flag": ""}
+{"case": "LAW-005", "edits": [{"field": "benefit", "after": "해당없음(공정위 시정명령·과태료 처분 사례)"}], "flag": ""}
+{"case": "LAW-011", "edits": [{"field": "benefit", "after": "해당없음(공정위 시정명령·과징금 처분 사례)"}], "flag": ""}
+{"case": "LAW-012", "edits": [{"field": "benefit", "after": "해당없음(공정위 부당광고 시정조치 사례)"}], "flag": ""}
+{"case": "LAW-023", "edits": [{"field": "benefit", "after": "해당없음(공정위 표시의무 점검·과태료 검토 사례)"}], "flag": ""}
+{"case": "LAW-024", "edits": [{"field": "benefit", "after": "해당없음(공정위 불공정 약관 시정·표준약관 개정 사례)"}], "flag": ""}
+{"case": "LAW-026", "edits": [{"field": "benefit", "after": "해당없음(특허청 부정경쟁행위 시정권고 사례)"}], "flag": ""}
+{"case": "LAW-027", "edits": [{"field": "benefit", "after": "해당없음(조직위 앰부시 마케팅 권고 사례)"}], "flag": ""}
+{"case": "LAW-028", "edits": [{"field": "benefit", "after": "해당없음(FIFA 상표 사용 제한·로열티 요구 사례)"}], "flag": ""}
+{"case": "LAW-029", "edits": [{"field": "benefit", "after": "해당없음(이탈리아 경쟁당국 벌금 처분 사례)"}], "flag": ""}
+{"case": "LAW-030", "edits": [{"field": "benefit", "after": "해당없음(불법 현수막 과태료 처분 사례)"}], "flag": ""}
+{"case": "LAW-031", "edits": [{"field": "benefit", "after": "해당없음(불법 현수막 과태료 처분 사례)"}], "flag": ""}
+{"case": "LAW-032", "edits": [{"field": "benefit", "after": "해당없음(입간판·에어라이트 정비·단속 사례)"}], "flag": ""}
+{"case": "LAW-033", "edits": [{"field": "benefit", "after": "해당없음(전단 배포 법적 처벌 안내 사례)"}], "flag": ""}
+{"case": "LAW-035", "edits": [{"field": "benefit", "after": "해당없음(식약처 부당광고 적발 사례)"}], "flag": ""}
+{"case": "LAW-036", "edits": [{"field": "benefit", "after": "해당없음(숙취해소 표시·광고 실증 규제 사례)"}], "flag": ""}
+{"case": "LAW-037", "edits": [{"field": "benefit", "after": "해당없음(식약처 위생 점검·처분 사례)"}], "flag": ""}
+{"case": "LAW-038", "edits": [{"field": "benefit", "after": "해당없음(공정위 수사의뢰·과태료 사례)"}], "flag": ""}
+{"case": "LAW-039", "edits": [{"field": "benefit", "after": "해당없음(광고 문자 정보통신망법 위반 처분 사례)"}], "flag": ""}
+{"case": "MST-001", "edits": [{"field": "benefit", "after": "해당없음(식약처 부당광고 적발 사례)"}], "flag": ""}
+{"case": "MST-003", "edits": [{"field": "benefit", "after": "해당없음(가격표 게시 규정·처분 강화 사례)"}], "flag": ""}
+{"case": "MST-004", "edits": [{"field": "benefit", "after": "해당없음(법령 개정 사례)"}], "flag": ""}
+{"case": "NFD-005", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "NFD-006", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "NFD-007", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "NFD-008", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "NFD-009", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "NFD-010", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "NFD-011", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "NFD-021", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "NFD-023", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "NFD-024", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "NFD-025", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "NFD-026", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "NFD-027", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "NFD-028", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "NFD-029", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "NFD-030", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "NFD-034", "edits": [{"field": "source_dates", "after": "2025-08-04 | 2025-08-07"}], "flag": ""}
+{"case": "NFD-036", "edits": [{"field": "source_dates", "after": "2025-08-17"}], "flag": ""}
+{"case": "NFD-056", "edits": [{"field": "source_dates", "after": "2011-06-13"}, {"field": "benefit", "after": "해당없음(공정위 과태료 처분 사례)"}], "flag": ""}
+{"case": "NFD-057", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "NFD-059", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "NFD-061", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "NFD-062", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "NFD-063", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "NFD-064", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "NFD-065", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "NFD-066", "edits": [{"field": "source_dates", "after": "날짜 미상 | 날짜 미상"}], "flag": ""}
+{"case": "NFD-070", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "NFD-071", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "NFD-074", "edits": [{"field": "benefit", "after": "해당없음(공정위 시정명령·과징금 처분 사례)"}], "flag": ""}
+{"case": "NFD-075", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "ONL-010", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "ONL-013", "edits": [{"field": "source_dates", "after": "날짜 미상 | 날짜 미상 | 2025-12-31"}], "flag": ""}
+{"case": "ONL-015", "edits": [{"field": "benefit", "after": "해당없음(유튜버 의혹 제기로 생긴 위기 사례)"}], "flag": ""}
+{"case": "ONL-017", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "ONL-019", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "ONL-021", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "ONL-023", "edits": [{"field": "source_dates", "after": "날짜 미상 | 날짜 미상"}], "flag": ""}
+{"case": "ONL-024", "edits": [{"field": "benefit", "after": "해당없음(맘카페 갑질 논란·상인 대응 사례)"}], "flag": ""}
+{"case": "ONL-026", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "ONL-027", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "ONL-029", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "ONL-036", "edits": [{"field": "source_dates", "after": "2024-02-20"}], "flag": ""}
+{"case": "ONL-037", "edits": [{"field": "source_dates", "after": "2026-02-02"}], "flag": ""}
+{"case": "ONL-043", "edits": [{"field": "source_dates", "after": "2010-05-05 | 날짜 미상"}], "flag": ""}
+{"case": "ONL-044", "edits": [{"field": "benefit", "after": "해당없음(주류 광고 규제 판정 사례)"}], "flag": ""}
+{"case": "OPN-006", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "OPN-008", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "OPN-010", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "OPN-018", "edits": [{"field": "source_dates", "after": "2025-06-05"}], "flag": ""}
+{"case": "OPN-019", "edits": [{"field": "source_dates", "after": "2025-03-30"}], "flag": ""}
+{"case": "OPN-023", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": "원문 '입력 2018.05.18 15:51'은 본문 '내일(14일)'과 맞지 않음(같은 시각 일괄 표기, 이관 시각으로 보임) — 2018년 5월 13일 전후 기사로 추정, 미상 처리"}
+{"case": "OPN-028", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "OPN-029", "edits": [{"field": "source_dates", "after": "2024-12-19"}], "flag": ""}
+{"case": "OPN-033", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "OPN-035", "edits": [{"field": "source_dates", "after": "2026-10-14"}], "flag": ""}
+{"case": "OPN-038", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "OPN-039", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "SVC-005", "edits": [{"field": "source_dates", "after": "날짜 미상 | 날짜 미상"}], "flag": ""}
+{"case": "SVC-022", "edits": [{"field": "source_dates", "after": "2023-04-19"}], "flag": ""}
+{"case": "SVC-027", "edits": [{"field": "source_dates", "after": "2023-09-13"}], "flag": ""}
+{"case": "SVC-028", "edits": [{"field": "source_dates", "after": "날짜 미상 | 날짜 미상 | 2026-03-03"}], "flag": ""}
+{"case": "SVC-029", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "SVC-030", "edits": [{"field": "source_dates", "after": "날짜 미상 | 2025-10-03"}], "flag": ""}
+{"case": "SVC-036", "edits": [{"field": "source_dates", "after": "2026-05-08"}], "flag": ""}
+{"case": "SVC-037", "edits": [{"field": "source_dates", "after": "날짜 미상 | 날짜 미상"}], "flag": ""}
+{"case": "SVC-038", "edits": [{"field": "source_dates", "after": "날짜 미상 | 날짜 미상"}], "flag": ""}
+{"case": "SVC-039", "edits": [{"field": "source_dates", "after": "날짜 미상 | 날짜 미상"}], "flag": ""}
+{"case": "SVC-043", "edits": [{"field": "source_dates", "after": "2023-12-08"}], "flag": ""}
+{"case": "SVC-045", "edits": [{"field": "source_dates", "after": "날짜 미상 | 2026-06-18 | 날짜 미상"}], "flag": ""}
+{"case": "SVC-049", "edits": [{"field": "source_dates", "after": "2012-10-07"}], "flag": ""}
+{"case": "CLS-002", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "CLS-014", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "CLS-018", "edits": [{"field": "source_dates", "after": "2014-03-17"}], "flag": ""}
+{"case": "CSR-007", "edits": [{"field": "source_dates", "after": "2023-04-28"}], "flag": ""}
+{"case": "CSR-014", "edits": [{"field": "source_dates", "after": "2007-11-13"}], "flag": ""}
+{"case": "CSR-021", "edits": [{"field": "benefit", "after": "해당없음(급식카드 부정사용 적발 사례)"}], "flag": ""}
+{"case": "CSR-024", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": "원문 '입력 2018.05.18 15:51'은 다른 인사이트 기사(155028)와 같은 시각의 일괄 표기로 보여 게재일로 쓰지 않음(미상 처리)"}
+{"case": "PRE-006", "edits": [{"field": "source_dates", "after": "2016-05-15"}], "flag": ""}
+{"case": "PRE-007", "edits": [{"field": "source_dates", "after": "2016-05-15"}], "flag": ""}
+{"case": "PRE-008", "edits": [{"field": "source_dates", "after": "2016-05-15"}], "flag": ""}
+{"case": "PRE-012", "edits": [{"field": "benefit", "after": "해당없음(지자체 가림벽 디자인 규정 사례)"}], "flag": ""}
+{"case": "PRE-018", "edits": [{"field": "source_dates", "after": "2025-12-10"}], "flag": ""}
+{"case": "PRE-019", "edits": [{"field": "source_dates", "after": "2016-05-15"}], "flag": ""}
+{"case": "PRE-023", "edits": [{"field": "source_dates", "after": "2025-09-05"}], "flag": ""}
+{"case": "REL-003", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "REL-004", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "REL-005", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "REL-007", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "REL-008", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "REL-009", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "REL-010", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "REL-011", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "REL-020", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "REL-021", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "REL-022", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "REL-023", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "REL-024", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "BIZ-004", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "BIZ-006", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "BIZ-013", "edits": [{"field": "source_dates", "after": "2025-04-19"}], "flag": ""}
+{"case": "BIZ-020", "edits": [{"field": "source_dates", "after": "2018-08-29"}], "flag": ""}
+{"case": "BIZ-021", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "BIZ-024", "edits": [{"field": "source_dates", "after": "2016-01-08"}], "flag": ""}
+{"case": "BIZ-028", "edits": [{"field": "source_dates", "after": "2026-07-22"}], "flag": ""}
+{"case": "BIZ-031", "edits": [{"field": "source_dates", "after": "2014-11-14"}], "flag": ""}
+{"case": "BIZ-036", "edits": [{"field": "source_dates", "after": "2021-07-04"}], "flag": ""}
+{"case": "BIZ-043", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "BIZ-046", "edits": [{"field": "source_dates", "after": "2021-03-22"}, {"field": "benefit", "after": "해당없음(악성 리뷰 피해 사례)"}], "flag": ""}
+{"case": "RET-002", "edits": [{"field": "benefit", "after": "해당없음(손님 혜택 없는 개업 홍보 관행·독자 투고)"}], "flag": ""}
+{"case": "RET-004", "edits": [{"field": "benefit", "after": "해당없음(인형탈 거리 홍보, 손님 혜택 없음)"}], "flag": ""}
+{"case": "RET-005", "edits": [{"field": "benefit", "after": "해당없음(개업 소음 규제고시·단속 사례)"}], "flag": ""}
+{"case": "RET-008", "edits": [{"field": "benefit", "after": "해당없음(가두 홍보 관행, 손님 혜택 없음)"}], "flag": ""}
+{"case": "RET-009", "edits": [{"field": "benefit", "after": "해당없음(풍선아치·도우미 개업 홍보 관행)"}], "flag": ""}
+{"case": "RET-010", "edits": [{"field": "benefit", "after": "해당없음(홍보도우미 관행·단속 사례)"}], "flag": ""}
+{"case": "RET-012", "edits": [{"field": "benefit", "after": "해당없음(개업 공연, 손님 혜택 없음)"}], "flag": ""}
+{"case": "RET-015", "edits": [{"field": "benefit", "after": "해당없음(개업 공연, 손님 혜택 없음)"}], "flag": ""}
+{"case": "RET-017", "edits": [{"field": "benefit", "after": "해당없음(개업 홍보 연출, 손님 혜택 없음)"}], "flag": ""}
+{"case": "RET-019", "edits": [{"field": "benefit", "after": "해당없음(현장 홍보, 손님 혜택 없음)"}], "flag": ""}
+{"case": "RET-021", "edits": [{"field": "benefit", "after": "해당없음(화환 대신 쌀 기부 사례)"}], "flag": ""}
+{"case": "RET-022", "edits": [{"field": "benefit", "after": "해당없음(개원 쌀 기부 사례)"}], "flag": ""}
+{"case": "RET-029", "edits": [{"field": "benefit", "after": "해당없음(전단 범람 보도 사례)"}], "flag": ""}
+{"case": "RET-031", "edits": [{"field": "benefit", "after": "해당없음(불법광고물 단속·과태료 사례)"}], "flag": ""}
+{"case": "RET-032", "edits": [{"field": "benefit", "after": "해당없음(무단 광고 스티커 사례)"}], "flag": ""}
+{"case": "RET-034", "edits": [{"field": "benefit", "after": "해당없음(예식장 방문 홍보, 손님 혜택 없음)"}], "flag": ""}
+{"case": "TIM-028", "edits": [{"field": "source_dates", "after": "2026-06-24"}], "flag": ""}
+{"case": "TIM-034", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "EMP-012", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "EMP-028", "edits": [{"field": "source_dates", "after": "2018-07-20"}], "flag": ""}
+{"case": "EMP-035", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "EMP-045", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "EMP-048", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "JP2-015", "edits": [{"field": "benefit", "after": "해당없음(혜택 없는 폐점 사례)"}], "flag": ""}
+{"case": "JP2-016", "edits": [{"field": "benefit", "after": "해당없음(서점 폐점 발표 후 양도 사례)"}], "flag": ""}
+{"case": "JP2-020", "edits": [{"field": "benefit", "after": "해당없음(호우 피해 료칸 단계 재개 안내 사례)"}], "flag": ""}
+{"case": "JP2-028", "edits": [{"field": "benefit", "after": "해당없음(포장마차 동시 개업 사례)"}], "flag": ""}
+{"case": "JP2-029", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "JP2-031", "edits": [{"field": "benefit", "after": "해당없음(혜택 없는 폐점 사례)"}], "flag": ""}
+{"case": "JP2-036", "edits": [{"field": "benefit", "after": "해당없음(비매너 손님 대응 운영 공지 사례)"}], "flag": ""}
+{"case": "EMP-055", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "EMP-057", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "EMP-060", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "EMP-062", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "RT2-014", "edits": [{"field": "benefit", "after": "해당없음(개업 소음·인도 점거 민원 독자 투고)"}], "flag": ""}
+{"case": "KRA-010", "edits": [{"field": "benefit", "after": "해당없음(교습비 특별점검·과태료 처분 사례)"}], "flag": "기존 출처날짜 첫 항목 2026-04-21은 헤럴드경제 원문 '기사입력 2026-04-20 19:00'과 하루 다름"}
+{"case": "KRA-035", "edits": [{"field": "benefit", "after": "해당없음(약국 가격 제도 논란 사례)"}], "flag": ""}
+{"case": "KRB-025", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "KRB-026", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "KRB-027", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "KRB-036", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "KRC-030", "edits": [{"field": "benefit", "after": "해당없음(사건 후 방문 쏠림 사례)"}], "flag": "기존 출처날짜 첫 항목 2026-10-16은 경인일보 원문 '입력 2026-10-18 19:30'과 다름(10-16은 사진 촬영일)"}
+{"case": "KRC-031", "edits": [{"field": "benefit", "after": "해당없음(산불 피해 횟집 재개업 사례)"}], "flag": "기존 출처날짜 2025-12-30은 한국일보 원문 '입력 2025.12.31 04:30'과 하루 다름"}
+{"case": "KRC-032", "edits": [{"field": "benefit", "after": "해당없음(코로나 위기 대응·폐업 사례)"}], "flag": ""}
+{"case": "KRC-036", "edits": [{"field": "benefit", "after": "해당없음(화재 복구 임시시장 사례)"}], "flag": ""}
+{"case": "KRC-038", "edits": [{"field": "benefit", "after": "해당없음(화재 후 재건 사례)"}], "flag": ""}
+{"case": "KRC-039", "edits": [{"field": "benefit", "after": "해당없음(확진자 방문 시장 안심 방문 연출)"}], "flag": ""}
+{"case": "KRC-040", "edits": [{"field": "benefit", "after": "해당없음(바가지 논란 후 상권 침체 사례)"}], "flag": "기존 출처날짜 2026-07-28은 경기일보 원문 '승인 2026-07-29 06:00'과 하루 다름(주소에는 20260728)"}
+{"case": "NT1-015", "edits": [{"field": "benefit", "after": "해당없음(혜택 없는 감사 손편지 사례)"}], "flag": ""}
+{"case": "NT1-016", "edits": [{"field": "benefit", "after": "해당없음(가격표 떼기 표시 방식 사례)"}], "flag": ""}
+{"case": "NT1-017", "edits": [{"field": "benefit", "after": "해당없음(가격 유지·중량 축소 논란 사례)"}], "flag": ""}
+{"case": "NT1-018", "edits": [{"field": "benefit", "after": "해당없음(가격 유지·중량 축소 논란 사례)"}], "flag": ""}
+{"case": "NT1-019", "edits": [{"field": "benefit", "after": "해당없음(선거 직후 가격 인상 사례)"}], "flag": ""}
+{"case": "NT1-022", "edits": [{"field": "benefit", "after": "해당없음(착한가격업소 가격 정책 사례)"}], "flag": "기존 출처날짜 2026-03은 고대신문 원문 '입력 2026.01.16'(업데이트 2026.03.13)과 다름"}
+{"case": "NT1-023", "edits": [{"field": "benefit", "after": "해당없음(배달 이중가격 도입·공지 논란 사례)"}], "flag": "기존 출처날짜 둘째 항목 2024-09-18은 세계일보 원문 '입력 2024-09-19 00:01'과 하루 다름(주소에는 20240918)"}
+{"case": "NT1-024", "edits": [{"field": "benefit", "after": "해당없음(배달가 인상·이중가격 사례)"}], "flag": ""}
+{"case": "NT1-026", "edits": [{"field": "benefit", "after": "해당없음(쿠폰 차액 요구 논란 사례)"}], "flag": ""}
+{"case": "NT1-036", "edits": [{"field": "benefit", "after": "해당없음(특사경 적발 처분 사례)"}], "flag": ""}
+{"case": "NT1-037", "edits": [{"field": "benefit", "after": "해당없음(지역화폐 부정유통 단속 사례)"}], "flag": ""}
+{"case": "NT1-038", "edits": [{"field": "benefit", "after": "해당없음(상품권 부정유통 단속 사례)"}], "flag": ""}
+{"case": "NT1-039", "edits": [{"field": "benefit", "after": "해당없음(온누리상품권 부정유통 과태료 처분 사례)"}], "flag": ""}
+{"case": "NT1-040", "edits": [{"field": "benefit", "after": "해당없음(법 개정·처분 사례)"}], "flag": ""}
+{"case": "NT2-031", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "NT4-029", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "NT4-030", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "NT4-031", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "NT4-032", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "NT4-033", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
+{"case": "NT4-034", "edits": [{"field": "source_dates", "after": "날짜 미상"}], "flag": ""}
