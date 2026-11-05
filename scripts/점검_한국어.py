@@ -14,6 +14,7 @@ def scan(text,where):
     for ln in clean(text).splitlines():
         if ALLOW.search(ln): continue
         m=EN.search(ln)
+        if m and all(w.isupper() and len(w)<=4 for w in re.findall(r"[A-Za-z]+",m.group(0))): continue  # 대문자 약어 목록(접두어 등)은 문장이 아님
         if m and len(m.group(0))>=18: out.append(f"{where}: {ln.strip()[:120]}")
     return out
 args=sys.argv[1:];hits=[]
