@@ -1,3 +1,4 @@
+<meta charset="utf-8">
 <title>사장님 행사안 고르기</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap">
@@ -214,7 +215,7 @@ const SUBMAP=s=>{const R=[[/치킨|호프|주점|포차|펍|이자카야/,"치�
 const STG=st=>({"오픈전":"오픈전","가오픈":"오픈전","그랜드오픈":"그랜드오픈","오픈N일":"그랜드오픈","정착기":"정착기","상시":"상시","비수기":"상시","위기회복":"위기회복","리뉴얼":"위기회복","신메뉴":"위기회복","N주년":"상시","폐업정리":""})[st]||"";
 const FAM={"고깃집":["치킨호프","한식"],"치킨호프":["고깃집","한식"],"카페":["베이커리","고깃집"],"미용실":["네일피부"],"한식":["고깃집","반찬가게"],"베이커리":["카페"],"반찬가게":["한식","베이커리"],"편의점":[],"의류잡화":[],"꽃집":[],"세탁소":[],"네일피부":["미용실"],"헬스":["태권도장"],"태권도장":["학원"],"학원":["태권도장"],"정육점":["반찬가게"],"화장품":[],"사진관":[],"정비세차":[],"PC방":[],"숙박":[],"반려동물":[],"병의원":[],"약국":[],"동물병원":[],"공인중개사":[],"휴대폰":[],"노래방":[]};
 // 달력에 있는 시점만 '지금 시기'로 본다(스포츠 경기는 달력 자료에 없어 늘 뒤로)
-function calHas(kind){const K=d=>new Date(d.getTime()+9*3600e3).toISOString().slice(0,10),today=K(new Date()),end=K(new Date(Date.now()+60*864e5));  // 한국 기준
+function calHas(kind){const KD=d=>new Date(d.getTime()+9*3600e3).toISOString().slice(0,10),today=KD(new Date()),end=KD(new Date(Date.now()+60*864e5));  // 한국 기준
  const rows=D.cal.filter(r=>r[0]>=today&&r[0]<=end);const K={"시험·수능":r=>r[2]==="시험","명절":r=>r[2]==="명절·세시","공휴일·연휴":r=>r[2]==="공휴일","기념일":r=>r[2]==="국가기념일"||r[2]==="○○데이","연말송년회":r=>r[0].slice(5,7)==="12","스포츠경기":r=>false,"사회이슈":r=>false,"지역축제":r=>false};
  return K[kind]?rows.some(K[kind]):true}
 const TIMED=["시험·수능","명절","공휴일·연휴","기념일","연말송년회","스포츠경기","사회이슈","지역축제"];
@@ -233,6 +234,7 @@ function run(){
  const I=inp();if(!I.ind){$("#go-msg").textContent="업종을 고르세요";return}
  let sc=D.cases.map(c=>[score(c,I),c]).filter(x=>x[0]>0).sort((a,b)=>b[0]-a[0]);
  if(window.MF)sc=sc.filter(x=>(x[1].mt||[]).includes(window.MF));  // 판 10: 행사 방식으로 거르기
+ if(window.EXCL)sc=sc.filter(x=>!window.EXCL.has(x[1].i));  // 판 11: 다시 뽑기 — 이미 보여 준 사례 빼기
  const usedG=new Set(),natN={};PICKS=[];
  const MAIN=sc.filter(x=>x[1].kd==="행사"),REST=sc.filter(x=>x[1].kd==="안내·참고");const POOL=MAIN.length>=6?MAIN:MAIN.concat(REST);
  for(const [s,c] of POOL){if(PICKS.length>=6)break;if(c.grp&&usedG.has(c.grp))continue;const n=c.na.split("|")[0];if((natN[n]||0)>=2)continue;
@@ -252,6 +254,7 @@ function run(){
  if(whoNote)$("#s2-note").insertAdjacentHTML("afterbegin",`<b>${esc(whoNote)}</b><br>`);
  document.querySelectorAll("[data-pick]").forEach(b=>b.addEventListener("click",()=>pick(+b.dataset.pick)));
  if(window.mfNote)mfNote();
+ if(window.afterRun)afterRun();
  cal();myBox();NAV.length=0;navPush("s2");$("#s2").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"start"});
 }
 function costLabel(c){const u=c.uc||c.cr;return /없음|0원|무비용/.test(u)?"거의 없음":/높음/.test(u)?"높음":/중간/.test(u)?"중간":/낮음/.test(u)?"낮음":"미상"}

@@ -3,6 +3,7 @@
 // deliv = 배달앱 할인 실수령(→ 배달 실수령 도구: merged/다른도구용/배달실수령용_행사근거.json)
 // open  = 개업 행사 한 묶음·D-데이 순서표(→ 개업 D-데이 순서표 도구: merged/다른도구용/개업순서표용_행사항목.json)
 // link  = 연결 파일 시험(관리용. 받은 파일은 spec/연동/에 두면 화면에 들어감)
-const SET9={끈도구:["deliv","open","link"]};
+// 판 11: 꺼 둔 기능 번호·이유·켜는 조건은 spec/설정.json 「끈기능」(끔-1~끔-4)
+const SET9={끈도구:((D.set||{})["끈기능"]||[]).map(x=>x["키"]).filter(Boolean)};if(!SET9.끈도구.length)SET9.끈도구=["deliv","open","link"];
 for(const k of SET9.끈도구){delete TOOLS[k];delete RENDER[k]}
 toolGrid();

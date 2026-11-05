@@ -101,6 +101,9 @@ if os.path.exists(f"{B}/spec/행사방식.json"):
     for c in C: c["mt"]=[k for k,v in _by.items() if c["i"] in v]
     for e in EX: e["mt"]=[m["키"] for m in _m["방식"] if re.search(m["규칙"]," ".join([e["n"],e["b"],e["c"]]),flags=re.I)]
     MTD={"묶음":_m["묶음"],"기준":_m["기준"],"방식":[{k:v for k,v in m.items() if k not in ("사례","규칙")} for m in _m["방식"]]}
+    # 판 11: 쿠폰 체감 기준선 — 할인·쿠폰 방식 실제 사례의 혜택 글에 나온 할인율(%) 분포(출처 = 이 사례 DB)
+    _p=sorted(float(x) for c in C if c.get("k")=="실제" and set(c.get("mt",[]))&{"할인","쿠폰"} for x in re.findall(r"(\d{1,2}(?:\.\d)?)\s?%",c.get("b","")) if 0<float(x)<=90)
+    if _p: MTD["할인율"]={"건":len(_p),"하위25":_p[len(_p)//4],"중앙":_p[len(_p)//2]}
 # ── 판 9: 화면용 글 다듬기 — 「확인 필요」 같은 덜 만든 표시는 화면에 내지 않음(원본 자료·장부에는 그대로). 판정값 v는 화면에서 「신중」으로 표시(template vClass)
 def _scr(t):
     if not isinstance(t,str) or ("확인 필요" not in t and "확인필요" not in t and "미확인" not in t): return t
@@ -128,11 +131,12 @@ PUB="--공개판" in sys.argv
 if PUB:
     _n=len(C);C=[c for c in C if not (c.get("k")=="실제" and not c.get("u"))];print("공개판: 출처 주소 없는 실제 사례",_n-len(C),"건 뺌")
 IQ=json.load(open(f"{B}/spec/업종질문_판10.json",encoding="utf-8")) if os.path.exists(f"{B}/spec/업종질문_판10.json") else {}  # 판 10 업종 전용 질문
-DATA=dict(iq=IQ,mtd=MTD,link=LINKD,ind8=IND,law=LAW,ex=EX,sms=SMS,all=ALL,nex=NEX,nbl=NBL,cases=C,faq=F,bank=bank,cal=cal,samples=S,built=pd.Timestamp.now(tz="Asia/Seoul").strftime("%Y-%m-%d"))
+SETF=json.load(open(f"{B}/spec/설정.json",encoding="utf-8")) if os.path.exists(f"{B}/spec/설정.json") else {}  # 판 11 설정값
+DATA=dict(set=SETF,iq=IQ,mtd=MTD,link=LINKD,ind8=IND,law=LAW,ex=EX,sms=SMS,all=ALL,nex=NEX,nbl=NBL,cases=C,faq=F,bank=bank,cal=cal,samples=S,built=pd.Timestamp.now(tz="Asia/Seoul").strftime("%Y-%m-%d"))
 js=json.dumps(DATA,ensure_ascii=False,separators=(",",":")).replace("</","<\\/")
 tpl=open(f"{B}/preview/template.html",encoding="utf-8").read()
 out=tpl.replace("/*__DATA__*/null",js)
-plus="\n".join(open(f"{B}/preview/{n}",encoding="utf-8").read() for n in ("vendor_qrcode.js","plus7.js","link8.js","ind8.js","method10.js","coupon10.js","set9.js") if os.path.exists(f"{B}/preview/{n}")).replace("</","<\\/")
+plus="\n".join(open(f"{B}/preview/{n}",encoding="utf-8").read() for n in ("vendor_qrcode.js","plus7.js","link8.js","ind8.js","method10.js","coupon10.js","plan11.js","qa11.js","set9.js") if os.path.exists(f"{B}/preview/{n}")).replace("</","<\\/")
 out=out.replace("/*__PLUS__*/",plus)
 open(f"{B}/preview/"+("행사안_공개판.html" if PUB else "행사안_미리보기.html"),"w",encoding="utf-8").write(out)
 print("사례",len(C),"FAQ",len(F),"문구",len(bank),"달력",len(cal),"크기",len(out.encode())//1024,"KB")

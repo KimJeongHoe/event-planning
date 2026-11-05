@@ -51,7 +51,8 @@ async function recMigrate(){if(!ST.db||ST.ro)return 0;let n=0;for(const r of ST.
   try{await ST.db.collection("data/users/"+ST.uid).doc(id).set(b);lsPut(lsGet().filter(x=>x.id!==old));Object.assign(r,c);delete r.loc;n++}catch(e){break}}renderStore();return n}
 async function saveFile(name,text){if(ST.dl){try{await ST.dl.save({filename:name,data:text})}catch(e){if(e&&e.code==="declined")return}return}
  try{const a=document.createElement("a");a.href=URL.createObjectURL(new Blob(["﻿"+text],{type:"text/plain"}));a.download=name;document.body.appendChild(a);a.click();a.remove()}catch(e){alert("이 화면에서는 내려받기를 할 수 없습니다")}}
-const csvc=v=>{v=String(v??"");if(/^[=+\-@]/.test(v))v="'"+v;return /[",\n]/.test(v)?`"${v.replace(/"/g,'""')}"`:v};
+const csvc=v=>{v=String(v??"");if(/^["'\s]*[=+\-@\t\r]/.test(v))v="'"+v;  // 판 11: 따옴표·공백 뒤 수식도 막음
+ return /[",\n]/.test(v)?`"${v.replace(/"/g,'""')}"`:v};
 const toCSV=rows=>rows.map(r=>r.map(csvc).join(",")).join("\n");
 function renderStore(){const el=$("#store-mode");if(el)el.textContent=`기록 저장: ${ST.mode} · 결과 ${ST.rec.filter(r=>r.t==="결과").length} · 주변 가게 ${ST.rec.filter(r=>r.t==="주변").length} · 쿠폰 묶음 ${ST.rec.filter(r=>r.t==="쿠폰").length}`;
  if(TOOL==="mine")openTool("mine",true);if(!$("#s2").hidden)myBox()}
@@ -271,13 +272,13 @@ RENDER.open=()=>{const I=inp();const sub=SUBMAP(I.sub||"");const ex=st=>D.ex.fil
 
 // 5·6. 결과 기록·전후 비교
 RENDER.result=()=>{const I=inp();body(`<p class="small" style="margin:0">행사 기간과 <b>같은 길이·같은 요일 수</b>의 바로 전 기간을 비교하세요. 날씨·공휴일·근처 공사 같은 다른 이유도 메모에 적습니다. 손님 이름·연락처는 적지 않습니다.</p>
- <div class="grid"><label>행사 이름<input id="rs-name" value="${esc(CUR?CUR.n:"")}"></label><label>시작일<input type="date" id="rs-s1"></label><label>끝날<input type="date" id="rs-s2"></label><label>평가<select id="rs-ev"><option>좋았음</option><option>보통</option><option>별로</option></select></label></div>
+ <div class="grid"><label>행사 이름<input id="rs-name" value="${esc(CUR?CUR.n:"")}"></label><label>그날 날씨(판 11)<select id="rs-wx"><option value="">모름</option><option>맑음</option><option>흐림</option><option>비</option><option>눈</option><option>폭염</option><option>한파</option></select></label><label>시작일<input type="date" id="rs-s1"></label><label>끝날<input type="date" id="rs-s2"></label><label>평가<select id="rs-ev"><option>좋았음</option><option>보통</option><option>별로</option></select></label></div>
  <div class="tw"><table><tr><th></th><th class="num">행사 전(같은 길이)</th><th class="num">행사 중</th></tr>${[["손님 수(명)","c"],["매출(원)","m"],["리뷰 수(개)","rv"]].map(([l,k])=>`<tr><td>${l}</td><td><input id="rs-${k}0" inputmode="numeric"></td><td><input id="rs-${k}1" inputmode="numeric"></td></tr>`).join("")}<tr><td>쿠폰 회수(장)</td><td></td><td><input id="rs-cp" inputmode="numeric"></td></tr><tr><td>행사에 쓴 돈(원)</td><td></td><td><input id="rs-cost" inputmode="numeric"></td></tr></table></div>
  <div class="out" id="rs-out"></div>
  <label>다음에 바꿀 점·다른 이유 메모<textarea id="rs-memo" style="min-height:80px"></textarea></label>
  <div class="row"><button type="button" class="main" id="rs-save">결과 저장</button><span class="small" id="rs-msg"></span></div>
  <p class="small" style="margin:0">저장하면 다음에 행사안을 볼 때 「내 기록」과 같은 안의 카드에 「해 본 안」으로 나오고, 좋았던 안은 조금 앞으로, 별로였던 안은 뒤로 갑니다. ${CUR?`(사례 ${CUR.k==="응용예시"?CUR.i:"#"+CUR.i}와 연결)`:"(행사안을 고르고 기록하면 그 안과 연결됩니다)"}</p>`);
- const g=()=>({t:"결과",name:v7("#rs-name"),s1:v7("#rs-s1"),s2:v7("#rs-s2"),ev:v7("#rs-ev"),c0:n7("#rs-c0"),c1:n7("#rs-c1"),m0:n7("#rs-m0"),m1:n7("#rs-m1"),rv0:n7("#rs-rv0"),rv1:n7("#rs-rv1"),cp:n7("#rs-cp"),cost:n7("#rs-cost"),memo:v7("#rs-memo"),ci:CUR?String(CUR.i):"",ind:I.ind,sub:I.sub,st:I.st});
+ const g=()=>({t:"결과",name:v7("#rs-name"),wx:v7("#rs-wx"),s1:v7("#rs-s1"),s2:v7("#rs-s2"),ev:v7("#rs-ev"),c0:n7("#rs-c0"),c1:n7("#rs-c1"),m0:n7("#rs-m0"),m1:n7("#rs-m1"),rv0:n7("#rs-rv0"),rv1:n7("#rs-rv1"),cp:n7("#rs-cp"),cost:n7("#rs-cost"),memo:v7("#rs-memo"),ci:CUR?String(CUR.i):"",ind:I.ind,sub:I.sub,st:I.st});
  const up=()=>{const r=g();const pc=(a,b)=>a&&b!=null?((b-a)/a*100).toFixed(1)+"%":"계산 불가";const ag=(m,c)=>m!=null&&c?won(m/c):"계산 불가";
   $("#rs-out").innerHTML=[["손님 변화",pc(r.c0,r.c1)],["매출 변화",pc(r.m0,r.m1)],["객단가 전→중",ag(r.m0,r.c0)+" → "+ag(r.m1,r.c1)],["리뷰 늘어난 수",r.rv0!=null&&r.rv1!=null?(r.rv1-r.rv0)+"개":"계산 불가"],["늘어난 매출 − 쓴 돈",r.m0!=null&&r.m1!=null&&r.cost!=null?won(r.m1-r.m0-r.cost):"계산 불가"],["쿠폰 1장당 쓴 돈",r.cost!=null&&r.cp?won(r.cost/r.cp):"계산 불가"]].map(([a,b])=>`<div><span>${a}</span><b>${b}</b></div>`).join("")+`<div style="grid-column:1/-1"><span>읽는 법</span><b style="font-size:.85rem;font-weight:500">「늘어난 매출 − 쓴 돈」은 매출 기준이라 원가를 빼지 않았습니다. 남는 돈은 원가 확인 탭의 「손님 1명당 이익」으로 다시 보세요.</b></div>`};
  $("#tool-body").addEventListener("input",up);up();
