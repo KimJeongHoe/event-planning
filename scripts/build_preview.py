@@ -128,7 +128,7 @@ PUB="--공개판" in sys.argv
 if PUB:
     _n=len(C);C=[c for c in C if not (c.get("k")=="실제" and not c.get("u"))];print("공개판: 출처 주소 없는 실제 사례",_n-len(C),"건 뺌")
 IQ=json.load(open(f"{B}/spec/업종질문_판10.json",encoding="utf-8")) if os.path.exists(f"{B}/spec/업종질문_판10.json") else {}  # 판 10 업종 전용 질문
-DATA=dict(iq=IQ,mtd=MTD,link=LINKD,ind8=IND,law=LAW,ex=EX,sms=SMS,all=ALL,nex=NEX,nbl=NBL,cases=C,faq=F,bank=bank,cal=cal,samples=S,built=pd.Timestamp.today().strftime("%Y-%m-%d"))
+DATA=dict(iq=IQ,mtd=MTD,link=LINKD,ind8=IND,law=LAW,ex=EX,sms=SMS,all=ALL,nex=NEX,nbl=NBL,cases=C,faq=F,bank=bank,cal=cal,samples=S,built=pd.Timestamp.now(tz="Asia/Seoul").strftime("%Y-%m-%d"))
 js=json.dumps(DATA,ensure_ascii=False,separators=(",",":")).replace("</","<\\/")
 tpl=open(f"{B}/preview/template.html",encoding="utf-8").read()
 out=tpl.replace("/*__DATA__*/null",js)

@@ -214,7 +214,7 @@ const SUBMAP=s=>{const R=[[/치킨|호프|주점|포차|펍|이자카야/,"치�
 const STG=st=>({"오픈전":"오픈전","가오픈":"오픈전","그랜드오픈":"그랜드오픈","오픈N일":"그랜드오픈","정착기":"정착기","상시":"상시","비수기":"상시","위기회복":"위기회복","리뉴얼":"위기회복","신메뉴":"위기회복","N주년":"상시","폐업정리":""})[st]||"";
 const FAM={"고깃집":["치킨호프","한식"],"치킨호프":["고깃집","한식"],"카페":["베이커리","고깃집"],"미용실":["네일피부"],"한식":["고깃집","반찬가게"],"베이커리":["카페"],"반찬가게":["한식","베이커리"],"편의점":[],"의류잡화":[],"꽃집":[],"세탁소":[],"네일피부":["미용실"],"헬스":["태권도장"],"태권도장":["학원"],"학원":["태권도장"],"정육점":["반찬가게"],"화장품":[],"사진관":[],"정비세차":[],"PC방":[],"숙박":[],"반려동물":[],"병의원":[],"약국":[],"동물병원":[],"공인중개사":[],"휴대폰":[],"노래방":[]};
 // 달력에 있는 시점만 '지금 시기'로 본다(스포츠 경기는 달력 자료에 없어 늘 뒤로)
-function calHas(kind){const today=new Date().toISOString().slice(0,10),end=new Date(Date.now()+60*864e5).toISOString().slice(0,10);
+function calHas(kind){const K=d=>new Date(d.getTime()+9*3600e3).toISOString().slice(0,10),today=K(new Date()),end=K(new Date(Date.now()+60*864e5));  // 한국 기준
  const rows=D.cal.filter(r=>r[0]>=today&&r[0]<=end);const K={"시험·수능":r=>r[2]==="시험","명절":r=>r[2]==="명절·세시","공휴일·연휴":r=>r[2]==="공휴일","기념일":r=>r[2]==="국가기념일"||r[2]==="○○데이","연말송년회":r=>r[0].slice(5,7)==="12","스포츠경기":r=>false,"사회이슈":r=>false,"지역축제":r=>false};
  return K[kind]?rows.some(K[kind]):true}
 const TIMED=["시험·수능","명절","공휴일·연휴","기념일","연말송년회","스포츠경기","사회이슈","지역축제"];
@@ -265,7 +265,7 @@ function planCard(c,i,I){
  <dl class="kv"><dt>조건</dt><dd>${esc(c.c)}</dd><dt>혜택</dt><dd>${esc(c.b)}</dd><dt>1회 원가</dt><dd>${costLabel(c)}</dd>${(c.mt||[]).length&&D.mtd&&D.mtd["방식"]?`<dt>행사 방식</dt><dd>${c.mt.map(k=>(D.mtd["방식"].find(m=>m["키"]===k)||{})["이름"]).filter(Boolean).map(esc).join(" · ")}</dd>`:""}</dl>
  <div class="foot"><span class="small">${src}</span><button type="button" class="main" data-pick="${i}">이 안 고르기</button></div></article>`}
 function cal(){
- const box=$("#calbox");const today=new Date();const iso=d=>d.toISOString().slice(0,10);
+ const box=$("#calbox");const today=new Date();const iso=d=>new Date(d.getTime()+9*3600e3).toISOString().slice(0,10);  // 한국 기준
  if(!D.cal.length){box.innerHTML=`<h3>다가오는 날짜</h3><p class="empty">달력 자료 없음</p>`;return}
  const base=D.cal[0][4];const age=(today-new Date(base))/864e5;
  if(age>90){box.innerHTML=`<h3>다가오는 날짜</h3><p class="empty">달력 자료 없음 (캘린더 기준일 ${esc(base)}이 90일 넘게 지남)</p>`;return}

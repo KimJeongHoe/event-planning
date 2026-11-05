@@ -14,7 +14,7 @@ for r in csv.DictReader(open(f"{B}/merged/FAQ.csv",encoding="utf-8-sig")):
 P=open(f"{B}/preview/plus7.js",encoding="utf-8").read()
 law=lambda ks:[{k:LAW[x].get(k) for k in ("key","law","art","gist","status","note","file")} for x in ks if x in LAW]
 faq=lambda ids:[FAQ.get(i,{"번호":i,"메모":"FAQ.csv에서 찾지 못함"}) for i in ids]
-today=datetime.date.today().isoformat()
+today=datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).date().isoformat()  # 한국 기준
 # 1) 배달 실수령
 m=re.search(r'계산식: (.*?)</p>',P[P.index("RENDER.deliv"):]);
 d={"종류":"행사도구_배달근거","기준일":today,"출처":"사장님 행사안 고르기(판 9에서 꺼 둔 「배달앱 할인 실수령」 기능)",

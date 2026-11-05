@@ -11,7 +11,7 @@ python3 -I scripts/pending.py > /dev/null   # 공식 판단 대기 목록
 python3 -I scripts/col_doc.py > /dev/null   # 도구 CSV 칸 설명서
 python3 -I scripts/checks.py > /dev/null   # 시행일·문구 은행 자동 검사(통계.md 맨 앞 경고)
 python3 -I scripts/selftest_check_plan.py > /dev/null || { echo '생성 결과 검사 시험이 어긋남 — 묶음을 만들지 않음'; exit 1; }   # 고장 사본으로 검사가 실제로 잡는지 확인
-OUT=${1:-..}; D=$(date +%Y%m%d_%H%M)
+OUT=${1:-..}; D=$(TZ=Asia/Seoul date +%Y%m%d_%H%M)  # 한국 기준
 R=$(basename "$PWD"); cd ..; zip -qr "$OUT/event_db_이관_$D.zip" "$R" -x "*/src_cache/*" "*/verify_packets/*" "*.tmp" "*/.git/*"
 cp $R/merged/사례DB.csv "$OUT/사례DB_$D.csv"; cp $R/merged/FAQ.csv "$OUT/FAQ_$D.csv"
 cp $R/merged/다른도구용/QR오더용_사례.csv "$OUT/QR오더용_사례_$D.csv"; cp $R/merged/다른도구용/디자인메이커_공지물용_사례.csv "$OUT/디자인메이커_공지물용_사례_$D.csv"

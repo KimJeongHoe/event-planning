@@ -3,7 +3,9 @@
 const LAWS=D.law||{};
 const ymd=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
 const addD=(s,n)=>{const d=new Date(s+"T00:00:00");d.setDate(d.getDate()+n);return ymd(d)};
-const TODAY=ymd(new Date());
+// 판 11: 날짜는 한국 기준(기기 시간대와 상관없이 UTC+9)
+const kst=(d=new Date())=>{const k=new Date(d.getTime()+9*3600e3);return k.getUTCFullYear()+"-"+String(k.getUTCMonth()+1).padStart(2,"0")+"-"+String(k.getUTCDate()).padStart(2,"0")};
+const TODAY=kst();
 const PII=/01[016789][-\s.]?\d{3,4}[-\s.]?\d{4}|\d{6}[-\s]?[1-4]\d{6}|[\w.+-]+@[\w-]+\.[a-z]{2,}/i;
 const v7=q=>($(q)?.value||"").trim();
 const n7=q=>{const s=v7(q).replace(/[^0-9.]/g,"");return s===""?null:+s};

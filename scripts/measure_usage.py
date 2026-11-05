@@ -40,4 +40,4 @@ if len(sys.argv)>2:
     with open(hp,"a",encoding="utf-8-sig",newline="") as f:
         w=csv.writer(f)
         if new: w.writerow(["측정 시각","이름","응답 수","입력 새로","캐시 읽기","캐시 쓰기","출력","응답당 다시 읽는 양 평균","최대","마지막","판정"])
-        w.writerow([datetime.datetime.now().strftime("%Y-%m-%d %H:%M"),sys.argv[2],len(rows),tot(0),tot(1),tot(2),tot(3),sum(reread)//len(reread),max(reread),reread[-1],st])
+        w.writerow([datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).strftime("%Y-%m-%d %H:%M"),sys.argv[2],len(rows),tot(0),tot(1),tot(2),tot(3),sum(reread)//len(reread),max(reread),reread[-1],st])
