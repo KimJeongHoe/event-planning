@@ -2,7 +2,7 @@
 const {chromium}=require('playwright');
 (async()=>{const b=await chromium.launch();const p=await b.newPage({viewport:{width:+process.argv[3]||1100,height:900}});const E=[];p.on('pageerror',e=>E.push(e.message));p.on('dialog',d=>d.accept());
 await p.addInitScript(()=>{window.print=()=>{window.__printed=(window.__printed||0)+1}});
-await p.goto('file://'+process.argv[2]);await p.waitForTimeout(500);const o={};
+await p.goto((process.argv[2].startsWith('http')?process.argv[2]:'file://'+process.argv[2]));await p.waitForTimeout(500);const o={};
 await p.click('#mbox summary');await p.waitForTimeout(100);o.방식카드=await p.$$eval('#mlist article',x=>x.length);
 await p.click('[data-mf="쿠폰"]');await p.waitForTimeout(250);o.방식거름=await p.$eval('#s2-note',x=>x.innerText.slice(0,30));
 await p.click('#plans [data-pick]');await p.waitForTimeout(200);

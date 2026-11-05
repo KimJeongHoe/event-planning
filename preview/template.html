@@ -47,7 +47,7 @@ button.ghost{background:transparent}
 .kv{display:grid;grid-template-columns:4.2em 1fr;gap:2px 8px;font-size:.88rem}
 .kv dt{color:var(--mut)}.kv dd{margin:0;min-width:0;overflow-wrap:anywhere}
 .badges{display:flex;flex-wrap:wrap;gap:6px}
-.badge{font-size:.78rem;padding:2px 8px;border-radius:99px;font-weight:500;white-space:nowrap}
+.badge{font-size:.78rem;padding:2px 8px;border-radius:99px;font-weight:500;white-space:normal;max-width:100%;overflow-wrap:anywhere}
 .b-ok{background:var(--oksoft);color:var(--ok)}.b-warn{background:var(--warnsoft);color:var(--warn)}.b-bad{background:var(--badsoft);color:var(--bad)}.b-info{background:var(--infosoft);color:var(--info)}.b-ex{background:var(--exsoft);color:var(--ex)}
 .plan.ex{border-color:var(--ex);background:linear-gradient(var(--exsoft),var(--exsoft)) top/100% 4px no-repeat,var(--paper)}
 .plan .foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:8px}
@@ -85,10 +85,12 @@ details summary{cursor:pointer;color:var(--acc)}
 .cp-cond{font-size:.78rem;color:#4a4f57}.cp-foot{margin-top:auto;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font-size:.72rem;color:#4a4f57}
 @media print{body.print-cp *{visibility:hidden}body.print-cp #cp-card,body.print-cp #cp-card *{visibility:visible}body.print-cp #cp-card{position:fixed;left:0;top:0}}
 @media (prefers-reduced-motion:no-preference){.plan{transition:box-shadow .15s}}
+/* 판 11: 누르는 곳 크기 */
+input:not([type=checkbox]):not([type=radio]):not([type=file]),select,button{min-height:36px}
 </style>
 
 <header class="band"><div class="wrap">
-<h1>사장님 행사안 고르기</h1><span class="small" style="opacity:.85">미리보기 판 7</span>
+<h1>사장님 행사안 고르기</h1><span class="small" style="color:inherit">미리보기 판 11</span>
 <p>가게 정보를 넣으면 실제 사례에서 맞는 행사안을 골라 드립니다. 하나를 고르면 공지문 초안, 준비할 것, 주의 사항, 원가까지 이어서 봅니다. <span id="meta"></span></p>
 </div></header>
 
@@ -262,7 +264,7 @@ function planCard(c,i,I){
  const [vc,vt]=vClass(c.v);const liq=c.lq?`<span class="badge b-bad">술 혜택 — 광고에 쓰면 안 됨</span>`:"";
  const exb=c.k==="응용예시"?`<span class="badge b-ex">응용 예시 · 근거 사례 ${c.bi.map(b=>"#"+b).join("·")}</span>${c.hy==="안내형"?`<span class="badge b-info">안내형 — 가격 혜택 없이 알리기</span>`:""}`:"";const tob=(c.to||timeOff(c))?`<span class="badge b-info">지금 시기 아님 — 달력에 ${esc(c.to||timeOff(c))} 없음</span>`:"";
  const so=exb+tob+(c.kd!=="행사"?`<span class="badge b-info">${esc(c.kd)}</span>`:"")+(c.wh!=="일반 손님"?`<span class="badge b-info">손님: ${esc(c.wh)}</span>`:"")+(c.so?`<span class="badge b-warn">안전운영조건 있음</span>`:"")+(c.fr===2?`<span class="badge b-bad">본사·가맹 지원 전제 — 혼자 하는 가게는 따라 하기 어려움</span>`:c.fr===1?`<span class="badge b-info">큰 브랜드 사례 — 방식만 참고</span>`:"")+(budHit(c,I)?`<span class="badge b-warn">원가 높음 — 예산에 부담</span>`:"")+(window.myBadge?myBadge(c):"");
- const src=c.k==="응용예시"?`응용 예시${c.ref&&c.ref.length?" · 같이 볼 주의 사례 "+c.ref.map(b=>"#"+b).join("·"):""}`:c.k==="응용"?`응용 아이디어(바탕 사례 ${esc(c.bi)})`:`실제 사례 #${c.i}${c.co&&c.co!=="한국"?" · "+esc(c.co):""}`;
+ const src=c.k==="영상"?"영상 사례(주장) — 실제 사례 비중에서 뺌":c.k==="응용예시"?`응용 예시${c.ref&&c.ref.length?" · 같이 볼 주의 사례 "+c.ref.map(b=>"#"+b).join("·"):""}`:c.k==="응용"?`응용 아이디어(바탕 사례 ${esc(c.bi)})`:`실제 사례 #${c.i}${c.co&&c.co!=="한국"?" · "+esc(c.co):""}`;
  return `<article class="plan${c.k==="응용예시"?" ex":""}" id="plan-${i}"><div class="badges"><span class="badge ${vc}">${vt}</span>${so}${liq}</div>
  <h3>${esc(c.n)}</h3><p class="small" style="margin:0">${esc(c.s)}</p>
  <dl class="kv"><dt>조건</dt><dd>${esc(c.c)}</dd><dt>혜택</dt><dd>${esc(c.b)}</dd><dt>1회 원가</dt><dd>${costLabel(c)}</dd>${(c.mt||[]).length&&D.mtd&&D.mtd["방식"]?`<dt>행사 방식</dt><dd>${c.mt.map(k=>(D.mtd["방식"].find(m=>m["키"]===k)||{})["이름"]).filter(Boolean).map(esc).join(" · ")}</dd>`:""}</dl>
@@ -335,9 +337,10 @@ function check(){
  const W=[];const txt={};document.querySelectorAll("#ch-box label:not([hidden]) textarea.nt").forEach(t=>txt[t.dataset.l]=t.value);chCount();
  if(/^\(광고\)/.test($("#nt-sms").value.trim())===false&&CHSEL&&CHSEL.has("sms"))W.push(["문자","맨 앞에 「(광고)」가 없음 — 정보통신망법 제50조","(광고) 표시"]);
  if(CHSEL&&CHSEL.has("sms")&&!/수신 ?거부/.test($("#nt-sms").value))W.push(["문자","무료 수신 거부 방법이 없음 — 정보통신망법 제50조","수신 거부"]);
- const PRO=/할인|반값|특가|1\+1|\d\s?%|기념가|무제한|무한|쿠폰|캐시백|증정|서비스|무료|공짜|한 ?잔 ?더|리필|덤/g;
+ const PRO=/할인|반값|특가|1\+1|\d\s?%|기념가|무제한|무한|쿠폰|캐시백|증정|서비스|무료|공짜|한 ?잔 ?더|리필|덤|해피 ?아워|타임 ?세일/g;  // 판 11: 시간대 혜택도
  for(const [k,t] of Object.entries(txt)){
-  t.split(/\n|[.!]/).forEach(l=>{
+  t.split(/\n|[.!]/).forEach(l=>{if(/^\s*※/.test(l))return;  // 판 11: 「※」로 시작하는 줄은 이 도구가 넣은 안내·부인 문장이라 검사하지 않음
+
    if(hasLiq(l)){let m;PRO.lastIndex=0;const lm=l.search(/술|소주|맥주|생맥|막걸리|하이볼|와인|사케|샴페인|주류|양주|위스키|칵테일/);
     while((m=PRO.exec(l))){if(Math.abs(m.index-lm)<=26&&!NEG.test(l)){W.push([k,"술 할인·증정·쿠폰 표시 — 국민건강증진법 제8조의2 제2항 제1호(F075). 술 가격은 메뉴판에만",l]);break}}}
    if(/마시자|마셔라|취하자|한 ?잔 ?더|술 ?무제한|무제한 ?(술|맥주|소주)/.test(l)&&(hasLiq(l)||hasLiq(t)))W.push([k,"음주 권유 — 같은 조 제2호",l]);

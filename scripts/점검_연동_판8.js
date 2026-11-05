@@ -2,7 +2,7 @@
 // 주의: 시험 도구가 한글 파일 이름을 못 넘기므로 예시 파일은 copy.json·deliv.json·open.json 영문 이름으로 복사해 폴더를 넘김
 const {chromium}=require('playwright');
 (async()=>{const b=await chromium.launch();const p=await b.newPage({viewport:{width:1100,height:900}});const errs=[];p.on('pageerror',e=>errs.push(e.message));p.on('dialog',d=>d.accept());
-await p.goto('file://'+process.argv[2]);await p.waitForTimeout(500);const r={};
+await p.goto((process.argv[2].startsWith('http')?process.argv[2]:'file://'+process.argv[2]));await p.waitForTimeout(500);const r={};
 await p.click('[data-sample="고깃집"]');await p.waitForTimeout(200);await p.click('#plan-0 [data-pick]');await p.waitForTimeout(200);
 await p.click('[data-tool="link"]');r.대기=await p.$eval('#tool-body',x=>(x.innerText.match(/연결 대기/g)||[]).length);
 await p.setInputFiles('[data-lk="deliv"]',process.argv[4]);await p.waitForTimeout(200);r.틀린파일=await p.$eval('#lk-msg',x=>x.innerText.replace(/\s+/g,' ').slice(0,300));

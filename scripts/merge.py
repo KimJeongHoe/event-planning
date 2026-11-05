@@ -270,6 +270,11 @@ def main():
                 if m in rid:
                     rid[m]["similar_group"] = f'{g["group"]}({len(g["members"])}건)'
                     rid[m]["group_rep"] = "대표" if m == g["rep"] else str(g["rep"])
+    # 판 11: 행사방식 칸(기본 행사 방식 키, spec/사례_방식.json — scripts/anon11.py가 보조 판단 결과로 만듦)
+    pm_path = f"{SPEC}/사례_방식.json"
+    if os.path.exists(pm_path):
+        pm = json.load(open(pm_path, encoding="utf-8"))["사례"]
+        for r in recs: r["promo_method"] = "|".join(pm.get(str(r["id"]), []))
     df = pd.DataFrame(recs, columns=CASE_KEYS).sort_values("id")
     csv_safe(df).to_csv(f"{OUT}/사례DB.csv", index=False, encoding="utf-8-sig",
               header=[h for _, h in CASE_COLS], quoting=csv.QUOTE_ALL)

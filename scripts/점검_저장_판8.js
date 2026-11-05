@@ -14,7 +14,7 @@ for(const mode of (process.argv[3]?process.argv[3].split(","):["ok","ro","reject
  p.on('pageerror',e=>errs.push(e.message));p.on('dialog',async d=>{alerts.push(d.message().slice(0,60));await d.accept()});
  if(mode!=="none"&&mode!=="nostorage")await p.addInitScript(MOCK(mode));
  if(mode==="nostorage")await p.addInitScript(()=>{Object.defineProperty(window,"localStorage",{get(){throw new Error("막힘")}})});
- await p.goto('file://'+process.argv[2]);await p.waitForTimeout(600);
+ await p.goto((process.argv[2].startsWith('http')?process.argv[2]:'file://'+process.argv[2]));await p.waitForTimeout(600);
  await p.click('[data-sample="고깃집"]');await p.waitForTimeout(200);await p.click('#plan-0 [data-pick]');await p.waitForTimeout(200);
  await p.click('[data-tool="result"]');await p.fill('#rs-name','저장 점검');await p.fill('#rs-c0','100');await p.fill('#rs-c1','130');await p.click('#rs-save');await p.waitForTimeout(300);
  await p.click('[data-tool="coupon"]');await p.fill('#cp-ben','사이드 1접시 증정');await p.click('#cp-save');await p.waitForTimeout(300);

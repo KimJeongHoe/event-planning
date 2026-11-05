@@ -1,9 +1,9 @@
 const {chromium}=require('playwright');
 (async()=>{const b=await chromium.launch();const W=+process.argv[3]||1100;const p=await b.newPage({viewport:{width:W,height:900}});const errs=[];
 p.on('pageerror',e=>errs.push('오류 '+e.message));p.on('console',m=>{if(m.type()==='error')errs.push('콘솔 '+m.text())});
-await p.goto('file://'+process.argv[2]);await p.waitForTimeout(500);
+await p.goto((process.argv[2].startsWith('http')?process.argv[2]:'file://'+process.argv[2]));await p.waitForTimeout(500);
 const r={};
-await p.click('[data-sample="고깃집"]');await p.waitForTimeout(300);
+await p.click('[data-sample="고깃집"]');await p.waitForTimeout(300);await p.fill('#in-name','우리고깃집');// 판 11: 샘플 가게는 저장이 막혀서 실제 이름으로
 r.ex=await p.$$eval('#explans .plan',x=>x.length);r.plans=await p.$$eval('#plans .plan',x=>x.length);r.side=await p.$$eval('#side .plan',x=>x.length);
 await p.click('#plan-0 [data-pick]');await p.waitForTimeout(300);
 r.ch=await p.$$eval('#ch-box label:not([hidden])',x=>x.length);r.check=await p.$eval('#nt-check',x=>x.innerText.slice(0,80));

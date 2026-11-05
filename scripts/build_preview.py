@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """행사안 미리보기 화면 만들기: 사례 DB·FAQ·문구 은행·캘린더를 JSON으로 넣은 한 장짜리 HTML → preview/행사안_미리보기.html
 생성 모델을 부르지 않는다(자료에서 골라 조합). 숫자는 화면의 계산식으로만."""
-import json,re,os,pandas as pd
+import json,re,os,sys,pandas as pd
 B=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 d=pd.read_json(f"{B}/merged/사례DB.jsonl",lines=True,dtype=str).fillna("")
 ALL=len(d); NEX=int((d.ref_exclude!="").sum()); NBL=int(((d.ref_exclude=="")&(d.verify_status=="막힘")).sum())
@@ -26,6 +26,32 @@ for _,r in d.iterrows():
       br=r.business_risk,orr=r.ops_risk,rr=r.reputation_risk,va=r.variants,so=r.safe_ops,ev=r.evidence_level,v=verdict(r.case_qna),qb=basis(r.case_qna),
       f=r.faq_ids,uc=r.unit_cost,cr=r.cost_ratio_level,k=r.kind,co=r.country,vs=r.verify_status,grp=r.similar_group,rep=r.group_rep,
       fr=2 if HARD.search(r["name"]+" "+r.summary+" "+r.condition+" "+r.benefit+" "+r.resources) else (1 if BIG.search(r["name"]+" "+r.summary) else 0),lq=1 if ((LIQ.search(tt) and PRO.search(tt)) or "F075" in r.legal_risk) else 0,u=url1(r.source_urls),bi=r.base_ids,wh=_who(r),kd=_kind(r)))
+# ── 판 11: 영상 사례(주장) 20건 — 번호 9001~, k="영상". 실제 사례 비중(spec/행사방식.json)에는 들어가지 않음
+if os.path.exists(f"{B}/spec/영상사례_판11.json") and "--공개판" not in sys.argv:
+    for j,e in enumerate(json.load(open(f"{B}/spec/영상사례_판11.json",encoding="utf-8"))["items"]):
+        tt=e["혜택"]+" "+e["이름"]
+        C.append(dict(i=9001+j,n=e["이름"],s=e["한줄설명"],ind=e["업종"],sub=e.get("세부업종",""),st=e["단계"],tm="",na="",g="",t="",c=e["조건"],b=e["혜택"],sg="",rs="",du="",li="",kp="",up="",
+          br=e.get("주의",""),orr="",rr="",va="",so=e.get("안전운영조건",""),ev="영상 사례(주장) — 실제 사례 비중에서 뺌",v=e["진행여부"],qb=e.get("법위험",""),f="|".join(e.get("관련FAQ",[])) if isinstance(e.get("관련FAQ"),list) else e.get("관련FAQ",""),
+          uc="",cr="",k="영상",co="한국",vs="해당없음(영상)",grp="",rep="",fr=0,lq=1 if (LIQ.search(tt) and PRO.search(tt)) else 0,u="",bi="",wh="일반 손님",kd="행사",mt=e.get("방식",[])))
+# ── 판 11: 업체 실명 빼기 — 손님판·공개판은 spec/사례_익명.json 글, 출처 주소는 관리자판에만. 사용: --관리자판
+ADMIN="--관리자판" in sys.argv
+if not ADMIN and os.path.exists(f"{B}/spec/사례_익명.json"):
+    _an=json.load(open(f"{B}/spec/사례_익명.json",encoding="utf-8"))["사례"];_TXT=("n","s","c","b","sg","rs","du","li","kp","up","br","orr","rr","va","so","qb","uc","ev","t")
+    for c in C:
+        a=_an.get(str(c["i"]));c["_src"]=bool(c.get("u"));c["u"]=""
+        if not a: continue
+        for k in ("n","s","c","b","sg","va"):
+            if k in a: c[k]=a[k]
+        for x,y in a.get("rep",[]):
+            for k in _TXT:
+                if isinstance(c.get(k),str) and x in c[k]: c[k]=c[k].replace(x,y)
+    # 사례 글의 플랫폼 이름은 일반 표현으로(우리 안내 글·FAQ·법 근거의 채널 이름은 그대로)
+    PLATR=[("인스타그램","SNS"),("인스타","SNS"),("카카오톡 채널","메신저 채널"),("카카오톡","메신저"),("카카오","메신저"),("카톡","메신저"),("네이버 스마트플레이스","지도 앱"),("네이버 플레이스","지도 앱"),("네이버 예약","예약 앱"),("네이버","포털"),("배달의민족","배달앱"),("배민","배달앱"),("쿠팡이츠","배달앱"),("요기요","배달앱"),("쿠팡","온라인 쇼핑몰"),("당근 비즈프로필","동네 앱 가게 소식"),("당근마켓","동네 앱"),("당근","동네 앱"),("페이스북","SNS"),("유튜버","영상 제작자"),("유튜브","영상 SNS"),("기프티콘","모바일 상품권"),("틱톡","짧은 영상 SNS"),("스마트스토어","온라인 쇼핑몰"),("LINE","메신저"),("트위터","SNS")]
+    for c in C:
+        for k in _TXT:
+            if isinstance(c.get(k),str):
+                for x,y in PLATR: c[k]=c[k].replace(x,y)
+    PLAT_LEFT=[x for x,_ in PLATR]
 f=pd.read_csv(f"{B}/merged/FAQ.csv",dtype=str).fillna("")
 cols=f.columns.tolist()
 def col(*names):
@@ -89,6 +115,13 @@ if errs: raise SystemExit("응용 예시 검사 실패:\n"+"\n".join(errs))
 print("응용 예시",len(EX),"검사 통과(숫자 0·효과 0·피해야 할 표현 0), 판정",{k:sum(1 for e in EX if e["v"].startswith(k)) for k in ("가능","조건부","확인","불가")},"술 표시 주의",sum(e["lq"] for e in EX))
 LP=f"{B}/spec/법근거_판8.json"  # 판 8: 판 7 키 + 재확인 + 업종별 항목
 LAW={x["key"]:x for x in json.load(open(LP,encoding="utf-8"))["items"]} if os.path.exists(LP) else {}
+if os.path.exists(f"{B}/spec/법근거_판11_추가.json"):
+    for x in json.load(open(f"{B}/spec/법근거_판11_추가.json",encoding="utf-8"))["items"]: LAW[x["key"]]=x
+SDJ=json.load(open(f"{B}/spec/법근거_시행일.json",encoding="utf-8")) if os.path.exists(f"{B}/spec/법근거_시행일.json") else {}
+SDJ=SDJ.get("키",SDJ) if isinstance(SDJ,dict) else {}
+for k,x in LAW.items():
+    sd=(SDJ.get(k) or {}).get("시행일","") if isinstance(SDJ.get(k),dict) else ""
+    if sd: x["sd"]=sd
 LINKF={"copy":"문구기준","deliv":"배달요금표","open":"개업순서표"}  # 다른 도구 파일: spec/연동/<이름>.json (docs/연동파일_칸설명서.md)
 LINKD={k:json.load(open(f"{B}/spec/연동/{v}.json",encoding="utf-8")) for k,v in LINKF.items() if os.path.exists(f"{B}/spec/연동/{v}.json")}
 IP=f"{B}/spec/업종_판8.json"
@@ -106,6 +139,8 @@ if os.path.exists(f"{B}/spec/행사방식.json"):
     if _p: MTD["할인율"]={"건":len(_p),"하위25":_p[len(_p)//4],"중앙":_p[len(_p)//2]}
 # ── 판 9: 화면용 글 다듬기 — 「확인 필요」 같은 덜 만든 표시는 화면에 내지 않음(원본 자료·장부에는 그대로). 판정값 v는 화면에서 「신중」으로 표시(template vClass)
 def _scr(t):
+    if isinstance(t,str) and "회차" in t:  # 판 11: 내부 작업 메모(「(회차8 원문 확인)」 등)는 화면에서 지움
+        t=re.sub(r"\s*[(（][^()（）]*회차 ?\d+[^()（）]*[)）]","",t);t=re.sub(r"회차 ?\d+(에서|의|에|때)?\s*","",t)
     if not isinstance(t,str) or ("확인 필요" not in t and "확인필요" not in t and "미확인" not in t): return t
     t=t.replace("확인필요","확인 필요")
     t=re.sub(r"[^./]*?(원문을 확보하지 못해|원문 미확인|원문이 없어|원문을 확인하지 못)[^./]*\.?","공식 해석이 없어 꼭 지킬 조건을 따르세요.",t)
@@ -125,18 +160,40 @@ for x in C: x.update(_walk({k:v for k,v in x.items()}))
 EX=[_walk(e) for e in EX]
 F={k:_walk(v) for k,v in F.items()}
 IND=_walk(IND,skip=())
-LAW={k:{kk:(_scr(vv) if kk=="gist" else vv) for kk,vv in v.items() if kk in ("law","art","gist","num","key")} for k,v in LAW.items()}
+LAW={k:{kk:(_scr(vv) if kk=="gist" else vv) for kk,vv in v.items() if kk in ("law","art","gist","num","key","sd")} for k,v in LAW.items()}
 # ── 판 9: 공개판(광고·유료 예정)은 출처 모르는 값·상업 이용 금지 자료를 뺌(spec/자료장부.json). 사용: build_preview.py --공개판 → preview/행사안_공개판.html
 PUB="--공개판" in sys.argv
 if PUB:
-    _n=len(C);C=[c for c in C if not (c.get("k")=="실제" and not c.get("u"))];print("공개판: 출처 주소 없는 실제 사례",_n-len(C),"건 뺌")
+    _n=len(C);C=[c for c in C if not (c.get("k")=="실제" and not c.get("_src",bool(c.get("u"))))];print("공개판: 출처 주소 없는 실제 사례",_n-len(C),"건 뺌")
+    # 판 11: 확정 전 자료(판정이 정해지지 않은 사례·응용 예시·FAQ, 영상 사례)는 공개판에서 자동으로 뺌
+    _n=len(C);C=[c for c in C if not str(c.get("v","")).startswith("확인") and c.get("k")!="영상"];_e=len(EX);EX=[e for e in EX if not str(e.get("v","")).startswith("확인")]
+    _f=len(F);F={k:v for k,v in F.items() if not str(v.get("v","")).startswith("확인")};
+    for _x in C+EX+list(F.values()):
+        if isinstance(_x.get("v"),str): _x["v"]=_x["v"].replace("확인 필요","신중")
+    print("공개판: 확정 전 사례",_n-len(C),"건·응용 예시",_e-len(EX),"개·FAQ",_f-len(F),"개 뺌")
 IQ=json.load(open(f"{B}/spec/업종질문_판10.json",encoding="utf-8")) if os.path.exists(f"{B}/spec/업종질문_판10.json") else {}  # 판 10 업종 전용 질문
 SETF=json.load(open(f"{B}/spec/설정.json",encoding="utf-8")) if os.path.exists(f"{B}/spec/설정.json") else {}  # 판 11 설정값
+for c in C: c.pop("_src",None)
 DATA=dict(set=SETF,iq=IQ,mtd=MTD,link=LINKD,ind8=IND,law=LAW,ex=EX,sms=SMS,all=ALL,nex=NEX,nbl=NBL,cases=C,faq=F,bank=bank,cal=cal,samples=S,built=pd.Timestamp.now(tz="Asia/Seoul").strftime("%Y-%m-%d"))
 js=json.dumps(DATA,ensure_ascii=False,separators=(",",":")).replace("</","<\\/")
 tpl=open(f"{B}/preview/template.html",encoding="utf-8").read()
 out=tpl.replace("/*__DATA__*/null",js)
 plus="\n".join(open(f"{B}/preview/{n}",encoding="utf-8").read() for n in ("vendor_qrcode.js","plus7.js","link8.js","ind8.js","method10.js","coupon10.js","plan11.js","qa11.js","set9.js") if os.path.exists(f"{B}/preview/{n}")).replace("</","<\\/")
 out=out.replace("/*__PLUS__*/",plus)
-open(f"{B}/preview/"+("행사안_공개판.html" if PUB else "행사안_미리보기.html"),"w",encoding="utf-8").write(out)
+# 판 11: 손님판·공개판에 원래 업체 이름이 나오면 멈춤(검사가 살아 있는지 먼저 시험)
+NAMES=json.load(open(f"{B}/spec/업체명_사전.json",encoding="utf-8"))["이름"] if os.path.exists(f"{B}/spec/업체명_사전.json") else []
+def _leak(txt): return [n for n in NAMES if n in txt]
+if NAMES and not _leak("시험 "+NAMES[0]): raise SystemExit("실명 검사가 동작하지 않음")
+if not ADMIN:
+    _lk=_leak(js)
+    if _lk: raise SystemExit(f"손님판에 업체 이름 {len(_lk)}개가 남음: "+", ".join(_lk[:15]))
+    _cj=json.dumps(C,ensure_ascii=False);_pl=[x for x in PLAT_LEFT if x in _cj] if "PLAT_LEFT" in globals() else []
+    if _pl: raise SystemExit("사례 글에 플랫폼 이름이 남음: "+", ".join(_pl))
+# 판 11: 공개판에 내부 문장(개발·검수 말)이 섞이면 멈춤
+INNER=re.compile(r"회차 ?\d|검수 창|개발 창|인수인계\.md|인수인계 문서|TODO|FIXME|확인 필요|scratchpad|/home/user")
+if PUB:
+    if not INNER.search("시험 확인 필요"): raise SystemExit("내부 문장 검사가 동작하지 않음")
+    _m=INNER.search(js)
+    if _m: raise SystemExit("공개판에 내부 문장: "+js[max(0,_m.start()-40):_m.end()+40])
+open(f"{B}/preview/"+("행사안_관리자판.html" if ADMIN else "행사안_공개판.html" if PUB else "행사안_미리보기.html"),"w",encoding="utf-8").write(out)
 print("사례",len(C),"FAQ",len(F),"문구",len(bank),"달력",len(cal),"크기",len(out.encode())//1024,"KB")

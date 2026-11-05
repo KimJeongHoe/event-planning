@@ -11,7 +11,7 @@ const v7=q=>($(q)?.value||"").trim();
 const n7=q=>{const s=v7(q).replace(/[^0-9.]/g,"");return s===""?null:+s};
 // 판 9: 화면에는 상태 배지·미확인 메모를 내지 않음(상태는 spec/법근거_판8.json·docs/화면밖_확인필요_장부.md에만)
 function lawLi(k){const L=LAWS[k];if(!L)return "";
- return `<li>⚠ <b>${esc(L.law)} ${esc(L.art)}</b> — ${esc(L.gist)}</li>`}
+ return `<li>⚠ <b>${esc(L.law)} ${esc(L.art)}</b>${L.sd?` <span class="small">(시행 ${esc(L.sd)})</span>`:""} — ${esc(L.gist)}</li>`}  // 판 11: 시행일 함께
 function lawBox(t,keys,extra){return `<div class="note bad"><b>⚠ ${esc(t)}</b><ul class="clean" style="margin-top:4px">${keys.map(lawLi).join("")}${extra||""}</ul></div>`}
 function faqBox(ids){const h=ids.map(f=>{const q=D.faq[f];if(!q)return"";const [fc,ft]=vClass(q.v);return `<div class="faq"><div class="badges"><span class="badge ${fc}">${ft}</span><b class="small">${f}</b></div><p style="margin:4px 0">${esc(q.q)}</p>${q.c?`<details><summary>조건 보기</summary><p class="small" style="margin:4px 0 0">${esc(q.c)}</p></details>`:""}</div>`}).join("");return h?`<details><summary>관련 질문과 답 (FAQ ${ids.join("·")})</summary><div style="display:flex;flex-direction:column;gap:8px;margin-top:6px">${h}</div></details>`:""}
 const CONFIRM=t=>"";  // 판 9: 원문 미확인 쟁점은 화면에 내지 않음(docs/화면밖_확인필요_장부.md)

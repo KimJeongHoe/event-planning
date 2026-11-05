@@ -29,11 +29,16 @@ IND=["요식업","소매","서비스업","학원·교육","미용·뷰티","병�
 hit={k:[] for k,*_ in M};none=0
 for r in R:
     t=txt(r);got=False
-    nm=r.get("이름","");ty=r.get("방식","")
+    nm=r.get("이름","");ty=r.get("방식","");pm=r.get("행사방식","")
+    if "행사방식" in r:  # 판 11: 사례 DB 「행사방식」 칸(보조 판단 분류)을 그대로 씀. 빈 칸 = 판촉 수단이 아닌 사례
+        for k in [x for x in pm.split("|") if x]:
+            if k in hit: hit[k].append(r);got=True
+        if r in real and not got: none+=1
+        continue
     for k,n,g,rx,d,l in M:
         if re.search(rx,nm,flags=re.I) or (re.search(rx,t,flags=re.I) and re.search(GATE[g],ty)): hit[k].append(r);got=True
     if r in real and not got: none+=1
-out={"_설명":"판 10 기본 행사 방식 축(scripts/methods10.py가 만듦). 비중 = 실제 사례(원문 확인) 중 그 방식 낱말이 든 사례 비율. 한 사례가 여러 방식에 들 수 있어 합이 100%를 넘음. 응용 사례는 비중에 넣지 않음. 낱말 규칙이라 오분류가 남음. 큰 묶음 순서 = 묶음 안 방식들의 실제 사례 수(중복 없이) 많은 순, 묶음 안 방식 순서 = 비중 큰 순.",
+out={"_설명":"판 10 기본 행사 방식 축(scripts/methods10.py가 만듦). 판 11부터 사례 DB 「행사방식」 칸으로 셈. 비중 = 실제 사례(원문 확인) 중 그 방식인 사례 비율. 한 사례가 여러 방식에 들 수 있어 합이 100%를 넘음. 응용 사례는 비중에 넣지 않음. 낱말 규칙이라 오분류가 남음. 큰 묶음 순서 = 묶음 안 방식들의 실제 사례 수(중복 없이) 많은 순, 묶음 안 방식 순서 = 비중 큰 순.",
  "기준":{"실제사례":len(real),"전체":len(R),"어느방식에도안듦":none},"묶음":[],"방식":[]}
 for k,n,g,rx,d,l in M:
     rr=[r for r in hit[k] if r["실제/응용"]=="실제"]

@@ -10,6 +10,7 @@ import sys,os,re,json,csv
 import pandas as pd
 BASE=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0,f"{BASE}/scripts")
+from anon_apply import anon_raw,anon_text
 OUT=sys.argv[1] if len(sys.argv)>1 else f"{BASE}/merged"
 cols=json.load(open(f"{BASE}/spec/columns.json",encoding="utf-8"))["case_columns"]
 rs=[json.loads(l) for l in open(f"{BASE}/merged/사례DB.jsonl",encoding="utf-8")]
@@ -96,7 +97,8 @@ for fname,topics in T.items():
             if topic not in e["주제"]: e["주제"].append(topic); e["고른근거"].append(f"{topic}:{why}")
     out=[]
     for i in sorted(rows):
-        e=rows[i]; row=[" | ".join(e["주제"])," | ".join(e["고른근거"])]+[e["r"].get(k,"") for k,_ in cols]+badge_cols(e["r"])
+        e=rows[i]; e["r"]=anon_raw(e["r"])  # 판 11: 다른 도구에 넘기는 파일도 업체 실명·출처 주소를 뺌
+        row=[" | ".join(e["주제"])," | ".join(e["고른근거"])]+[e["r"].get(k,"") for k,_ in cols]+badge_cols(e["r"])
         if fname.startswith("QR"):
             kio=any(t in ("키오스크·어르신 응대","테이블오더 개인정보 동의") for t in e["주제"])
             row.append(KIOSK if kio else "")
@@ -121,4 +123,5 @@ fq["진행여부_표시"]=fq["진행여부"].map(lambda v:(VCOL[v][1]+" "+VCOL[v
 fq["근거수준_짧은표시"]=fq["근거수준"].map(lambda e:ev_badge(e)[1]); fq["근거수준_색"]=fq["근거수준"].map(lambda e:ev_badge(e)[0])
 fq=fq.apply(lambda col:col.map(clean))
 for c in fq.columns: fq[c]=fq[c].map(lambda v:("'"+v) if isinstance(v,str) and v[:1] in ("=","+","-","@") else v)
+fq=fq.apply(lambda col:col.map(anon_text))  # 판 11: FAQ 속 사례 업체 이름도 일반 표현으로
 fq.to_csv(f"{OUT}/FAQ_표시용.csv",index=False,encoding="utf-8-sig",quoting=csv.QUOTE_ALL); print(f"{OUT}/FAQ_표시용.csv",len(fq))
